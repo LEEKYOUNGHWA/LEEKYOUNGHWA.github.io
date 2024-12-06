@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>git 명령어 정리 | MIND UPLOAD</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/logo.jpg">
+    <script async="true" src="https://www.googletagmanager.com/gtag/js?id=G-672PNZBWWP"></script>
+    <script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-672PNZBWWP');</script>
+    <script async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8111136017997298" crossorigin="anonymous"></script>
+    <meta name="description" content="git 명령어 정리">
+    <meta name="git 명령어 정리" content="git 명령어 정리">
+    <meta property="article:published_time" content="2023-11-20T10:00:00.000Z">
+    <meta property="article:modified_time" content="2023/11/20 10:00:00">
+    <meta property="og:site_name" content="MIND UPLOAD">
+    <meta property="og:title" content="git 명령어 정리">
+    <meta property="og:description" content="git 명령어 정리">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="leekyounghwa.github.io/posts/2023/git.html">
+    <meta property="og:image" content="https://leekyounghwa.github.io/logo.jpg">
+    <meta name="twitter:title" content="git 명령어 정리">
+    <meta name="twitter:description" content="git 명령어 정리">
+    <meta name="twitter:url" content="leekyounghwa.github.io/posts/2023/git.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://leekyounghwa.github.io/logo.jpg">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="git">
+    <meta property="article:tag" content="git">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.e6085275.css" as="style"><link rel="preload" href="/assets/js/app.43115f4a.js" as="script"><link rel="preload" href="/assets/js/2.85a072e1.js" as="script"><link rel="preload" href="/assets/js/1.f91167be.js" as="script"><link rel="preload" href="/assets/js/81.7180d21d.js" as="script"><link rel="prefetch" href="/assets/js/100.7aaef4cd.js"><link rel="prefetch" href="/assets/js/101.12f52f1a.js"><link rel="prefetch" href="/assets/js/102.464f4e35.js"><link rel="prefetch" href="/assets/js/103.6e157da3.js"><link rel="prefetch" href="/assets/js/104.89848dba.js"><link rel="prefetch" href="/assets/js/105.e623000f.js"><link rel="prefetch" href="/assets/js/106.78a8d38d.js"><link rel="prefetch" href="/assets/js/107.baa66c3c.js"><link rel="prefetch" href="/assets/js/108.805b3e36.js"><link rel="prefetch" href="/assets/js/109.9fea47d2.js"><link rel="prefetch" href="/assets/js/110.030ff6d3.js"><link rel="prefetch" href="/assets/js/111.b2b31cd7.js"><link rel="prefetch" href="/assets/js/112.6032be0f.js"><link rel="prefetch" href="/assets/js/113.2d861894.js"><link rel="prefetch" href="/assets/js/114.dbc39f7b.js"><link rel="prefetch" href="/assets/js/115.e1ac051a.js"><link rel="prefetch" href="/assets/js/116.5775a9da.js"><link rel="prefetch" href="/assets/js/117.6de37ab0.js"><link rel="prefetch" href="/assets/js/118.b44a6985.js"><link rel="prefetch" href="/assets/js/119.44d69599.js"><link rel="prefetch" href="/assets/js/12.a1fa05af.js"><link rel="prefetch" href="/assets/js/120.07221207.js"><link rel="prefetch" href="/assets/js/121.bcbbc7ba.js"><link rel="prefetch" href="/assets/js/122.457d1aa1.js"><link rel="prefetch" href="/assets/js/123.d4d98f63.js"><link rel="prefetch" href="/assets/js/124.be8799b8.js"><link rel="prefetch" href="/assets/js/125.8aedb702.js"><link rel="prefetch" href="/assets/js/126.a4e7d4ec.js"><link rel="prefetch" href="/assets/js/127.8eec82a4.js"><link rel="prefetch" href="/assets/js/128.d0c4c528.js"><link rel="prefetch" href="/assets/js/129.e30292ee.js"><link rel="prefetch" href="/assets/js/13.d6e40b61.js"><link rel="prefetch" href="/assets/js/130.2bd1f6dd.js"><link rel="prefetch" href="/assets/js/131.27ae6127.js"><link rel="prefetch" href="/assets/js/14.f60748fb.js"><link rel="prefetch" href="/assets/js/15.90b0fa0a.js"><link rel="prefetch" href="/assets/js/16.0941870f.js"><link rel="prefetch" href="/assets/js/17.520daff9.js"><link rel="prefetch" href="/assets/js/18.84f5f436.js"><link rel="prefetch" href="/assets/js/19.47bd282e.js"><link rel="prefetch" href="/assets/js/20.ce9366da.js"><link rel="prefetch" href="/assets/js/21.a13b555a.js"><link rel="prefetch" href="/assets/js/22.15270f6a.js"><link rel="prefetch" href="/assets/js/23.9326113b.js"><link rel="prefetch" href="/assets/js/24.ae0d66cb.js"><link rel="prefetch" href="/assets/js/25.ebe5a887.js"><link rel="prefetch" href="/assets/js/26.2bd83dc4.js"><link rel="prefetch" href="/assets/js/27.d696b27b.js"><link rel="prefetch" href="/assets/js/28.27b8f300.js"><link rel="prefetch" href="/assets/js/29.7848fd9d.js"><link rel="prefetch" href="/assets/js/3.f6d21412.js"><link rel="prefetch" href="/assets/js/30.cbd28ba3.js"><link rel="prefetch" href="/assets/js/31.fe33b9e8.js"><link rel="prefetch" href="/assets/js/32.7dc3d279.js"><link rel="prefetch" href="/assets/js/33.687196cf.js"><link rel="prefetch" href="/assets/js/34.4038b87c.js"><link rel="prefetch" href="/assets/js/35.c8ab3550.js"><link rel="prefetch" href="/assets/js/36.dbb0a35a.js"><link rel="prefetch" href="/assets/js/37.1fb8516f.js"><link rel="prefetch" href="/assets/js/38.c12c20c6.js"><link rel="prefetch" href="/assets/js/39.36359b83.js"><link rel="prefetch" href="/assets/js/4.529eb72c.js"><link rel="prefetch" href="/assets/js/40.7c6cc6e8.js"><link rel="prefetch" href="/assets/js/41.6e68de5e.js"><link rel="prefetch" href="/assets/js/42.3d685bbd.js"><link rel="prefetch" href="/assets/js/43.1b49a7cd.js"><link rel="prefetch" href="/assets/js/44.ec6d209f.js"><link rel="prefetch" href="/assets/js/45.39d120f4.js"><link rel="prefetch" href="/assets/js/46.f84a7c42.js"><link rel="prefetch" href="/assets/js/47.eb2f7571.js"><link rel="prefetch" href="/assets/js/48.7428c02e.js"><link rel="prefetch" href="/assets/js/49.07852bbc.js"><link rel="prefetch" href="/assets/js/5.a56e5a0d.js"><link rel="prefetch" href="/assets/js/50.8a0e2cfb.js"><link rel="prefetch" href="/assets/js/51.b7b3ba5f.js"><link rel="prefetch" href="/assets/js/52.085de3fe.js"><link rel="prefetch" href="/assets/js/53.d95f8d26.js"><link rel="prefetch" href="/assets/js/54.3534519c.js"><link rel="prefetch" href="/assets/js/55.9d7803a9.js"><link rel="prefetch" href="/assets/js/56.5e9bf6f5.js"><link rel="prefetch" href="/assets/js/57.6d7e07a8.js"><link rel="prefetch" href="/assets/js/58.a6029583.js"><link rel="prefetch" href="/assets/js/59.bd997ebc.js"><link rel="prefetch" href="/assets/js/6.b1309cab.js"><link rel="prefetch" href="/assets/js/60.45316178.js"><link rel="prefetch" href="/assets/js/61.753a05c4.js"><link rel="prefetch" href="/assets/js/62.1271ec2d.js"><link rel="prefetch" href="/assets/js/63.3dbd3c26.js"><link rel="prefetch" href="/assets/js/64.692d7f2a.js"><link rel="prefetch" href="/assets/js/65.b91c1132.js"><link rel="prefetch" href="/assets/js/66.89173df6.js"><link rel="prefetch" href="/assets/js/67.69aeb756.js"><link rel="prefetch" href="/assets/js/68.d83b2e7f.js"><link rel="prefetch" href="/assets/js/69.4a716a43.js"><link rel="prefetch" href="/assets/js/7.9a99511f.js"><link rel="prefetch" href="/assets/js/70.50ea0105.js"><link rel="prefetch" href="/assets/js/71.af311bff.js"><link rel="prefetch" href="/assets/js/72.f3943e40.js"><link rel="prefetch" href="/assets/js/73.bca65d37.js"><link rel="prefetch" href="/assets/js/74.8daf6a54.js"><link rel="prefetch" href="/assets/js/75.56a768a2.js"><link rel="prefetch" href="/assets/js/76.5ac8fd09.js"><link rel="prefetch" href="/assets/js/77.45b9812f.js"><link rel="prefetch" href="/assets/js/78.bb8df35d.js"><link rel="prefetch" href="/assets/js/79.a7e6df34.js"><link rel="prefetch" href="/assets/js/8.9d80e16f.js"><link rel="prefetch" href="/assets/js/80.826d7495.js"><link rel="prefetch" href="/assets/js/82.0fddf0fc.js"><link rel="prefetch" href="/assets/js/83.0f663c0f.js"><link rel="prefetch" href="/assets/js/84.25f37c9b.js"><link rel="prefetch" href="/assets/js/85.3c065e8b.js"><link rel="prefetch" href="/assets/js/86.53b567c3.js"><link rel="prefetch" href="/assets/js/87.5a937c80.js"><link rel="prefetch" href="/assets/js/88.9f6efa67.js"><link rel="prefetch" href="/assets/js/89.ccd8d489.js"><link rel="prefetch" href="/assets/js/90.58b402cf.js"><link rel="prefetch" href="/assets/js/91.3e864e45.js"><link rel="prefetch" href="/assets/js/92.8b69cc93.js"><link rel="prefetch" href="/assets/js/93.7aee9dad.js"><link rel="prefetch" href="/assets/js/94.e23aaf39.js"><link rel="prefetch" href="/assets/js/95.7683c53b.js"><link rel="prefetch" href="/assets/js/96.6c822efb.js"><link rel="prefetch" href="/assets/js/97.94c42dcc.js"><link rel="prefetch" href="/assets/js/98.b04635b3.js"><link rel="prefetch" href="/assets/js/99.9d15ece0.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.f307c150.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.9641d7fa.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e6085275.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.jpg" alt="MIND UPLOAD" class="logo"> <span class="site-name can-hide">MIND UPLOAD</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/posts/" class="nav-link router-link-active">
+  TIL
+</a></div><div class="nav-item"><a href="/study/" class="nav-link">
+  study
+</a></div><div class="nav-item"><a href="/blog/" class="nav-link">
+  blog
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/posts/" class="nav-link router-link-active">
+  TIL
+</a></div><div class="nav-item"><a href="/study/" class="nav-link">
+  study
+</a></div><div class="nav-item"><a href="/blog/" class="nav-link">
+  blog
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>2022</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>2023</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/posts/2023/adsenseLog.html" class="sidebar-link">vuepress 블로그 애드고시</a></li><li><a href="/posts/2023/autoConfirmClick.html" class="sidebar-link">GetSmart alert 없애기, 자동 재생</a></li><li><a href="/posts/2023/confluence.html" class="sidebar-link">confluence</a></li><li><a href="/posts/2023/dbObject.html" class="sidebar-link">oracle object 조회</a></li><li><a href="/posts/2023/eclipse.html" class="sidebar-link">Eclipse 기능 정리. 내가 보는용</a></li><li><a href="/posts/2023/git.html" aria-current="page" class="active sidebar-link">git 명령어 정리</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/posts/2023/git.html#pull-request" class="sidebar-link">pull request</a></li></ul></li><li><a href="/posts/2023/iosManageWakeupTime.html" class="sidebar-link">아이폰 단축어 기상시간 앞당겨서 알람 자동 생성</a></li><li><a href="/posts/2023/iosReminderDday.html" class="sidebar-link">아이폰 미리알림 디데이로</a></li><li><a href="/posts/2023/javaException.html" class="sidebar-link">java exception</a></li><li><a href="/posts/2023/javaLambda.html" class="sidebar-link">java lambda cheet sheet</a></li><li><a href="/posts/2023/oracleDeclareProcedure.html" class="sidebar-link">oracle PL/SQL DECLARE PROCEDURE</a></li><li><a href="/posts/2023/playwright.html" class="sidebar-link">playwright</a></li><li><a href="/posts/2023/writeDocumentUsingPython.html" class="sidebar-link">파이썬으로 대량 문서 작업 소스</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>2024</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="frontmatter-title"><a href="#frontmatter-title" class="header-anchor">#</a> git 명령어 정리</h1> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># 원격저장소 커밋,푸쉬 내용 리셋하기</span>
+<span class="token function">git</span> reset <span class="token parameter variable">--hard</span> 0f16a57a<span class="token punctuation">[</span>되돌아가고싶은커밋<span class="token punctuation">]</span>
+<span class="token function">git</span> push <span class="token parameter variable">-f</span> origin develop <span class="token comment"># 강제 푸쉬</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># Repository 생성</span>
+<span class="token comment"># 새로운 로컬 저장소를 생성하기</span>
+<span class="token function">git</span> init <span class="token punctuation">[</span>project_name<span class="token punctuation">]</span>
+<span class="token comment"># 이미 있는 저장소로 부터 다운로드 하기</span>
+<span class="token function">git</span> clone <span class="token punctuation">[</span>url<span class="token punctuation">]</span>
+
+<span class="token comment"># Local Repository 살펴보기</span>
+<span class="token comment"># 아직 commit 되지 않은 새파일 혹은 변경된 파일 목록 보기</span>
+<span class="token function">git</span> status
+<span class="token comment"># unstage 파일들의 변경 보기</span>
+<span class="token function">git</span> <span class="token function">diff</span>
+<span class="token comment"># staged 파일들의 변경 보기</span>
+<span class="token function">git</span> <span class="token function">diff</span> <span class="token parameter variable">--cached</span>
+<span class="token comment"># 모든 staged와 unstage 파일들의 변경 보기</span>
+<span class="token function">git</span> <span class="token function">diff</span> HEAD
+<span class="token comment"># 두 commit id들 사이의 변화 보기</span>
+<span class="token function">git</span> <span class="token function">diff</span> commit1 commit2
+<span class="token comment"># 파일의 변경일과 작성자의 변화 목록</span>
+<span class="token function">git</span> blame <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
+<span class="token comment"># commit와/또는 파일의 변화 보기</span>
+<span class="token function">git</span> show <span class="token punctuation">[</span>commit<span class="token punctuation">]</span>:<span class="token punctuation">[</span>file<span class="token punctuation">]</span>
+<span class="token comment"># 변경 이력 보기</span>
+<span class="token function">git</span> log
+<span class="token comment"># file/directory의 변경 이력 보기</span>
+<span class="token function">git</span> log <span class="token parameter variable">-p</span> <span class="token punctuation">[</span>file/directory<span class="token punctuation">]</span>
+
+<span class="token comment"># 브랜치 작업</span>
+<span class="token comment"># 모든 로컬 브랜치 목록</span>
+<span class="token function">git</span> branch
+<span class="token comment"># 모든 로컬과 원격 브랜치 보기</span>
+<span class="token function">git</span> branch <span class="token parameter variable">-av</span>
+<span class="token comment"># &lt;branch&gt;로 변경하고 작업 디렉토리를 업데이트</span>
+<span class="token function">git</span> checkout <span class="token operator">&lt;</span>branch<span class="token operator">&gt;</span>
+<span class="token comment"># 브랜치 생성하기</span>
+<span class="token function">git</span> branch <span class="token operator">&lt;</span>new-branch<span class="token operator">&gt;</span>
+<span class="token comment"># 브랜치 삭제하기</span>
+<span class="token function">git</span> branch <span class="token parameter variable">-d</span> <span class="token operator">&lt;</span>branch<span class="token operator">&gt;</span>
+<span class="token comment"># branch_a를 branch_b로 머지</span>
+<span class="token function">git</span> checkout branch_b
+<span class="token function">git</span> merge branch_a
+<span class="token comment"># 현재 커밋에 태그 달기</span>
+<span class="token function">git</span> tag <span class="token operator">&lt;</span>tag-name<span class="token operator">&gt;</span>
+
+<span class="token comment"># 변경하기</span>
+<span class="token comment"># 파일을 stage함</span>
+<span class="token function">git</span> <span class="token function">add</span> <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
+<span class="token comment">#변경된 모든 파일을 stage함</span>
+<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+<span class="token comment"># 모든 staged 파일들을 메시지와 함께 commit</span>
+<span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">&quot;commit message&quot;</span>
+<span class="token comment"># 모든 변경 사항을 반영하여 메시지와 함께 commit</span>
+<span class="token function">git</span> commit <span class="token parameter variable">-am</span> <span class="token string">&quot;commit message&quot;</span>
+<span class="token comment"># 파일을 unstage함</span>
+<span class="token function">git</span> reset <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
+<span class="token comment"># 최근 commit의 모든것을 revert함</span>
+<span class="token function">git</span> reset <span class="token parameter variable">--hard</span>
+
+<span class="token comment"># 동기화하기</span>
+<span class="token comment"># 원격 저장소의 변경사항 가져오기</span>
+<span class="token function">git</span> fetch
+<span class="token comment"># 원격 저장소의 변경사항을 가져오고 머지하기</span>
+<span class="token function">git</span> pull
+<span class="token comment"># 원격 저장소의 변경사항을 가져오고 rebase하기</span>
+<span class="token function">git</span> pull <span class="token parameter variable">--rebase</span>
+<span class="token comment"># 원격 저장소에 로컬 저장소의 변경사항 넣기</span>
+<span class="token function">git</span> push
+<span class="token comment"># git 도움말</span>
+<span class="token function">git</span> <span class="token builtin class-name">command</span> <span class="token parameter variable">--help</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br></div></div><h2 id="pull-request"><a href="#pull-request" class="header-anchor">#</a> pull request</h2> <ol><li>[github] Fork</li> <li>clone, remote설정</li> <li>branch 생성</li> <li>수정 작업 후 add, commit, push</li> <li>[github] Pull Request 생성</li> <li>[github] 코드리뷰, Merge Pull Reqest</li> <li>Merge 이후 branch 삭제 및 동기화</li></ol></div> <div class="theme-default-content"><a href="/etc/tagList.html#git">
+    #git
+  </a></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/posts/2023/eclipse.html" class="prev">
+        Eclipse 기능 정리. 내가 보는용
+      </a></span> <span class="next"><a href="/posts/2023/iosManageWakeupTime.html">
+        아이폰 단축어 기상시간 앞당겨서 알람 자동 생성
+      </a>
+      →
+    </span></p></div> <div class="theme-default-content"></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.43115f4a.js" defer></script><script src="/assets/js/2.85a072e1.js" defer></script><script src="/assets/js/1.f91167be.js" defer></script><script src="/assets/js/81.7180d21d.js" defer></script>
+  </body>
+</html>

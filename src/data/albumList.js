@@ -1,12 +1,48 @@
 export const albumList = {
     "2025" :  [
         {
+            "link":"https://music.apple.com/kr/album/why-lawd/1739842642",
+            "img":"https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/31/c7/48/31c748d5-f144-d01f-e22d-71ec2d975ee0/1777.jpg/296x296bb.webp",
+            "date":"2025.02.10",
+            "artist": "NxWorries",
+            "name": "Why Lawd?",
+            "memo": "진정한 명반이란 달리기의 고통을 잊게 해주는 앨범. 에어팟으로 들으면 좀 옹졸하게 들려서 아쉽다.. 스피커로 들어야 제맛 >.< 오늘자 기준 rateyourmusic 2024년 80위, 평점 3.63",
+            "year": "1975"
+        },
+        {
+            "link":"https://music.apple.com/kr/album/rza-presents-bobby-digital-and-the-pit-of-snakes/1626544424",
+            "img":"https://is1-ssl.mzstatic.com/image/thumb/Video112/v4/a5/0c/dd/a50cdded-ae7a-113e-51d7-0a2ef075b669/Jobdf9a2b80-a72c-4a82-855a-8185665f7c3f-133538297-PreviewImage_Preview_Image_Intermediate_nonvideo_246083672-Time1656617098397.png/296x296bb.webp",
+            "date":"2025.02.09",
+            "artist": "RZA",
+            "name": "RZA, Bobby Digital",
+            "memo": "Enter the Wu-Tang(36 Chambers) 명반을 귀에 끼워 맞추기 위해 수십번 노력했지만 실패함. 그으런데 이 앨범 평점은 낮은데 내 취향임 씁... 아직 갈길이 멀다...(rateyourmusic 2.14 이정도면 거의 RZA 앨범중 바닥인듯 왜...?) Enter the Wu-Tang 재도전...",
+            "year": "2022"
+        },
+        {
+            "link":"https://music.apple.com/kr/album/cheshire-cat/1444200940",
+            "img":"https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/21/18/b0/2118b011-930c-3dc1-70db-222f3dd7d108/00602537824496.rgb.jpg/296x296bb.webp",
+            "date":"2025.01.27",
+            "artist": "Ronnie Foster",
+            "name": "Cheshire Cat",
+            "memo": "라고스 새벽",
+            "year": "1975"
+        },
+        {
+            "link":"https://music.apple.com/kr/album/days-before-rodeo/1763919907",
+            "img":"https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/30/98/ed/3098ed0e-537d-4230-d893-2e7218a3bdf1/196871381420.jpg/296x296bb.webp",
+            "date":"2025.01.22",
+            "artist": "Travis Scott",
+            "name": "DAYS BEFORE RODEO",
+            "memo": "아니 비행기 안에 이게 있어? 포르투갈 행 행복한 비행 이었다... (편식쟁이 내 취향은 아니지만 부정할 수 없는 명반이다 10번이상 들음)",
+            "year": "2014"
+        },
+        {
             "link":"https://music.apple.com/kr/album/original-musiquarium/1440757544",
             "img":"https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/00/68/13/006813b3-9ca1-2e6f-98df-4ef78cd6cb49/06UMGIM20452.rgb.jpg/316x316bf.webp",
             "date":"2025.01.17",
             "artist": "Kanye West",
             "name": "Late Registration",
-            "memo": "휴먼 알고리즘 경고리즘에 의거 Stevie Wonder의 Superwoman을 들으면 We Major를 들어줘야함 \n 내가 좋아하는 클래식 곰돌이 시리즈.. ★★★★★★★★★★",
+            "memo": "클래식 곰돌이 시리즈 ★★★★★★★★★★",
             "year": "2005"
         },
         {

@@ -1,7 +1,8 @@
 ---
 lastUpdated: 2025/02/10 17:01:00
-subTitle: NVM
+subTitle: NVM 명령어 정리
 description: NVM 명령어 정리
+image: https://raw.githubusercontent.com/nvm-sh/logos/HEAD/nvm-logo-color.svg
 ---
 
 # NVM

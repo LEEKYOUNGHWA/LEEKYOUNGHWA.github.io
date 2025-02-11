@@ -6,16 +6,16 @@ export const albumList = {
             "date":"2025.02.10",
             "artist": "NxWorries",
             "name": "Why Lawd?",
-            "memo": "진정한 명반이란 달리기의 고통을 잊게 해주는 앨범. 에어팟으로 들으면 좀 옹졸하게 들려서 아쉽다.. 스피커로 들어야 제맛 >.< 오늘자 기준 rateyourmusic 2024년 80위, 평점 3.63",
-            "year": "1975"
+            "memo": "진정한 명반이란 달리기의 고통을 잊게 해주는 앨범. 에어팟으로 들으면 좀 옹졸하게 들려서 아쉽다.. 스피커로 들어야 제맛. 오늘자 기준 rateyourmusic 2024년 80위, 평점 3.63",
+            "year": "2024"
         },
         {
             "link":"https://music.apple.com/kr/album/rza-presents-bobby-digital-and-the-pit-of-snakes/1626544424",
             "img":"https://is1-ssl.mzstatic.com/image/thumb/Video112/v4/a5/0c/dd/a50cdded-ae7a-113e-51d7-0a2ef075b669/Jobdf9a2b80-a72c-4a82-855a-8185665f7c3f-133538297-PreviewImage_Preview_Image_Intermediate_nonvideo_246083672-Time1656617098397.png/296x296bb.webp",
             "date":"2025.02.09",
-            "artist": "RZA",
-            "name": "RZA, Bobby Digital",
-            "memo": "Enter the Wu-Tang(36 Chambers) 명반을 귀에 끼워 맞추기 위해 수십번 노력했지만 실패함. 그으런데 이 앨범 평점은 낮은데 내 취향임 씁... 아직 갈길이 멀다...(rateyourmusic 2.14 이정도면 거의 RZA 앨범중 바닥인듯 왜...?) Enter the Wu-Tang 재도전...",
+            "artist": "RZA, Bobby Digital",
+            "name": "RZA Presents: Bobby Digital and the Pit of Snakes",
+            "memo": "Enter the Wu-Tang(36 Chambers) 명반을 귀에 끼워 맞추기 위해 수십번 노력했지만 실패함. 그으런데 이 앨범 평점은 낮은데 내 취향임.. (rateyourmusic 2.14 이정도면 거의 RZA 앨범중 바닥인듯.. 왜...?) 아직 갈길이 멀다... Enter the Wu-Tang 재도전...",
             "year": "2022"
         },
         {
@@ -33,7 +33,7 @@ export const albumList = {
             "date":"2025.01.22",
             "artist": "Travis Scott",
             "name": "DAYS BEFORE RODEO",
-            "memo": "아니 비행기 안에 이게 있어? 포르투갈 행 행복한 비행 이었다... (편식쟁이 내 취향은 아니지만 부정할 수 없는 명반이다 10번이상 들음)",
+            "memo": "아니 비행기 안에 이게 있어? 포르투갈 행 행복한 비행 이었다... 힙합 편식쟁이 내 취향은 아니지만 부정할 수 없는 명반이다",
             "year": "2014"
         },
         {

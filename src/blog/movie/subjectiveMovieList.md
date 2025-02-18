@@ -1,5 +1,5 @@
 ---
-lastUpdated: 2024/12/17 17:49:00
+lastUpdated: 2025/02/18 14:15:00
 subTitle: 이제 검증되지 않은 영화를 영화관에서 보는건 고문이다
 image: https://m.media-amazon.com/images/M/MV5BYzFlMTJjYzUtMWFjYy00NjkyLTg1Y2EtYmZkMjdlOGQ1ZGYwL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg
 ---

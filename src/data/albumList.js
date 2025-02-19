@@ -1,6 +1,24 @@
 export const albumList = {
   "2025": [
     {
+      "link": "https://music.apple.com/kr/album/gershwin-the-piano-rolls-vol-2/40581740",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music/y2004/m12/d31/h03/s06.qmoqjlky.jpg/316x316bf.webp",
+      "date": "2025.02.19",
+      "artist": "George Gershwin",
+      "name": "Gershwin: The Piano Rolls, Vol. 2",
+      "memo": "이 앨범은 조지 거슈윈이 남긴 피아노 롤(recorded piano rolls)을 기반으로 제작된 특별한 작품입니다. 피아노 롤은 자동 피아노에서 연주를 재현하기 위해 당시의 연주를 기록한 것으로, 거슈윈이 직접 녹음한 연주 스타일과 테크닉을 엿볼 수 있는 귀중한 자료입니다. 20세기 초 미국 음악사와 거슈윈의 천재성을 탐구하는 데에 이상적인 작품으로 클래식과 재즈의 경계를 허물었던 그의 음악적 유산을 가장 직관적으로 체험할 수 있는 기회입니다.",
+      "year": "1979"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/mouth-to-mouth/1552121129",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/5b/8c/4c/5b8c4cd8-4d72-307f-da43-85dd8d9beb95/21UMGIM07561.rgb.jpg/316x316bb.webp",
+      "date": "2025.02.19",
+      "artist": "Lipps, Inc.",
+      "name": "Mouth To Mouth",
+      "memo": "\"Won't you take me to Funkytown?\" \n 디스코 후기의 가장 상징적인 노래 중 하나로 탈출에 대한 갈망, 더욱 스릴 넘치고 활기찬 곳으로의 여행에 대한 갈망을 포착한다. 이런 의미에서 \"Funky Town\"은 자유, 자기 표현, 그리고 더욱 만족스러운 삶에 대한 탐구를 상징한다. 변화와 새로운 경험에 대한 갈망을 주제로 한 이 노래는 쇠퇴한 디스코 시대와 1980년대 초반의 문화적 변화에 환멸을 느꼈던 시기에 청취자들의 마음을 사로잡았다.",
+      "year": "1979"
+    },
+    {
       "link": "https://music.apple.com/kr/album/hardboiled/1699799079",
       "img": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/3f/1a/1f/3f1a1f79-65eb-f7d7-ce30-ebe6e625dcad/8804524008328.jpg/316x316bb.webp",
       "date": "2025.02.18",
@@ -150,7 +168,7 @@ export const albumList = {
       "date": "2025.01.03",
       "artist": "George Gershwin",
       "name": "Gershwin Plays Gershwin: The Piano Rolls",
-      "memo": "전 직장인이고 바쁩니다! 18분 플레이리스트 짜는게 이렇게 어려울 줄이야.. 이래저래 고민하다가 내가 듣고 싶은걸 듣자! 이렇게 결론이 났습니다.. 그래서 제가 좋아라 하고 듣고싶은것이 무어냐 하면 조지 거쉬윈이고요. 저 어릴때 집에 엄마가 저 태교 한다고 사셨던 클래식 전집이 있었습니다.. 전집 맨 뒤에 비닐 포장도 안뜯은 앨범이 바로 조지 거쉬윈 피아노 앨범 이었고요. 그걸 제가 중학생때 처음으로 뜯어서 주구장창 들었죠. 미리 말씀드리는데 좀 지루할 겁니다.. 여러분들 펑크는 평소에 주구장창 들으시니까 한번 환기 한다는 기분으로 들어보시죠...",
+      "memo": "저 어릴때 집에 엄마가 저 태교 한다고 사셨던 클래식 전집이 있었습니다.. 전집 맨 뒤에 비닐 포장도 안뜯은 앨범이 바로 조지 거쉬윈 피아노 앨범 이었고요. 그걸 제가 중학생때 처음으로 뜯어서 주구장창 들었죠. 미리 말씀드리는데 좀 지루할 겁니다.. 여러분들 펑크는 평소에 주구장창 들으시니까 한번 환기 한다는 기분으로 들어보시죠...",
       "year": "1993"
     },
     {

@@ -1,6 +1,6 @@
 ---
 lastUpdated: 2025/01/06 16:01:00
-subTitle: 누군가 당신에게 칠판에 RESTful API 설계를 해보라 한다면...... 이불킥
+subTitle: 누군가 당신에게 칠판에 RESTful API 설계를 해보라 한다면.. 이불킥
 ---
 
 # RESTful API

@@ -1,6 +1,60 @@
 export const albumList = {
   "2025": [
     {
+      "link": "https://music.apple.com/kr/album/utopia/1699712635",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Video126/v4/2b/cb/c5/2bcbc5fb-590a-a991-00a9-23e09da46860/Jobcca42104-faad-4d2d-8766-c7cafe52cdf0-153498700-PreviewImage_preview_image_nonvideo_sdr-Time1690571006394.png/316x316bb.webp",
+      "date": "2025.02.21",
+      "artist": "Travis Scott",
+      "name": "UTOPIA",
+      "memo": "HJ 트리거 트랩 탈선 기차 출발",
+      "year": "2023"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/link-up-suede-ep/1062158603",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/df/96/77/df9677b0-481d-e741-1b03-b4fe20e6f6fa/1363.jpg/316x316bb.webp",
+      "date": "2025.02.21",
+      "artist": "NxWorries",
+      "name": "Link Up & Suede - EP",
+      "memo": "* Stone Throw Records 정주행 5 \nInterude가 말도안되게 좋음",
+      "year": "2015"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/yes-lawd/1150640159",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/d4/9a/aa/d49aaae9-779d-408c-84ec-9b90bd9d7aef/815.jpg/316x316bb.webp",
+      "date": "2025.02.20",
+      "artist": "NxWorries",
+      "name": "Yes Lawd!",
+      "memo": "* Stone Throw Records 정주행 4 \n대안은 없다 일관되고 빡센 취향",
+      "year": "2016"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/yessir-whatever/646508871",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/da/fa/a8/dafaa809-4421-a651-3881-fddfb93420e9/STH2326.jpg/316x316bb.webp",
+      "date": "2025.02.20",
+      "artist": "Quasimoto",
+      "name": "Yessir, Whatever",
+      "memo": "* Stone Throw Records 정주행 3 \nMadlib's Alter Ego",
+      "year": "2013"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/skiptracing/1110226847",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/69/b0/c3/69b0c397-dc3c-381f-386e-f7f4a3d9f754/Skiptracing.jpg/316x316bb.webp",
+      "date": "2025.02.20",
+      "artist": "Mild High Club",
+      "name": "Skiptracing",
+      "memo": "* Stone Throw Records 정주행 2 \n약빤 느낌.. 굿...",
+      "year": "2016"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/snaxxx/1698890501",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/36/a6/ac/36a6ac6b-9d4d-4901-9407-eeb376abc6d3/1702.jpg/316x316bb.webp",
+      "date": "2025.02.20",
+      "artist": "Mndsgn",
+      "name": "Snaxxx",
+      "memo": "* Stone Throw Records 정주행 1\nSNT",
+      "year": "2023"
+    },
+    {
       "link": "https://music.apple.com/kr/album/gershwin-the-piano-rolls-vol-2/40581740",
       "img": "https://is1-ssl.mzstatic.com/image/thumb/Music/y2004/m12/d31/h03/s06.qmoqjlky.jpg/316x316bf.webp",
       "date": "2025.02.19",

@@ -1,6 +1,59 @@
 export const albumList = {
   "2025": [
     {
+      "link": "https://music.apple.com/kr/album/an-evening-with-silk-sonic/1611637679",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Video122/v4/20/ab/c9/20abc921-eaf2-7593-8212-a582352d7454/Job103dd0c6-1d51-4d5b-887a-1e5bf2dfae98-132823680-PreviewImage_preview_image_nonvideo_sdr-Time1654886834215.png/296x296bb.webp",
+      "date": "2025.02.27",
+      "artist": "Silk Sonic",
+      "name": "An Evening with Silk Sonic",
+      "memo": "서재페 썬더캣 예습하다가 여기까지 왔다. 아플때 많이 듣던 앨범. 그때 쓰던 물건도 버릴 수 있고 사람도 버릴 수 있는데 노래는 잊을 수가 없다",
+      "year": "2021"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/the-bends/1097862703",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/1b/a9/5c/1ba95cac-b245-d386-63fb-6b857aa9dce8/634904078065.png/296x296bb.webp",
+      "date": "2025.02.26",
+      "artist": "Radiohead",
+      "name": "The Bends",
+      "memo": "Faith, you're driving me away\nYou do it every day\nYou don't mean it, but it hurts like hell",
+      "year": "1995"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/highway-to-hell/574043989",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/43/f2/12/43f21289-c1f2-4c3a-db9d-20dc51186887/Job0022e2fb-b549-4b8b-affa-372aa5a3b344-185276724-PreviewImage_Preview_Image_Intermediate_nonvideo_sdr_362485322_2045545522-Time1738863002787.png/316x316bb.webp",
+      "date": "2025.02.26",
+      "artist": "AC/DC",
+      "name": "Highway to Hell",
+      "memo": "급 장르변경.. 탈선을 넘어선 환승연애잼.. 별안간 머리속에서 번개가 쳤다...! 러닝할때 들어야쥐\n예전에 이 앨범커버 티셔츠 있었눈데 사라짐 ㅠ 다시 살꺼야... 왜냐...간지니까.... \n락 스피릿 요ㅘ앙아아아!!!아!!!우!!!!!!!!!!! ",
+      "year": "1979"
+    },
+    {
+      "link": "https://music.apple.com/kr/playlist/%ED%95%9C%EB%B2%88%EC%94%A9-%EB%B6%88%EB%9F%89%EC%8B%9D%ED%92%88%EC%9D%B4-%EB%95%A1%EA%B8%B8%EB%95%8C%EA%B0%80-%EC%9E%88%EB%8B%A4/pl.u-d2b05VluL7dL4MA",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/SG-MQ-US-035-Image000001/v4/9e/70/36/9e703667-3d3e-ccf3-a403-58b9844fccfc/image/305x305cc.webp",
+      "date": "2025.02.25",
+      "artist": "(앨범콜렉터잠시탈주)playlist",
+      "name": "250225",
+      "memo": "Beef 트리거 '싱글 취급 안하는데 가끔은 불량식품이 땡겨'행 탈선기차 출발",
+    },
+    {
+      "link": "https://music.apple.com/kr/album/madvillainy/887699504",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/1a/c2/1a/1ac21a9d-3ffd-3f80-dc96-223622b50b5f/Madvillainy.jpg/316x316bb.webp",
+      "date": "2025.02.24",
+      "artist": "Madvillain",
+      "name": "Madvillainy",
+      "memo": "* Stone Throw Records 정주행 5 \n여태껏 정주행은 이 앨범을 올리기 위한 빌드업 이었음을.... 올타임 레전드",
+      "year": "2004"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/shades-of-yesterday/1702615891",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/b2/dd/d8/b2ddd895-c2db-e945-6820-279a2fcab78d/1707.jpg/316x316bb.webp",
+      "date": "2025.02.24",
+      "artist": "DJ Harrison",
+      "name": "Shades of Yesterday",
+      "memo": "* Stone Throw Records 정주행 5 \n탈선기차 금방 복귀함.\nhttps://www.instagram.com/p/C2K5LN5O7lM/",
+      "year": "2024"
+    },
+    {
       "link": "https://music.apple.com/kr/album/utopia/1699712635",
       "img": "https://is1-ssl.mzstatic.com/image/thumb/Video126/v4/2b/cb/c5/2bcbc5fb-590a-a991-00a9-23e09da46860/Jobcca42104-faad-4d2d-8766-c7cafe52cdf0-153498700-PreviewImage_preview_image_nonvideo_sdr-Time1690571006394.png/316x316bb.webp",
       "date": "2025.02.21",
@@ -8,15 +61,6 @@ export const albumList = {
       "name": "UTOPIA",
       "memo": "HJ 트리거 트랩 탈선 기차 출발",
       "year": "2023"
-    },
-    {
-      "link": "https://music.apple.com/kr/album/link-up-suede-ep/1062158603",
-      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/df/96/77/df9677b0-481d-e741-1b03-b4fe20e6f6fa/1363.jpg/316x316bb.webp",
-      "date": "2025.02.21",
-      "artist": "NxWorries",
-      "name": "Link Up & Suede - EP",
-      "memo": "* Stone Throw Records 정주행 5 \nInterude가 말도안되게 좋음",
-      "year": "2015"
     },
     {
       "link": "https://music.apple.com/kr/album/yes-lawd/1150640159",
@@ -105,7 +149,7 @@ export const albumList = {
       "date": "2025.02.10",
       "artist": "NxWorries",
       "name": "Why Lawd?",
-      "memo": "진정한 명반이란 달리기의 고통을 잊게 해주는 앨범. 에어팟으로 들으면 좀 옹졸하게 들려서 아쉽다.. 오늘자 기준 rateyourmusic 2024년 80위, 평점 3.63",
+      "memo": "진정한 명반이란 달리기의 고통을 잊게 해주는 앨범. 에어팟으로 들으면 좀 옹졸하게 들려서 아쉽다.. 오늘자 기준 rateyourmusic 2024년 80위, 평점 3.63 \n* Stone Throw Records",
       "year": "2024"
     },
     {

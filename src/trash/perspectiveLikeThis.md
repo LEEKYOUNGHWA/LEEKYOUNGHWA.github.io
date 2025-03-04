@@ -7,7 +7,7 @@ image: https://yt3.googleusercontent.com/J0u9zbDZI_Lt993z-yG6Xmzk-GKJydnsA-DC5RO
 # 요런시점
 
 거의없다를 제친 내 최애 영화 유튜버  
-구독중.... **since** 20240918
+멤버쉽 가입.. 유튜버한테 처음으로 돈써봤다.... **since** 20240918
 
 <Movie 
   name="매트릭스" 

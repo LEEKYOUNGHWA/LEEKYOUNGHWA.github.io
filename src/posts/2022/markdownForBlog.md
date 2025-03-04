@@ -12,6 +12,41 @@ tags: ["vuepress"]
 
 # {{ $frontmatter.title }}
 
+## 이탤릭체, 볼드, 취소선, 밑줄
+
+```md
+*이탤릭체*  
+_이탤릭체_  
+**볼드**  
+__볼드__  
+~~취소선~~  
+<U>밑줄</U>  
+<mark>형광펜</mark>
+```
+
+> *이탤릭체*  
+> _이탤릭체_  
+> **볼드**  
+> __볼드__  
+> ~~취소선~~  
+> <U>밑줄</U>  
+> <mark>형광펜</mark>
+
+## 표
+```md
+|    |<center>right</center>|<center>left</center>|center                |
+|----|---------------------:|:--------------------|:--------------------:|   # 차례로 오른쪽, 왼쪽, 가운데 정렬
+|row1|data                  |data                 |data                  |
+|row2|data2-1               |data2-2              |data2-3               |
+|row3|data 3-1              |data 3-2             |data 3-3              |
+```
+
+|    |<center>right</center>|<center>left</center>|center                 |
+|----|---------------------:|:--------------------|:---------------------:|
+|row1|data                  |data                 |data                   |
+|row2|data2-1               |data2-2              |data2-3                |
+|row3|data 3-1              |data 3-2             |data 3-3               |
+
 ## escape
 
 backslash(\\)를 사용

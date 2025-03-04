@@ -7,10 +7,9 @@ image: https://i.etsystatic.com/41044968/r/il/34ca41/6073840813/il_570xN.6073840
 
 # Scrap
 
-## White Digging Club
 <div class="iframe-container" style="text-align: center;" >
 <iframe id="ytplayer" type="text/html" width="720" height="405"
-src="https://www.youtube.com/embed/?listType=playlist&list=PLp4i3bBl_j23hQspaufnX49BVzXqZuzNX"
+src="https://www.youtube.com/embed/?listType=playlist&list=PLp4i3bBl_j23_sMaXfKPwexUqOnd8lAsV"
 frameborder="0" allowfullscreen></iframe>
 </div>
 
@@ -85,21 +84,6 @@ frameborder="0" allowfullscreen></iframe>
 <div class="iframe-container" style="text-align: center;" >
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pRERgcQe-fQ?si=gGF2Iiuhwb_aZ2T4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
-
-
-
-## 전곡해석
-
-> ### Logic
-> - [Ultra 85 전곡해석](https://hiphople.com/album/29623836)
-> - [Incredible True Story 전곡해석](https://hiphople.com/album/27883845)  
-
-> ### Kendrick Lamar
-> - [To Pimp A Butterfly 전곡해석](https://hiphople.com/album/12201865)
-> - [To Pimp A Butterfly 나무위키](https://namu.wiki/w/To%20Pimp%20A%20Butterfly)  
-
-> ### Kanye West - The Collage Dropout 은 우리 모두의 인생
-> - [The Collage Dropout 전곡해석](https://hiphople.com/album/12200706)
 
 <style scoped>
 .iframe-container {

@@ -19,7 +19,7 @@ heroImage: /logo.jpg
     <h2>blog</h2>
     <a href="/blog">music, movie, etc</a>
   </div>
-  <div class="feature">
+  <!-- <div class="feature">
     <h2>tagList</h2>
     <a href="/etc/tagList">see post tags</a>
   </div>
@@ -30,7 +30,7 @@ heroImage: /logo.jpg
   <div class="feature">
     <h2>github</h2>
     <a href="https://github.com/LEEKYOUNGHWA" target="_blank">github.com/LEEKYOUNGHWA</a>
-  </div>
+  </div> -->
 </div>
 
 

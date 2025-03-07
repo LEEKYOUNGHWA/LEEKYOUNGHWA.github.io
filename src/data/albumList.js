@@ -1,6 +1,24 @@
 export const albumList = {
   "2025": [
     {
+      "link": "https://music.apple.com/kr/album/without-warning/1303426031",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/24/25/f6/2425f66c-acda-ef4f-5682-ad543e088507/886446838526.jpg/316x316bb.webp",
+      "date": "2025.03.05",
+      "artist": "21 Savage, Offset, Metro Boomin",
+      "name": "Without Warning",
+      "memo": "알고리즘이 내 취향을 맞춰주는게 아니라 내 취향이 알고리즘을 따라가는건가...? 알고리즘한테 강매당했는데 너무 잘쓰고 있다... 둠칫둠칫",
+      "year": "2017"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/appetite-for-destruction/1377813284",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/a0/4d/c4/a04dc484-03cc-02aa-fa82-5334fcb4bc16/18UMGIM24878.rgb.jpg/316x316bb.webp",
+      "date": "2025.03.04",
+      "artist": "Guns N' Roses",
+      "name": "Appetite for Destruction",
+      "memo": "Highway to Hell 들으면 다음으로 들어줘야제...... 다음 달리기는 너다......",
+      "year": "1987"
+    },
+    {
       "link": "https://music.apple.com/kr/album/an-evening-with-silk-sonic/1611637679",
       "img": "https://is1-ssl.mzstatic.com/image/thumb/Video122/v4/20/ab/c9/20abc921-eaf2-7593-8212-a582352d7454/Job103dd0c6-1d51-4d5b-887a-1e5bf2dfae98-132823680-PreviewImage_preview_image_nonvideo_sdr-Time1654886834215.png/296x296bb.webp",
       "date": "2025.02.27",

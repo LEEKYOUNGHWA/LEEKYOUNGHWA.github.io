@@ -33,13 +33,13 @@
 </template>
 
 <script>
-import { albumList } from '@data/albumList.js'
+import { albumList } from '@data/albumList.js';
 
 export default {
     props: {
         year: {
             type: String,
-            required: true,
+            required: false,
         },
     },
     data() {
@@ -49,7 +49,12 @@ export default {
     },
     computed: {
         albums() {
-            return albumList[this.year] || [];
+            if (this.year) {
+                return albumList[this.year] || [];
+            }
+            return Object.entries(albumList)
+            .reverse() // 키(연도) 순서를 역순으로 변경
+            .flatMap(([_, albums]) => albums);
         },
     },
     created() {

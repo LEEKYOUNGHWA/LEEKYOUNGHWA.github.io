@@ -1,12 +1,66 @@
 export const albumList = {
   "2025": [
     {
+      "link": "https://music.apple.com/kr/album/3-3/1030452445",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/7e/1a/2f/7e1a2f9c-154a-49d0-0484-44550a26da26/mzm.fckxoqtz.jpg/316x316bb.webp",
+      "date": "2025.03.17",
+      "artist": "The Isley Brothers",
+      "name": "3+3",
+      "memo": "☆★☆★☆★ 20250315 TPAB 발매 10주년 기념 ☆★☆★☆★ \nTPAB은 이미 밑에 있어서 이전에 리스트업 하려고 했으나 놓친 Isley Brother의 3+3을 대신 업로드 하겠음..(TPAB 수록곡 i 에서 샘플링한 That lady가 수록되어 있다! 일은 안하고 하루종일 두 앨범 퐁당퐁당 듣기 잼) 들으면 들을수록 곱씹으면 곱씹을수록 새롭게 들리는 TPAB... 개 삽 명 반",
+      "year": "1973"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/fearless-ep/1621089349",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/90/dc/9f/90dc9fdb-c0f3-f506-0942-0e33c94d26f4/196922016622_Cover.jpg/296x296bb.webp",
+      "date": "2025.03.16",
+      "artist": "르세라핌",
+      "name": "FEARLESS - EP",
+      "memo": "정말 공들인 티가 많이 남. 이건 깔수 없다. 근데 뒤에 내는 앨범들은 가면 갈수록 점점 촌스러워지는 매직. 한국 아이돌은 팬덤 문화라 인기를 얻음 빠돌이 빠순이 들이 아묻따 사재기 해주기 때문에 인기와 앨범 퀄이 반비례 하는듯...(물론 예외는 있다)",
+      "year": "2022"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/playboi-carti/1440887343",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/f9/58/95/f95895f4-0ef6-a636-241e-ba4824ef6621/17UMGIM08349.rgb.jpg/296x296bb.webp",
+      "date": "2025.03.14",
+      "artist": "Playboi Carti",
+      "name": "Playboi Carti",
+      "memo": "카티 신상 앨범이 나왔다,, 본인 나름 신상 사운드를 잘 받아들이는 편이라고 생각하고 살았으나, 이젠 늙어서 그런건지 이번 앨범은 '이게 뭐지' 레벨이 만랩을 찍었다..ㅋ (5년뒤에 재도전ㄱ) Magnolia 나 들어야지... \n In New York I Milly Rock (rock!) Hide it in my sock (sock!)",
+      "year": "2017"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/moving-violation/1442872993",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/99/1c/e7/991ce7d7-d721-1b03-c282-17e8142f57f6/00602547026248.rgb.jpg/592x592bb.webp",
+      "date": "2025.03.11",
+      "artist": "Jackson 5",
+      "name": "Moving Violation",
+      "memo": "인생 살면서 기쁜 순간... jackson 5 쿨타임 찼을때... 오래오래 살아야지",
+      "year": "1975"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/metallica/1440833237",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Video115/v4/7f/98/4c/7f984c6f-26f9-7070-d4fc-135a6090dcb7/Job5587b67f-d7d6-4048-918e-6d681acd80af-121873201-PreviewImage_preview_image_nonvideo_sdr-Time1629738584910.png/316x316bf.webp",
+      "date": "2025.03.10",
+      "artist": "Metallica",
+      "name": "Metallica",
+      "memo": "다음 달리기 리스트업! 이제 슬슬 하프 플리를 짜볼까나\n아.. 아껴들어야 하는데ㅜ Enter Sandman 노래 넘 좋쿠여",
+      "year": "1991"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/buzz-effect/1454772754",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/fe/c3/f6/fec3f68e-0310-313e-2c32-a334cbb999ef/8007002.jpg/316x316bb.webp",
+      "date": "2025.03.10",
+      "artist": "버즈",
+      "name": "Buzz Effect",
+      "memo": "한국 대중음악 전성기",
+      "year": "2005"
+    },
+    {
       "link": "https://music.apple.com/kr/album/without-warning/1303426031",
       "img": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/24/25/f6/2425f66c-acda-ef4f-5682-ad543e088507/886446838526.jpg/316x316bb.webp",
       "date": "2025.03.05",
       "artist": "21 Savage, Offset, Metro Boomin",
       "name": "Without Warning",
-      "memo": "알고리즘이 내 취향을 맞춰주는게 아니라 내 취향이 알고리즘을 따라가는건가...? 알고리즘한테 강매당했는데 너무 잘쓰고 있다... 둠칫둠칫",
+      "memo": "알고리즘이 내 취향을 맞춰주는게 아니라 내 취향이 알고리즘을 따라가는건가? 알고리즘한테 강매당했는데 너무 잘듣고 있다... If young metro don't trust you I'm gon' shoot you......",
       "year": "2017"
     },
     {
@@ -15,7 +69,7 @@ export const albumList = {
       "date": "2025.03.04",
       "artist": "Guns N' Roses",
       "name": "Appetite for Destruction",
-      "memo": "Highway to Hell 들으면 다음으로 들어줘야제...... 다음 달리기는 너다......",
+      "memo": "Highway to Hell 들으면 다음으로 들어줘야제 다음 달리기는 너다",
       "year": "1987"
     },
     {
@@ -33,7 +87,7 @@ export const albumList = {
       "date": "2025.02.26",
       "artist": "Radiohead",
       "name": "The Bends",
-      "memo": "Faith, you're driving me away\nYou do it every day\nYou don't mean it, but it hurts like hell",
+      "memo": "인생에 대한 기대가 없어진 30대.. 이제 더이상 Ok Computer를 듣지 않아도 된다",
       "year": "1995"
     },
     {
@@ -754,7 +808,7 @@ export const albumList = {
       "date": "2024.09.20",
       "artist": "Michael Jackson",
       "name": "Off the Wall",
-      "memo": "내가 진짜 장르불문 시대 불문 지구상에서 0번째로 좋아하는 앨범..(잠깐만... collage dropout....?!)",
+      "memo": "내가 진짜 장르불문 시대 불문 지구상에서 0번째로 좋아하는 앨범..(잠깐만... College Dropout....?!)",
       "year": "1979"
     },
     {
@@ -1168,7 +1222,7 @@ export const albumList = {
       "date": "2024.03.13",
       "artist": "Kanye West",
       "name": "The College Dropout",
-      "memo": "생애주기마다 들어줘야하는 College Dropout. 죽을고비 넘기고 들으니 감동이 열배...... !!!정정합니다!!! 분기마다 들어줘야 하는 Collage Dropout...... !!!정정합니다!!! 매달 들어줘야하는 Collage Dropout......!",
+      "memo": "칸예 다큐를 보면(Through The Wire 가사에도 나와있죵) 이제 래퍼 데뷔를 앞둔 상태에서 턱이 다 들어가버리는 큰 교통사고를 당하거든요. 근데 그걸 딛고 세계적인 아티스트(지금은 미쳤지만)가 되었죠.. 제가 유년시절부터 이 앨범을 주구장창 들었는데(그때는 학업 스트레스 때문에 교육 시스템 비판적인 내용에 심취했었죵...이 앨범을 들으면서 버텼습니다) 아프고 나서 꿈을 향해 가는 과정에서 들으니까 또 다시 와닿는게 다릅니다. 눈물없이 들을 수 없는 칸예 1집",
       "year": "2004"
     },
     {

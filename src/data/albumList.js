@@ -1,12 +1,30 @@
 export const albumList = {
   "2025": [
     {
+      "link": "https://music.apple.com/kr/album/music/1802175271",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/03/24/10/03241047-f22d-7e64-3932-6df7550acc42/25UMGIM46212.rgb.jpg/316x316bb.webp",
+      "date": "2025.03.21",
+      "artist": "Playboi Carti",
+      "name": "MUSIC",
+      "memo": "일루미나티와 손잡은 거대 인터넷 기업이 ㅈ구린 음악을 얼마나 팔아먹을 수 있는지 알고리즘 테스트 중인게 분명하다. 알고리즘에 도배되었다고 해서 전곡이 차트 인을 한다고 해서 나의 취향을 저버리고 이딴걸 듣거ㄴ ㄱㄹㅈ ㅇㄶ..... \n Brand-new ass and brand-new nose, let's go (Let's go)! Bend it over, touch your toes, that's go (Touch your toes) ... ... ",
+      "year": "2025"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/hybrid-theory/528436018",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Video116/v4/a2/b1/e4/a2b1e46c-a3fc-9c80-801c-b2a75ee982ac/Job9135a037-1e17-46cc-bc28-f10a0b156827-148659078-PreviewImage_Preview_Image_Intermediate_nonvideo_sdr_280007824_1422080563-Time1681538625386.png/316x316bb.webp",
+      "date": "2025.03.19",
+      "artist": "LINKIN PARK",
+      "name": "Hybrid Theory",
+      "memo": "달리기용 앨범은 역사상 많이 팔린 락 앨범이 짱이라는 지론을 가지고 다음 달리기 앨범을 선정해 보았다! \n<b>- Led Zeppelin IV</b> 포크 극혐이라 탈락 \n<b>- The Dark Side of the Moon</b> 좋아하는 앨범이지만 프로그레시브록은 달리기용으로는 별로.. 심플한게 좋다. 탈락 \n<b>- Rumours</b> 진짜 내 취향 아님 탈락 \n<b>- Hotel California</b> 컨트리 취급 안함 탈락.. \n몇개 안남았다.. 일단 이번에는 <b>Hybrid Theory</b> 듣고 다음엔 <b>Nevermind</b>다....!",
+      "year": "2000"
+    },
+    {
       "link": "https://music.apple.com/kr/album/3-3/1030452445",
       "img": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/7e/1a/2f/7e1a2f9c-154a-49d0-0484-44550a26da26/mzm.fckxoqtz.jpg/316x316bb.webp",
       "date": "2025.03.17",
       "artist": "The Isley Brothers",
       "name": "3+3",
-      "memo": "☆★☆★☆★ 20250315 TPAB 발매 10주년 기념 ☆★☆★☆★ \nTPAB은 이미 밑에 있어서 이전에 리스트업 하려고 했으나 놓친 Isley Brother의 3+3을 대신 업로드 하겠음..(TPAB 수록곡 i 에서 샘플링한 That lady가 수록되어 있다! 일은 안하고 하루종일 두 앨범 퐁당퐁당 듣기 잼) 들으면 들을수록 곱씹으면 곱씹을수록 새롭게 들리는 TPAB... 개 삽 명 반",
+      "memo": "☆★ 20250315 TPAB 발매 10주년 기념 ☆★ \nTPAB은 이미 밑에 있어서 이전에 리스트업 하려고 했으나 놓친 Isley Brothers의 3+3을 대신 업로드 하겠음..(TPAB 수록곡 i 에서 샘플링한 That lady가 수록되어 있다!) 들으면 들을수록 곱씹으면 곱씹을수록 새롭게 들리는 TPAB... 명반 of 명반 (3+3도)",
       "year": "1973"
     },
     {
@@ -320,7 +338,7 @@ export const albumList = {
       "date": "2025.01.06",
       "artist": "Donald Byrd",
       "name": "Places & Spaces",
-      "memo": "[BN-LA 549-G] \n * bluenote : 재즈 와 블루스 에서 블루 노트 는 표현적 목적으로 표준과 약간 다른 피치 로 부르거나 연주되는 음 입니다. 일반적으로 변화는 4분음 과 반음 사이이지만 , 이는 음악적 맥락에 따라 다릅니다 \n * BN-LA 시리즈 : 1970년대에 블루노트 레코드의 모회사인 United Artists Records 의 번호 매기기 시퀀스를 사용하여 발행된 12인치 LP에 추가 접두사가 붙습니다. 접미사는 앨범의 가격표와 2장 세트인지 여부를 나타내는 코드입니다.",
+      "memo": "[BN-LA 549-G] \n * bluenote : 재즈 와 블루스 에서 블루 노트 는 표현적 목적으로 표준과 약간 다른 피치 로 부르거나 연주되는 음 입니다. 일반적으로 변화는 4분음 과 반음 사이이지만, 이는 음악적 맥락에 따라 다릅니다 \n * BN-LA 시리즈 : 1970년대에 블루노트 레코드의 모회사인 United Artists Records 의 번호 매기기 시퀀스를 사용하여 발행된 12인치 LP에 추가 접두사가 붙습니다. 접미사는 앨범의 가격표와 2장 세트인지 여부를 나타내는 코드입니다.",
       "year": "1975"
     },
     {
@@ -338,7 +356,7 @@ export const albumList = {
       "date": "2025.01.03",
       "artist": "George Gershwin",
       "name": "Gershwin Plays Gershwin: The Piano Rolls",
-      "memo": "저 어릴때 집에 엄마가 저 태교 한다고 사셨던 클래식 전집이 있었습니다.. 전집 맨 뒤에 비닐 포장도 안뜯은 앨범이 바로 조지 거쉬윈 피아노 앨범 이었고요. 그걸 제가 중학생때 처음으로 뜯어서 주구장창 들었죠. 미리 말씀드리는데 좀 지루할 겁니다.. 여러분들 펑크는 평소에 주구장창 들으시니까 한번 환기 한다는 기분으로 들어보시죠...",
+      "memo": "저 어릴때 집에 엄마가 저 태교 한다고 사셨던 클래식 전집이 있었습니다.. 전집 맨 뒤에 비닐 포장도 안뜯은 앨범이 바로 조지 거쉬윈 피아노 앨범 이었고요. 그걸 제가 중학생때 처음으로 뜯어서 주구장창 들었죠. 미리 말씀드리는데 좀 지루할 겁니다.. 여러분들 펑크는 평소에 많이 들으시니까 한번 환기 한다는 기분으로 들어보시죠...",
       "year": "1993"
     },
     {

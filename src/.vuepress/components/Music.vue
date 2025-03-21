@@ -25,7 +25,7 @@
                             <img class="apple-music-img" src="@image/2024/apple-music.png">
                         </a>
                     </h3>
-                    <p :style="{ whiteSpace: 'pre-line' }">{{album.memo}}</p>
+                    <p :style="{ whiteSpace: 'pre-line' }" v-html="album.memo"></p>
                 </div>
             </div>
         </div>
@@ -116,10 +116,10 @@ export default {
 
 <style scoped>
 h3 {
-    margin: 10px 0 0 0;
+    margin: 2px 0 0 0;
 }
 p {
-    margin: 10px 0 0 0;
+    margin: 7px 0 0 0;
     font-size: 0.85em;
 }
 h4 {

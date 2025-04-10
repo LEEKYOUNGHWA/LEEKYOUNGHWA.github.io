@@ -1,12 +1,39 @@
 export const albumList = {
   "2025": [
     {
+      "link": "https://music.apple.com/kr/album/palco/82480985",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Features/v4/3d/e6/0a/3de60ade-113c-bd10-9805-e0b6610ea00e/dj.qspuibdd.jpg/592x592bf.webp",
+      "date": "2025.04.09",
+      "artist": "Gilberto Gil",
+      "name": "Luar",
+      "memo": "2025년 3월.. apple music 가장 많이 들은 앨범 5위.. 마지막 자존심..",
+      "year": "1981"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/gears/1535122521",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/ca/e5/bb/cae5bbda-5dd4-2933-af6f-ebbd6485dcb8/20CRGIM24161.rgb.jpg/592x592bb.webp",
+      "date": "2025.04.09",
+      "artist": "Johnny Hammond",
+      "name": "Gears",
+      "memo": "2025년 3월.. 취향 실종.. 노선을 되찾기 위해 보관함을 뒤지다.. ",
+      "year": "1975"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/easy-listening-for-love/1686874594",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/4d/98/e7/4d98e7bb-05a3-c935-0e55-d22ecd1dfab4/191953033693.jpg/316x316bb.webp",
+      "date": "2025.03.24",
+      "artist": "술탄 오브 더 디스코",
+      "name": "Easy Listening For Love",
+      "memo": "Chajangnim : 조선 펑크중에서는 얘네가 제일 낫다. \n Me : 이하 동감 입니다. \n 노래 4곡에 반주4곡 들어 있는걸 앨범이라고 내놓은게 양아치 스럽지만 전작들에 비해 뽕끼 빠지고 깔끔해서 수작으로 인정해 주겠다. 빨리 다음 앨범을 내놔라!",
+      "year": "2019"
+    },
+    {
       "link": "https://music.apple.com/kr/album/music/1802175271",
       "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/03/24/10/03241047-f22d-7e64-3932-6df7550acc42/25UMGIM46212.rgb.jpg/316x316bb.webp",
       "date": "2025.03.21",
       "artist": "Playboi Carti",
       "name": "MUSIC",
-      "memo": "일루미나티와 손잡은 거대 인터넷 기업이 ㅈ구린 음악을 얼마나 팔아먹을 수 있는지 알고리즘 테스트 중인게 분명하다. 알고리즘에 도배되었다고 해서 전곡이 차트 인을 한다고 해서 나의 취향을 저버리고 이딴걸 듣거ㄴ ㄱㄹㅈ ㅇㄶ..... \n Brand-new ass and brand-new nose, let's go (Let's go)! Bend it over, touch your toes, that's go (Touch your toes) ... ... ",
+      "memo": "일루미나티와 손잡은 거대 인터넷 기업이 구린 음악을 얼마나 팔아먹을 수 있는지 알고리즘 테스트 중인게 분명하다. 알고리즘에 도배되었다고 해서 전곡이 차트 인을 한다고 해서 나의 취향을 저버리고 이딴걸 듣거ㄴ ㄱㄹㅈ ㅇㄶ..... \n Brand-new ass and brand-new nose, let's go (Let's go)! Bend it over, touch your toes, that's go (Touch your toes) ... ... ",
       "year": "2025"
     },
     {

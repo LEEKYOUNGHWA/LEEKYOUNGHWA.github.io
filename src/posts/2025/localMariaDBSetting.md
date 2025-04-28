@@ -23,14 +23,26 @@ tags: ["database"]
 
 ## 캐릭터셋
 
-**결론**
-한국에서는 웬만하면 utf8mb4, utf8mb4_general_ci를 사용하면 된다.
-
 - [https://blog.honeybomb.kr/10](https://blog.honeybomb.kr/10)
 
-**대소문자 구분**
+## 대소문자 구분
 - [https://mangkyu.tistory.com/418](https://mangkyu.tistory.com/418)
 
 ## ini 파일 수정
 
 - [https://saakmiso.tistory.com/128](https://saakmiso.tistory.com/128)
+
+## 마리아 DB 권한 부여
+
+```sql
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '0000';
+FLUSH PRIVILEGES;
+```
+
+## 테이블 COLLATE 변경
+
+테이블의 모든 VARCHAR 및 CHAR 컬럼을 **대소문자 구분하는 utf8mb4_bin**으로 변경
+
+```sql
+ALTER TABLE MNblahblahRT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_bin;
+```

@@ -1,6 +1,51 @@
 export const albumList = {
   "2025": [
     {
+      "link": "https://music.apple.com/kr/album/kanye-west-presents-good-music-cruel-summer/1440829853",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/09/ab/09/09ab09b8-be51-3078-057d-2a849aad036a/12UMGIM50583.rgb.jpg/592x592bb.webp",
+      "date": "2025.04.28",
+      "artist": "Kanye West Presents: Good Music",
+      "name": "Cruel Summer",
+      "memo": "2012년에 진짜 마르고 닳도록 들었다. 그랬던 내가 드디어 칸예를 보러 가다니 그지같지만 살아볼 만한 인생이다 ㅠㅠ",
+      "year": "2012"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/lifes-like/1609042844",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/c7/8e/34/c78e346b-646e-db6c-2de1-7022c5e56a69/8809704421188_Cover.jpg/592x592bb.webp",
+      "date": "2025.04.25",
+      "artist": "재지팩트",
+      "name": "Lifes Like",
+      "memo": "재즈힙합의 문익점, 로컬라이징을 기가 막히게 했다. 피자던 햄버거던 어짜피 외국에서 넘어온거다. 맛있으면 그만",
+      "year": "2010"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/the-low-end-theory/278911460",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Video115/v4/4a/98/75/4a98759f-fc19-7bc4-0a52-39c81c909293/Job35b7baac-03f6-44b4-9b1d-85f14e311e11-124485009-PreviewImage_preview_image_nonvideo_sdr-Time1633111057418.png/592x592bb.webp",
+      "date": "2025.04.25",
+      "artist": "A Tribe Called Quest",
+      "name": "The Low End Theory",
+      "memo": "여기에서 'low-key'는 '낮은 음'이라는 뜻이 있는데, 이 앨범의 제목 [The Low End Theory]와 관련이 있습니다. 'Low End'는 '보급형'이라는 뜻과 '베이스를 끝내주게 잘 치는'을 뜻하는 슬랭으로 사용됩니다. 베이스는 음악에서 낮은 음계를 담당하는데, 낮은 음은 높은 음에 비해 상대적으로 덜 주목받기 마련입니다. ATCQ가 추구하는 재즈힙합도 이와 마찬가지로 처음에는 그냥 그렇지만 깊이 빠져들게 되면 재즈 힙합의 선구자인 ATCQ에게 경의를 표하게 될 거라고 말하는 것입니다.",
+      "year": "1991"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/things-fall-apart/1440632803",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/74/1d/df/741ddf4b-a124-16f4-60f3-03e03f291eab/06UMGIM02261.rgb.jpg/592x592bf.webp",
+      "date": "2025.04.25",
+      "artist": "The Roots",
+      "name": "Things Fall Apart",
+      "memo": "Step into the realm, you're bound to get caught\nHip-hop이라는 왕국으로 발을 들이면 빠져나올 수 없지\nAnd from this worldly life you'll soon depart\n그러면 넌 이 세속적인 삶을 곧 떠나게 되겠지",
+      "year": "1999"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/ye/1441456689",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/76/1b/36/761b368d-a267-4a99-9689-f5daf9bb1325/18UMGIM26291.rgb.jpg/592x592bb.webp",
+      "date": "2025.04.14",
+      "artist": "Kanye West",
+      "name": "ye",
+      "memo": "와이오밍 잭슨홀 버킷리스트 추가",
+      "year": "2018"
+    },
+    {
       "link": "https://music.apple.com/kr/album/palco/82480985",
       "img": "https://is1-ssl.mzstatic.com/image/thumb/Features/v4/3d/e6/0a/3de60ade-113c-bd10-9805-e0b6610ea00e/dj.qspuibdd.jpg/592x592bf.webp",
       "date": "2025.04.09",

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[70],{555:function(t,e,s){"use strict";s.r(e);var n=s(4),o=Object(n.a)({},(function(){var t=this._self._c;return t("ContentSlotsDistributor",{attrs:{"slot-key":this.$parent.slotKey}},[t("SubHome",{attrs:{nav:"blog",title:"Blog",desc:"music, movie, ect..."}})],1)}),[],!1,null,null,null);e.default=o.exports}}]);

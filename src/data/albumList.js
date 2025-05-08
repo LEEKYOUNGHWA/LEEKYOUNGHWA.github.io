@@ -1,6 +1,42 @@
 export const albumList = {
   "2025": [
     {
+      "link": "https://music.apple.com/kr/album/donuts/108233171",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/63/d3/c5/63d3c537-ac30-86e7-8e69-8a03a5346209/792.jpg/592x592bb.webp",
+      "date": "2025.05.08",
+      "artist": "J Dilla",
+      "name": "Donuts",
+      "memo": "삶과 죽음 윤회 원형구조 트랙 좋아하는 음식 도넛",
+      "year": "2006"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/am/663097964",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/cc/0f/2d/cc0f2d02-5ff1-10e7-eea2-76863a55dbad/887828031795.png/592x592bb.webp",
+      "date": "2025.05.08",
+      "artist": "Arctic Monkeys",
+      "name": "AM",
+      "memo": "앨범에서 담배맛이 나요 (담배안핌)",
+      "year": "2013"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/goodbye-yellow-brick-road-2014-remaster/1440863013",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Video126/v4/37/a5/8f/37a58f5e-e858-428c-773a-b1fee722102c/Job8f93bc63-13e2-4f72-9580-c0fe1c65238b-157475755-PreviewImage_preview_image_nonvideo_sdr-Time1697816869260.png/316x316bb.webp",
+      "date": "2025.05.07",
+      "artist": "Elton John",
+      "name": "Goodbye Yellow Brick Road",
+      "memo": "When are you gonna come down?\nWhen are you going to land?\nI should have stayed on the farm\nI should have listened to my old man \n\n 언제 집에 가지",
+      "year": "1973"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/its-almost-dry/1620082258",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/89/c7/8f/89c78fbb-56c2-25e1-55b5-3dd784eb9453/22UMGIM43681.rgb.jpg/592x592bb.webp",
+      "date": "2025.05.06",
+      "artist": "Pusha T",
+      "name": "It's Almost Dry",
+      "memo": "4월 가장 많이 들은 앨범 2위(1위는 Ye) 특이하게도 프로듀서 순으로 들을 수 있게 여러 버전이 있다 \n - Ye vs Pharrell \n - Pharrell vs Ye  \n 그으런데 Pharrell 이 프로듀싱한게 더 좋...",
+      "year": "2022"
+    },
+    {
       "link": "https://music.apple.com/kr/album/kanye-west-presents-good-music-cruel-summer/1440829853",
       "img": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/09/ab/09/09ab09b8-be51-3078-057d-2a849aad036a/12UMGIM50583.rgb.jpg/592x592bb.webp",
       "date": "2025.04.28",

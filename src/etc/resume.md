@@ -1,6 +1,12 @@
-# Resume
+---
+title: Home > About
+sidebar: false
+---
 
-### GSITM
+<div class="subhome">
+    <h1>Profile</h1>
+    <p>.. .잡부의 플젝 목록..</p>
+</div>
 
 > **GS리테일 HR 대응개발 프로젝트**
 >
@@ -85,3 +91,30 @@
 > 2018-03-02 ~ 2018-09-01
 >
 > `Java` `Spring` `Oracle` `HTML` `CSS` `javascript`
+
+
+<style lang="stylus" scoped>
+p {
+  font-size: 0.9em;
+}
+.subhome {
+  padding: 0;
+  max-width: $homePageWidth;
+  display: block;
+  text-align: left;
+  margin-left: 20px;
+  margin-bottom: 40px;
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  .description {
+    max-width: 35rem;
+    font-size: 1.6rem;
+    line-height: 1.3;
+    color: lighten($textColor, 40%);
+  }
+}
+
+</style>

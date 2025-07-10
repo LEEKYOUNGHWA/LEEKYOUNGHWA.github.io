@@ -1,6 +1,6 @@
 ---
-title: Home > blog
+title: Home > Journal
 sidebar: false
 ---
 
-<SubHome nav="blog" title="Blog" desc="music, movie, ect..."/>
+<SubHome nav="blog" title="Journal" desc="music, movie, ect..."/>

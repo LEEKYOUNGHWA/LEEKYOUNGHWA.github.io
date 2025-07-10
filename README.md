@@ -1,13 +1,40 @@
 # 깃블로그
 
-- 주소 : [LEEKYOUNGHWA.github.io](https://LEEKYOUNGHWA.github.io)
-  
-## setting
-1. 풀
-2. npm i
-3. npm build
-4. npm dev
+## [LEEKYOUNGHWA.github.io](https://LEEKYOUNGHWA.github.io)
 
-> ⚠️warning
-> node 16 이하에서 동작
+## 세팅 가이드
+
+1. VsCode 설치 [https://code.visualstudio.com/](https://code.visualstudio.com/)
+2. 관리자 권한 powershell 에서 명령어 입력 : git 설치
+   `winget install --id Git.Git -e --source winget`
+3.
+   ```
+   git config --global user.name "leekyounghwa"
+   git config --global user.email "rudghk5220@gmail.com"
+   ```
+
+4. chocolatey 설치
+   ```
+    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+   ```
+
+5. choco 사용 nvm 설치, node 16 설치
+   ```
+   choco install nvm
+   nvm install 16
+   nvm use 16.20.2
+   ```
+6. powershell, vscode 껏다 키기  
+7. VsCode 확장프로그램 Vue, Git Graph 설치  
+8. git clone `https://github.com/LEEKYOUNGHWA/LEEKYOUNGHWA.github.io.git`
+9. `npm i`
+10. `npm run build` `npm run dev`
+
+
+::: danger
+
+* 블로그 만든지 오래되어 node 16 이하에서 동작합니다
+* [https://stackoverflow.com/a/69699772/10222566](https://stackoverflow.com/a/69699772/10222566)
+:::
+
 

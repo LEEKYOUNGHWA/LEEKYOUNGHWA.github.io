@@ -1,4 +1,12 @@
-# Tags
+---
+title: Home > Tags
+sidebar: false
+---
+
+<div class="subhome">
+    <h1>Tags</h1>
+    <p>태그 모음</p>
+</div>
 
 <template v-for="tag in Object.keys(tags)">
   <h2 :id="tag.replace(' ','-')">
@@ -37,3 +45,29 @@ export default {
   },
 }
 </script>
+
+<style lang="stylus" scoped>
+p {
+  font-size: 0.9em;
+}
+.subhome {
+  padding: 0;
+  max-width: $homePageWidth;
+  display: block;
+  text-align: left;
+  margin-left: 20px;
+  margin-bottom: 40px;
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  .description {
+    max-width: 35rem;
+    font-size: 1.6rem;
+    line-height: 1.3;
+    color: lighten($textColor, 40%);
+  }
+}
+
+</style>

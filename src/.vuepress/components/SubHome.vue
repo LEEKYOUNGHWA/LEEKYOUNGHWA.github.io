@@ -64,7 +64,9 @@ export default {
         .filter(
           (page) =>
             page.relativePath.startsWith(this.nav) &&
-            !page.relativePath.includes("README")
+            !page.relativePath.includes("README") &&
+            !page.relativePath.includes("/list") &&
+            !page.relativePath.includes("/all")
         )
         .sort(
           (a, b) =>
@@ -188,7 +190,7 @@ p {
   }
 
   button.active {
-    background-color: #333;
+    background-color: #2F3D7C;
     color: white;
     font-weight: bold;
   }

@@ -42,7 +42,7 @@ image: https://vuepress.vuejs.org/images/hero.png
 7. VsCode 확장프로그램 Vue, Git Graph 설치  
 8. git clone `https://github.com/LEEKYOUNGHWA/LEEKYOUNGHWA.github.io.git`
 9. `npm i`
-10. `npm run dev`
+10. `npm run build` `npm run dev`
 
 
 ::: danger

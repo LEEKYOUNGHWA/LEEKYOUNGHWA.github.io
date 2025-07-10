@@ -40,9 +40,11 @@ module.exports = {
     editLinkText: "",
     lastUpdated: false,
     nav: [
-      { text: "TIL", link: "/posts/" },
-      { text: "study", link: "/study/" },
-      { text: "blog", link: "/blog/" },
+      { text: "TIL", link: "/posts/list" },
+      { text: "Study", link: "/study/list" },
+      { text: "Journal", link: "/blog/list" },
+      { text: "Tags", link: "/etc/tagList" },
+      { text: "Profile", link: "/etc/resume" }
     ],
     sidebar: {
       "/posts/": getSideBar("posts"),
@@ -97,11 +99,11 @@ function getSideBar(dirNm) {
   const fs = require("fs");
   const fileList = [];
   fs.readdirSync(src + dirNm)
-    .filter((file) => file != "README.md")
+    .filter((file) => file != "list.md")
     .forEach((file) => {
       const childrenList = [];
       fs.readdirSync(src + dirNm + "/" + file)
-        .filter((fileName) => fileName != "README.md")
+        .filter((fileName) => fileName != "list.md")
         .forEach((fileName) => {
           childrenList.push((file + "/" + fileName).replace(".md", ""));
         });

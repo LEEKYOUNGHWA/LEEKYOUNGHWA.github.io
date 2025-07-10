@@ -80,10 +80,20 @@ export default {
       return this.filteredPosts.slice(start, start + this.itemsPerPage);
     },
   },
+  created() {
+    const pageFromQuery = parseInt(this.$route.query.page);
+    if (pageFromQuery && pageFromQuery >= 1 && pageFromQuery <= this.totalPages) {
+      this.currentPage = pageFromQuery;
+    }
+  },
   methods: {
     goToPage(page) {
       if (page < 1 || page > this.totalPages) return;
       this.currentPage = page;
+      this.$router.replace({
+        path: this.$route.path,
+        query: { ...this.$route.query, page: String(page) },
+      });
       window.scrollTo({ top: 0, behavior: "smooth" });
     },
     altImg(image) {
@@ -117,9 +127,9 @@ p {
   cursor: pointer;
   width: 120px;
   height: 120px;
-    float: left;
-    margin-left: 30px;
-    margin-right: 30px;
+  float: left;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 .thumbnail {
   object-fit: cover;
@@ -131,7 +141,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-    width: 200px;
+  width: 200px;
   margin-top: 10px;
 }
 

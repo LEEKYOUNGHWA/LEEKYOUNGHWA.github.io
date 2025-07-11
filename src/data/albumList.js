@@ -1,6 +1,24 @@
 export const albumList = {
   "2025": [
     {
+      "link": "https://music.apple.com/kr/album/love-record/1454370179",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/99/b2/f8/99b2f8dc-b846-e977-688b-b059a00034f0/8008923.jpg/592x592bb.webp",
+      "date": "2025.07.10",
+      "artist": "윈디 시티",
+      "name": "Love Record",
+      "memo": "algorithm god... 아리가또.. 어렸을때 좋아했던 노래가 나왔읍니다 (딩초때로 추정..) \n 노래를 듣자마자 아...! 심연에 있던 뉴런까지 깨는 느낌... \n어렸을때 뭐 엠피쓰리 씨디 썼었지만 개인적으로 라디오에서 나오는 노래를 카세트 테이프로 녹음해서 듣는걸 참 좋아라 했음니다.. \n그때 그시절 음악 디깅.....",
+      "year": "2005"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/george-gershwin-rhapsody-in-blue-porgy-bess/1603164493",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/32/17/97/3217979f-7495-d36b-ec5b-0746ea411ed1/071083110191_cover.jpg/592x592bb.webp",
+      "date": "2025.07.10",
+      "artist": "Mario-Ratko Delorko",
+      "name": "George Gershwin: Rhapsody in Blue - Porgy + Bess",
+      "memo": "어릴때 들었던 클래식 전집 버전을 드디어... 드디어.. 수년만에..찾았다... 아.... 카타르시스... 하...! 죽기전에 찾아서 다행이다... 이 미묘한 엇박을 내가 얼마나..찾아 헤멨는데...",
+      "year": "2021"
+    },
+    {
       "link": "https://music.apple.com/kr/album/donuts/108233171",
       "img": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/63/d3/c5/63d3c537-ac30-86e7-8e69-8a03a5346209/792.jpg/592x592bb.webp",
       "date": "2025.05.08",

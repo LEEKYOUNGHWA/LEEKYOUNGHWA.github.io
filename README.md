@@ -15,7 +15,7 @@
    ```
 
 4. 관리자 권한 powershell 에서 chocolatey 설치
-   ```
+   ```sh
     Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
    ```
 1. VsCode 설치

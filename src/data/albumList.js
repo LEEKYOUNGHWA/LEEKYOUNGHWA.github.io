@@ -1,6 +1,15 @@
 export const albumList = {
   "2025": [
     {
+      "link": "https://music.apple.com/kr/album/let-god-sort-em-out/1816313639",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/39/df/8e/39df8e65-3e87-252c-06c2-25000e6e8f52/Jobce3a525d-c5fc-4ea9-8d58-0a5bb13f2a4a-194261637-PreviewImage_Preview_Image_Intermediate_nonvideo_sdr_380557961_2195018159-Time1749230505067.png/592x592bb.webp",
+      "date": "2025.07.11",
+      "artist": "Clipse",
+      "name": "Let God Sort Em Out",
+      "memo": "에어팟으로 들으면 유죄",
+      "year": "2025"
+    },
+    {
       "link": "https://music.apple.com/kr/album/love-record/1454370179",
       "img": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/99/b2/f8/99b2f8dc-b846-e977-688b-b059a00034f0/8008923.jpg/592x592bb.webp",
       "date": "2025.07.10",
@@ -17,6 +26,15 @@ export const albumList = {
       "name": "George Gershwin: Rhapsody in Blue - Porgy + Bess",
       "memo": "어릴때 들었던 클래식 전집 버전을 드디어... 드디어.. 수년만에..찾았다... 아.... 카타르시스... 하...! 죽기전에 찾아서 다행이다... 이 미묘한 엇박을 내가 얼마나..찾아 헤멨는데...",
       "year": "2021"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/miniseries-2/1757545844",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f3/4d/82/f34d8203-668c-575c-ed52-2be841008663/191953377520.jpg/592x592bb.webp",
+      "date": "2025.06.05",
+      "artist": "수민, 슬롬",
+      "name": "MINISERIES 2",
+      "memo": "Knxwledge, Mndsgn 공연 보러 갔는데 아니? 수민 슬롬 얘네 왤케 잘함...? 한대음 수상했다고 했을때 거들떠도 보지 않았던 문화 사대주의 나자신.. 반성합니다",
+      "year": "2024"
     },
     {
       "link": "https://music.apple.com/kr/album/donuts/108233171",

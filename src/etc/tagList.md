@@ -70,4 +70,42 @@ p {
   }
 }
 
+@media (max-width: $MQMobile)
+  h5, h3, h4, p {
+    margin-top: 2px;
+    margin-bottom: 0px;
+  }
+  h3 
+    a {
+      font-size: 1.1rem;
+    }
+  p {
+    font-size: 0.9rem;
+  }
+  .thumbnail-container{
+    display: flex;
+    object-fit: cover;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 15px;
+  }
+  .subhome
+    text-align center
+    h1
+      font-size 2rem
+    .description
+      margin-bottom 40px
+      font-size 1.4rem
+      line-height 1.3
+  .container
+    h3
+      font-size 1.2rem
+  .blog-content {
+    margin-top: 0px;
+    margin-left: 10px;
+  }
+
 </style>

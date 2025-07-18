@@ -1,6 +1,15 @@
 export const albumList = {
   "2025": [
     {
+      "link": "https://music.apple.com/kr/album/high-society/1610071544",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/52/d4/68/52d4684a-af06-e2ab-fde1-2f505f771604/08809114100956_Cover.jpg/592x592bb.webp",
+      "date": "2025.07.18",
+      "artist": "에픽하이",
+      "name": "High Society",
+      "memo": "딩초 경화의 최애 가수 : 에픽하이 \n 딩초 경화의 최애 앨범 : High Society \n 딩초 경화의 최애 노래 : 뒷담화",
+      "year": "2004"
+    },
+    {
       "link": "https://music.apple.com/kr/album/let-god-sort-em-out/1816313639",
       "img": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/39/df/8e/39df8e65-3e87-252c-06c2-25000e6e8f52/Jobce3a525d-c5fc-4ea9-8d58-0a5bb13f2a4a-194261637-PreviewImage_Preview_Image_Intermediate_nonvideo_sdr_380557961_2195018159-Time1749230505067.png/592x592bb.webp",
       "date": "2025.07.11",

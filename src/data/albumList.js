@@ -1,6 +1,15 @@
 export const albumList = {
   "2025": [
     {
+      "link": "https://music.apple.com/kr/album/watch-the-throne-deluxe/1440845249",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Video125/v4/58/9f/dd/589fdd55-17ad-4c19-0fbb-22eb88438e5d/Jobb8f9e51f-4560-46f8-bd1b-d4facf904ba7-118370146-PreviewImage_preview_image_nonvideo_sdr-Time1627580826768.png/592x592bb.webp",
+      "date": "2025.07.26",
+      "artist": "JAY-Z, Kanye West",
+      "name": "Watch the Throne (Deluxe)",
+      "memo": "<b>!!!칸예 콘서트 관람!!!</b>  \n 2011년... 마르고 닳도록 들었다.. 칸붕이 이제 죽어도 여한이 없다....",
+      "year": "2011"
+    },
+    {
       "link": "https://music.apple.com/kr/album/high-society/1610071544",
       "img": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/52/d4/68/52d4684a-af06-e2ab-fde1-2f505f771604/08809114100956_Cover.jpg/592x592bb.webp",
       "date": "2025.07.18",

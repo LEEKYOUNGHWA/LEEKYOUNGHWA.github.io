@@ -8,8 +8,35 @@
             style="width:100%;overflow:hidden;border-radius:10px;padding-bottom: 20px;" 
             sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation">
         </iframe>
-        <h4> albumlist {{albums.length}} </h4>
-        <div v-for="(album, idx) in albums">
+
+        <!-- 검색 & 정렬 UI -->
+        <div class="controls">
+            <input
+                type="text"
+                v-model="searchQuery"
+                placeholder="검색 (앨범명 / 아티스트)"
+                @keyup="filterAlbums"
+                class="search-box"
+            />
+            <select v-model="sortOption" @change="sortAlbums" class="sort-dropdown">
+                <option value="register">등록순</option>
+                <option value="release">발매순</option>
+                <option value="album">앨범명 가나다순</option>
+                <option value="artist">아티스트명 가나다순</option>
+            </select>
+            <button
+                class="order-toggle"
+                @click="toggleOrder"
+                :title="isDesc ? '최신순' : '오래된순'"
+            >
+                <span v-if="isDesc">↓</span>
+                <span v-else>↑</span>
+            </button>
+        </div>
+
+        <h4> albumlist {{filteredAlbums.length}} </h4>
+
+        <div v-for="(album, idx) in filteredAlbums" :key="albumId(album.artist, album.name)">
             <div class="container" :id="albumId(album.artist, album.name)">
                 <div class="wrap" @click="changeJukebox(album.link)">
                     <img-lazy class="album-img" :src="album.img"/>
@@ -17,8 +44,6 @@
                 <div class="blog-content">
                     <h4>{{album.date}}</h4>
                     <h3>
-                        <a  class="header-anchor"
-                            @click.prevent="scrollTo(album.artist, album.name)">#</a>
                         {{idx + 1}}. {{album.artist}} - {{album.name}} 
                         <span v-if="album.year">({{album.year}})</span>
                         <a :href="album.link" target="_blank">
@@ -45,6 +70,10 @@ export default {
     data() {
         return {
             jukeBox: '',
+            searchQuery: '',
+            sortOption: 'register', // 기본값: 등록순
+            isDesc: true, // true = 내림차순 (최신순), false = 오름차순 (오래된순)
+            filteredAlbums: [],
         };
     },
     computed: {
@@ -53,8 +82,8 @@ export default {
                 return albumList[this.year] || [];
             }
             return Object.entries(albumList)
-            .reverse() // 키(연도) 순서를 역순으로 변경
-            .flatMap(([_, albums]) => albums);
+                .reverse()
+                .flatMap(([_, albums]) => albums);
         },
     },
     created() {
@@ -62,9 +91,19 @@ export default {
         if (firstAlbum) {
             this.jukeBox = firstAlbum.link.replace('music', 'embed.music');
         }
+        this.filteredAlbums = [...this.albums];
+        this.sortAlbums();
     },
-    mounted () {
+    mounted() {
         this.handleInitialScroll();
+
+        // URL 쿼리에서 search 파라미터 읽어서 필터 적용
+        const params = new URLSearchParams(window.location.search);
+        const searchParam = params.get('search');
+        if (searchParam) {
+            this.searchQuery = searchParam;
+            this.filterAlbums();
+        }
     },
     methods: {
         albumId(artist, name) {
@@ -77,44 +116,103 @@ export default {
                 behavior: 'smooth',
             });
         },
-        scrollTo(artist, name) {
-            const id = this.albumId(artist, name);
-            const targetElement = document.getElementById(id);
-            console.log(id)
-            if (targetElement) {
-                const rect = targetElement.getBoundingClientRect();
-                const offset = 60; // Padding from the top
-                const targetPosition = window.scrollY + rect.top - offset;
-
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth',
-                });
-            }
-        },
         handleInitialScroll() {
-            const hash = window.location.hash;
-            if (hash) {
-                const targetId = hash.substring(1);  // '#' 이후 값만 추출
-                const targetElement = document.getElementById(targetId);
-
-                if (targetElement) {
-                    const rect = targetElement.getBoundingClientRect();
-                    const offset = 70; // Padding from the top
-                    const targetPosition = window.scrollY + rect.top - offset;
-
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth',
+            const params = new URLSearchParams(window.location.search);
+            const albumParam = params.get('album');
+            if (albumParam) {
+                const normalizedTarget = albumParam.toLowerCase().replace(/\s+/g, '');
+                const targetAlbum = this.albums.find(album =>
+                    album.name.toLowerCase().replace(/\s+/g, '') === normalizedTarget
+                );
+                if (targetAlbum) {
+                    this.$nextTick(() => {
+                        const targetElement = document.getElementById(
+                            this.albumId(targetAlbum.artist, targetAlbum.name)
+                        );
+                        if (targetElement) {
+                            const rect = targetElement.getBoundingClientRect();
+                            const offset = 70;
+                            const targetPosition = window.scrollY + rect.top - offset;
+                            window.scrollTo({
+                                top: targetPosition,
+                                behavior: 'smooth',
+                            });
+                        }
                     });
                 }
             }
+        },
+        filterAlbums() {
+            const query = this.searchQuery.toLowerCase();
+            this.filteredAlbums = this.albums.filter(album =>
+                album.name.toLowerCase().includes(query) ||
+                album.artist.toLowerCase().includes(query)
+            );
+            this.sortAlbums();
+        },
+        toggleOrder() {
+            this.isDesc = !this.isDesc;
+            this.sortAlbums();
+        },
+        sortAlbums() {
+            if (!this.filteredAlbums.length) return;
+
+            const order = this.isDesc ? 1 : -1;
+
+            this.filteredAlbums.sort((a, b) => {
+                switch (this.sortOption) {
+                    case 'release':
+                        return ((b.year || 0) - (a.year || 0)) * order;
+                    case 'register':
+                        return (this.albums.indexOf(a) - this.albums.indexOf(b)) * order;
+                    case 'album':
+                        return a.name.localeCompare(b.name, 'ko') * order;
+                    case 'artist':
+                        return a.artist.localeCompare(b.artist, 'ko') * order;
+                    default:
+                        return 0;
+                }
+            });
         },
     },
 };
 </script>
 
 <style scoped>
+.controls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px; /* 간격 통일 */
+    margin-bottom: 10px;
+    flex-wrap: nowrap; /* 가로 한 줄 유지 */
+}
+
+.search-box,
+.sort-dropdown,
+.order-toggle {
+    padding: 5px 8px;
+    font-size: 0.9em;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* 아주 살짝 둥글게 */
+    background: white;
+    margin: 0; /* 기본 margin 제거 */
+}
+
+.order-toggle {
+    cursor: pointer;
+    background: #f5f5f5;
+    user-select: none;
+    border-radius: 4px;
+    line-height: 1;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 h3 {
     margin: 2px 0 0 0;
 }
@@ -149,18 +247,26 @@ h4 {
 }
 
 @media (max-width: 800px) {
-    p {
-        font-size: 0.9em;
+    .controls {
+        flex-wrap: nowrap;    /* 한 줄로 유지 */
+        gap: 6px;             /* 간격 조금 좁게 */
+        justify-content: flex-start; /* 왼쪽 정렬 */
+        overflow-x: auto;     /* 넘치면 가로 스크롤 */
     }
-    .container {
-        flex-direction: column;
-        padding-top: 40px;
+    .search-box {
+        flex: 1 1 auto;       /* 가능한 넓게 */
+        min-width: 120px;
     }
-    .blog-content {
-        margin: 20px;
+    .sort-dropdown {
+        flex: 0 0 auto;       /* 고정 크기 */
+        width: 120px;
     }
-    .wrap {
-        margin: auto;
+    .order-toggle {
+        flex: 0 0 auto;       /* 고정 크기 */
+        width: 28px;          /* 좀 더 작게 */
+        height: 28px;
+        font-size: 1em;       /* 버튼 내부 글자 크기 조정 */
+        padding: 0;
     }
 }
 </style>

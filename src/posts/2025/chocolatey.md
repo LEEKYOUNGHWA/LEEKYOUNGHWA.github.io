@@ -23,6 +23,9 @@ choco install git
 choco install vscode
 choco install dbeaver
 choco install nvm
+choco install docker-desktop
+choco install Zip
+choco install intellijidea-community
 ```
 
 

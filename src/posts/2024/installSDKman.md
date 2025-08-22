@@ -1,13 +1,16 @@
 ---
 title: Window 에 SDKman 설치
-lang: ko-KR
 date: 2024/01/26 14:05:00
-lastUpdated: 2024/01/29 13:19:00
-subTitle: window 에서 SDKman 설치. choco 를 이용해서 설치. 설치후 제대로 동작하지 않을때
+lastUpdated: 2025/08/21 14:03:00
+subTitle: window 에 SDKman 설치
+description: window 에 SDKman 설치
 meta:
-  - name: window 에서 SDKman 설치 choco
-    content: window 에서 SDKman 설치 choco
-tags: ["tool"]    
+  - name: window 에 SDKman 설치 Chocolatey
+    content: window 에 SDKman 설치 Chocolatey
+  - name: SDKman으로 java 설치
+    content: SDKman으로 java 17 설치
+tags: ["tool"]
+image: https://sdkman.io/assets/img/sdk-man-small-pattern.svg
 ---
 
 # SDKman
@@ -32,22 +35,42 @@ choco 를 이용해서 설치하는 해외 [블로그](https://walterteng.com/us
    git bash 에서 실행. 블로그랑 똑같이 디렉토리 설정해서 설치했다.
 
    ```sh
-   export SDKMAN_DIR="/c/project/lib/sdkman" && curl -s "https://get.sdkman.io" | bash # 디렉토리 설정하여 설치
-   curl -s "https://get.sdkman.io" | bash # 디렉토리 설정 없이 설치. user 폴더 안에 설치된다
+   curl -s "https://get.sdkman.io" | bash
    ```
 
 5. 초기화 명령어를 실행시켜 준다
 
    git bash 에서 실행
 
+   설치하고 나면 다음에 실행할 명령어가 뜬다
    ```sh
-   source "C:\project\lib\sdkman\bin\sdkman-init.sh" # 본인의 sdkman 경로
+   Please open a new terminal, or run the following in the existing one:
+   source "/c/Users/lkh/.sdkman/bin/sdkman-init.sh"
    ```
 
-6. 환경변수 설정...
+   복사해서 그대로 실행해주자
+   ```sh
+   source "/c/Users/lkh/.sdkman/bin/sdkman-init.sh" # 본인의 sdkman 경로
+   ```
 
-   JAVA_HOME 을 `C:\project\lib\sdkman\candidates\java\current\` 로 설정해준다.
+6. 환경변수 설정
 
+   시스템 환경변수 편집 -> 시스템 변수 -> 새로 만들기
+   JAVA_HOME  `C:\Users\lkh\.sdkman\candidates\java\current` 
+   CLASSPATH  `%JAVA_HOME%\lib`
+
+   시스템 변수 -> Path 편집
+   Path `%JAVA_HOME%\bin` 추가
+
+7. 설치 확인
+```sh
+sdk version
+```
+```
+SDKMAN!
+script: 5.20.0
+native: 0.7.4 (windows x86_64)
+```
 SDKman 설치 완료 !
 
 ## SDK 설치 명령어
@@ -61,6 +84,13 @@ sdk default <sdk> <version> # 특정 버전의 SDK를 기본으로 설정 새로
 sdk uninstall <sdk> <version> # 특정 버전의 SDK를 제거
 ```
 
+### JAVA 17 설치
+```sh
+sdk list java
+sdk install java 17.0.16-tem # list java로 버전 확인하고 적어주기
+sdk default java 17.0.16-tem
+java -version # 환경변수를 올바르게 설정했으면 cmd에서도 버전이 잘 나온다
+```
 ## 로컬 SDK 설치
 
 기존에 사용하고 있던 SDK를 SDKman에 연결해서 사용할 수 있다.

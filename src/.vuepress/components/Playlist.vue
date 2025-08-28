@@ -91,7 +91,7 @@ export default {
     try {
       window.global ||= window;
       const axios = require('axios').default
-      const response = await axios.get(this.API_URL_LOCAL);
+      const response = await axios.get(this.API_URL);
       // API 응답 구조에 따라 데이터를 저장
       this.allVideos = response.data.map(video => ({
         ...video,

@@ -12,6 +12,8 @@ module.exports = {
    */
   description: description,
 
+  port: 8081, 
+
   /**
    * Extra tags to be injected to the page HTML `<head>`
    *

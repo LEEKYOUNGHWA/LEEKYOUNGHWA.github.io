@@ -247,6 +247,19 @@ h4 {
 }
 
 @media (max-width: 800px) {
+    p {
+        font-size: 0.9em;
+    }
+    .container {
+        flex-direction: column;
+        padding-top: 40px;
+    }
+    .blog-content {
+        margin: 20px;
+    }
+    .wrap {
+        margin: auto;
+    }
     .controls {
         flex-wrap: nowrap;    /* 한 줄로 유지 */
         gap: 6px;             /* 간격 조금 좁게 */

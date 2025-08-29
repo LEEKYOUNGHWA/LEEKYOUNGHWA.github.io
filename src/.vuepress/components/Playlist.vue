@@ -80,7 +80,7 @@ export default {
       isDesc: true, // true = 내림차순 (최신순), false = 오름차순 (오래된순)
       allVideos: [], // API에서 불러온 모든 비디오 데이터
       filteredVideos: [], // 검색 및 정렬된 비디오 데이터
-      API_URL: 'http://158.180.66.250:8080/api/videos', // ✅ 여기에 여러분의 API 주소를 정확히 입력하세요.
+      API_URL: 'https://api.leekyounghwa.com/api/videos',
       API_URL_LOCAL: 'http://localhost:8080/api/videos',
     };
   },

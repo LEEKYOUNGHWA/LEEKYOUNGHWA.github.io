@@ -1,6 +1,7 @@
 ---
 lastUpdated: 2025/08/22 15:35:00
 subTitle: 나는야바이브코더
+image: https://media.istockphoto.com/id/1403608383/photo/12-inch-vinyl-lp-record-isolated-on-white-background-3d-rendering.jpg?s=612x612&w=0&k=20&c=epDySRjPlX1a_IlIsUhNVHmURjfDkcsguc3SMQXMvFE=
 ---
 
 # ✨ 플레이리스트 백엔드 개발 가이드 ✨
@@ -74,8 +75,7 @@ JAR 파일이 생성되었다면, 이제 `Dockerfile`을 사용하여 Docker 이
 * **명령어:**
 
   ```
-  docker run -p 8080:8080 --name playlist-app --env-file .env.local -d playlist-backend:local
-  
+  docker run -p 8080:8080 --name playlist-app --env-file .env -d playlist-backend:local
   ```
 
 * **설명:**
@@ -136,18 +136,18 @@ JAR 파일이 생성되었다면, 이제 `Dockerfile`을 사용하여 Docker 이
 
 ```mermaid
 graph TD
-    User --> |HTTP 요청| Frontend[프런트엔드 (Next.js - 예정)]
-    Frontend --> |REST API 호출| Backend[백엔드 (Spring Boot)]
+    User -->|HTTP 요청| Frontend(Frontend - Next.js)
+    Frontend -->|REST API 호출| Backend(Backend - Spring Boot)
 
     subgraph Backend Services
-        Backend -- API 엔드포인트 --> PlaylistController[PlaylistController]
-        PlaylistController -- 데이터 조회 --> VideoRepository[VideoRepository]
-        Backend -- 주기적 실행 --> PlaylistBatchScheduler[PlaylistBatchScheduler]
-        PlaylistBatchScheduler -- API 호출 --> YouTubeApiClient[YouTubeApiClient]
+        Backend -- API 엔드포인트 --> PlaylistController
+        PlaylistController -- 데이터 조회 --> VideoRepository
+        Backend -- 주기적 실행 --> PlaylistBatchScheduler
+        PlaylistBatchScheduler -- API 호출 --> YouTubeApiClient
         PlaylistBatchScheduler -- 데이터 저장/업데이트 --> VideoRepository
     end
 
-    VideoRepository --> Database[(H2/PostgreSQL 데이터베이스)]
+    VideoRepository --> Database[(H2/PostgreSQL)]
     YouTubeApiClient --> |YouTube Data API 호출| YouTubeAPI[YouTube Data API]
 
     style Frontend fill:#f9f,stroke:#333,stroke-width:2px
@@ -183,18 +183,18 @@ graph TD
 ```mermaid
 erDiagram
     VIDEO {
-        long id PK "고유 ID (자동 생성)"
-        string videoId UK "YouTube 동영상 고유 ID (중복 불가)"
-        string title "동영상 제목"
-        string description "동영상 설명"
-        string thumbnailUrl "썸네일 이미지 URL"
-        datetime publishedAt "동영상 게시일"
-        string channelTitle "동영상을 업로드한 채널 이름"
-        string channelId "동영상을 업로드한 채널의 고유 ID"
-        string videoOwnerChannelTitle "동영상의 원본 콘텐츠 소유자 채널 이름 (재업로드/포함된 경우)"
-        string videoOwnerChannelId "동영상의 원본 콘텐츠 소유자 채널 ID (재업로드/포함된 경우)"
-        datetime createdAt "레코드 생성 시간"
-        datetime updatedAt "레코드 마지막 업데이트 시간"
+        long id PK "Unique ID"
+        string videoId "YouTube Video ID"
+        string title "Video Title"
+        string description "Video Description"
+        string thumbnailUrl "Thumbnail URL"
+        datetime publishedAt "Published Date"
+        string channelTitle "Channel Title"
+        string channelId "Channel ID"
+        string videoOwnerChannelTitle "Video Owner Channel Title"
+        string videoOwnerChannelId "Video Owner Channel ID"
+        datetime createdAt "Created Date"
+        datetime updatedAt "Updated Date"
     }
 ```
 

@@ -1,6 +1,69 @@
 export const albumList = {
   "2025": [
     {
+      "link": "https://music.apple.com/kr/album/jorge-ben-samba-esquema-novo/1187250736",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/88/ad/f5/88adf5ef-f727-04ce-9264-875b4eb72912/191018634889.jpg/592x592bb.webp",
+      "date": "2025.09.08",
+      "artist": "Jorge Ben Jor",
+      "name": "Jorge Ben: Samba Esquema Novo’",
+      "memo": "이게 진짜 오리지널 이었다 오리지널의 품격",
+      "year": "1963"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/flowers/1797634063",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/a3/65/19/a36519dc-4244-4c2a-0014-c89a4b7719ec/Job67fc4056-5664-48e1-952c-7f63bd9bcc88-190033725-PreviewImage_Preview_Image_Intermediate_nonvideo_sdr_372105259_2118284311-Time1744320125582.png/592x592bb.webp",
+      "date": "2025.09.08",
+      "artist": "Durand Jones & The Indications",
+      "name": "Flowers’",
+      "memo": "길에서 발견했는데 상당히 괜찮다 (발견한지는 좀 됐다.. 애플뮤직 보관함 정리중...) ",
+      "year": "2025"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/the-3rd-album-red-light/896036646",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/a6/1f/3f/a61f3fa8-29f4-0ec9-3b9e-9c1493623361/f_x_resize.jpg/592x592bb.webp",
+      "date": "2025.09.08",
+      "artist": "f(x)",
+      "name": "The 3rd Album ‘Red Light’",
+      "memo": "핑크테입이 명작이라 불리지만 개인적으로 이게 더 좋음",
+      "year": "2014"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/be-like/1267207252",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/66/20/bd/6620bd8d-6f41-f0fd-2842-696f1ed3086b/8809522647272.jpg/592x592bb.webp",
+      "date": "2025.09.01",
+      "artist": "김건모",
+      "name": "Be Like…",
+      "memo": "우리네 인생은 짧아요, 멋지게 살아요 \n 지금도 시간은 흘러요, 대충 살아요",
+      "year": "2005"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/crysalis/1827147857",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/98/5e/50/985e509d-742b-fc69-5e61-24b59157ba6b/Job09d92782-12b5-476e-9478-21edab91fe7c-198416004-PreviewImage_Preview_Image_Intermediate_nonvideo_sdr_388394273_2265948544-Time1753434580791.png/592x592bb.webp",
+      "date": "2025.08.18",
+      "artist": "Jenevieve",
+      "name": "CRYSALIS",
+      "memo": "나, 퍼포남(자신의 행동, 취향, 성격을 '보여주기용'으로 구성하는 남성을 의미)의 느좋앨범",
+      "year": "2025"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/saturday-night-fever-the-original-movie-soundtrack/1445668458",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/74/c1/73/74c17380-b75d-4d74-31d8-99f8e8b20c36/17UM1IM27905.rgb.jpg/592x592bb.webp",
+      "date": "2025.08.09",
+      "artist": "Bee Gees",
+      "name": "Saturday Night Fever",
+      "memo": "You Should Be Dancing",
+      "year": "1977"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/rage-against-the-machine/191450810",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/8e/08/bf/8e08bf66-8690-1ba7-affb-fe173c08623d/074645295923.jpg/592x592bb.webp",
+      "date": "2025.08.08",
+      "artist": "Rage Against the Machine",
+      "name": "Rage Against the Machine",
+      "memo": "교묘한 지배 전략, 인종 차별, 제국주의, 억압을 만드는 사회 체제… Rage Against the Machine은 찢어질 듯한 기타 소리와 폭발적인 랩으로 이 모든 것들에 분노를 쏟아냅니다.",
+      "year": "1992"
+    },
+    {
       "link": "https://music.apple.com/kr/album/watch-the-throne-deluxe/1440845249",
       "img": "https://is1-ssl.mzstatic.com/image/thumb/Video125/v4/58/9f/dd/589fdd55-17ad-4c19-0fbb-22eb88438e5d/Jobb8f9e51f-4560-46f8-bd1b-d4facf904ba7-118370146-PreviewImage_preview_image_nonvideo_sdr-Time1627580826768.png/592x592bb.webp",
       "date": "2025.07.26",

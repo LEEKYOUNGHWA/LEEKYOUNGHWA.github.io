@@ -1,6 +1,15 @@
 export const albumList = {
   "2025": [
     {
+      "link": "https://music.apple.com/kr/album/led-zeppelin-ii-remastered/580708374",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Video115/v4/a8/99/26/a899262a-88ef-d829-3af4-0927fb2bb434/Job22423210-cb91-4970-b8bf-018cbbe5b019-124898266-PreviewImage_preview_image_nonvideo_sdr-Time1634231331389.png/592x592bb.webp",
+      "date": "2025.09.18",
+      "artist": "Led Zeppelin",
+      "name": "Led Zeppelin II",
+      "memo": "F1무비... 돌비 영화관에서 또 듣고싶다...",
+      "year": "1969"
+    },
+    {
       "link": "https://music.apple.com/kr/album/jorge-ben-samba-esquema-novo/1187250736",
       "img": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/88/ad/f5/88adf5ef-f727-04ce-9264-875b4eb72912/191018634889.jpg/592x592bb.webp",
       "date": "2025.09.08",

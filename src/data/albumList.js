@@ -1,6 +1,15 @@
 export const albumList = {
   "2025": [
     {
+      "link": "https://music.apple.com/kr/album/not-all-heroes-wear-capes/1441065529",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/cd/87/e5/cd87e5ea-f001-04e6-4248-22f4cfbedb23/18UMGIM75545.rgb.jpg/592x592bb.webp",
+      "date": "2025.09.26",
+      "artist": "Metro Boomin",
+      "name": "NOT ALL HEROES WEAR CAPES",
+      "memo": "아...... 수십번 들은 앨범인데.. 조용한 사무실에서 컴퓨터로 유선으로 들으면 죽인다... 오늘 드디어 합격 목걸이를 드립니다 ... 메트로 부민 당신이 최고야... 아이폰 뒤져라.. 에어팟... 뒤져라....",
+      "year": "2018"
+    },
+    {
       "link": "https://music.apple.com/kr/album/led-zeppelin-ii-remastered/580708374",
       "img": "https://is1-ssl.mzstatic.com/image/thumb/Video115/v4/a8/99/26/a899262a-88ef-d829-3af4-0927fb2bb434/Job22423210-cb91-4970-b8bf-018cbbe5b019-124898266-PreviewImage_preview_image_nonvideo_sdr-Time1634231331389.png/592x592bb.webp",
       "date": "2025.09.18",

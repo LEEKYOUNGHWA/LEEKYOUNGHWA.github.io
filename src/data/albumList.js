@@ -1,6 +1,15 @@
 export const albumList = {
   "2025": [
     {
+      "link": "https://music.apple.com/kr/album/sound-renovates-a-structure/1593806196",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/16/02/5e/16025efd-47ff-b407-8985-841d90113526/cover_KM0001682_1.jpg/592x592bb.webp",
+      "date": "2025.10.31",
+      "artist": "아소토 유니온",
+      "name": "Sound Renovates A Structure",
+      "memo": "Think About' Chu",
+      "year": "2003"
+    },
+    {
       "link": "https://music.apple.com/kr/album/not-all-heroes-wear-capes/1441065529",
       "img": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/cd/87/e5/cd87e5ea-f001-04e6-4248-22f4cfbedb23/18UMGIM75545.rgb.jpg/592x592bb.webp",
       "date": "2025.09.26",

@@ -51,7 +51,6 @@ module.exports = {
     sidebar: {
       "/posts/": getSideBar("posts"),
       "/study/": getSideBar("study"),
-      "/blog/": getSideBar("blog"),
     },
     smoothScroll: true,
     author: "LeeKyounghwa",

@@ -71,3 +71,13 @@ DOM이 수정되면 브라우저는 Critical Rendering Path 의 전체 단계를
 - React는 업데이트가 발생하면서 실제 DOM을 수정하기 전에 이 가상의 복제판 DOM에 먼저 반영해본다
 
 실제 브라우저가 렌더링 하는 DOM을 Javascript 객체로 카피해 놓은 것. 리액트에서는 Virtual DOM을 이용해서 업데이트가 발생하면 실제 DOM을 수정하는것이 아니라 가상 DOM을 먼저 수정하도록 만든다. 자바스크립트 객체인 Virtual DOM 에 먼저 동시에 발생한 업데이트들을 순서대로 다 반영을 해 본뒤 업데이트들이 다 모이면 한방에 실제 DOM 에 반영. 아무리 많은 수의 업데이트가 발생한다고 해도 virtual DOM에 한번 다 모였다가 반영되는 거기 때문에 최소한의 횟수로 돔의 수정이 되고 결론적으로 좋은 업데이트 성능을 어느정도 보장해 준다.
+
+## 설치
+
+확장프로그램
+
+- korean
+- prettier : `ctrl` + `,` -> format on save 체크
+- material icon : 설치후 창이 뜨면 material icon 클릭
+- error lens
+- live server : `ctrl` + `shift` + `p` -> live server: open with live server

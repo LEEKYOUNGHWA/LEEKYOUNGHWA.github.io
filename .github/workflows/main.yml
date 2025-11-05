@@ -1,31 +1,35 @@
 name: Build and Deploy
-on: [push]
+on:
+  push:
+    branches:
+      - main
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    # 1. 코드 체크아웃
-    - name: Checkout
-      uses: actions/checkout@v3
+      # 1. 코드 체크아웃
+      - name: Checkout
+        uses: actions/checkout@v3
 
-    # 2. Node.js 16.20.2 설정
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '16.20.2'
+      # 2. Node.js 16.20.2 설정
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20.x"
 
-    # 3. 의존성 설치 및 VuePress 빌드
-    - name: Install Dependencies and Build
-      run: |
-        yarn install --ignore-engines
-        yarn build
-      env:
-        CI: true # CI 환경 설정
+      # 3. 의존성 설치 및 VuePress 빌드
+      - name: Install Dependencies and Build
+        run: |
+          yarn install --ignore-engines
+          yarn build
+        env:
+          NODE_OPTIONS: --openssl-legacy-provider
+          CI: true # CI 환경 설정
 
-    # 4. 빌드 결과 배포
-    - name: Deploy Build Files
-      uses: jenkey2011/vuepress-deploy@1.0.1
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        TARGET_BRANCH: gh-pages
-        BUILD_DIR: src/.vuepress/dist/
+      # 4. 빌드 결과 배포
+      - name: Deploy Build Files
+        uses: jenkey2011/vuepress-deploy@1.0.1
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          TARGET_BRANCH: gh-pages
+          BUILD_DIR: src/.vuepress/dist/

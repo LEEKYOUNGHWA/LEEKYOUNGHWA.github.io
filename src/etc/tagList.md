@@ -54,7 +54,7 @@ p {
   padding: 0;
   max-width: $homePageWidth;
   display: block;
-  text-align: left;
+  text-align: center;
   margin-left: 20px;
   margin-bottom: 40px;
 

@@ -1,7 +1,7 @@
 ---
 title: vuepress 블로그 세팅 가이드
 date: 2022/01/01 00:00:00
-lastUpdated: 2025/11/95 13:34:00
+lastUpdated: 2025/11/05 13:34:00
 subTitle: For me 뷰프레스 블로그 세팅하기
 meta:
   - name: vuepress 블로그 세팅 가이드

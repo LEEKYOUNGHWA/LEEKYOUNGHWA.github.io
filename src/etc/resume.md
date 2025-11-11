@@ -10,10 +10,10 @@ sidebar: false
 
 > **GS리테일 HR 대응개발 프로젝트**
 >
-> 2024-07-01 ~ 
-> 
+> 2024-07-01 ~
+>
 > 공수산정, 통합테스트, 슈퍼차세대 대응개발
-> 
+>
 > `Spring boot` `Oracle` `Vue JS`
 
 > **GS홈쇼핑 위드넷 개선 프로젝트**
@@ -21,7 +21,7 @@ sidebar: false
 > 2024-03-01 ~ 2024-07-01
 >
 > 프로젝트, 개발
-> 
+>
 > `Spring` `Oracle` `jsp`
 
 > **GS리테일 CRM 대응개발, HR 대응개발 제안 작업**
@@ -29,14 +29,13 @@ sidebar: false
 > 2024-01-01 ~ 2024-03-01
 >
 > 제안서 작성
-> 
 
 > **GS리테일 티머니 실시간 결제 시스템 구축 프로젝트**
 >
 > 2024-02-01 ~ 2024-03-01
 >
 > 프로젝트, 개발
-> 
+>
 > `Spring` `Oracle` `Miplatform`
 
 > **GS홈쇼핑 WEBDB 구조개선(탈 오라클) 상품파트 프로젝트**
@@ -44,7 +43,7 @@ sidebar: false
 > 2023-06-15 ~ 2023-12-31
 >
 > 프로젝트, 개발
-> 
+>
 > `Spring` `Oracle` `PL/SQL`
 
 > **GS리테일 SAP 재무시스템 구축에 따른 대응 개발 프로젝트**
@@ -52,7 +51,7 @@ sidebar: false
 > 2023-01-01 ~ 2023-03-01
 >
 > 프로젝트, 개발
-> 
+>
 > `Spring` `Oracle` `Nexacro` `Miplatform`
 
 > **GS리테일 e-커머스 상시개발**
@@ -60,7 +59,7 @@ sidebar: false
 > 2021-01-01 ~ 2022-12-31
 >
 > GS Fresh Mall 개발, 운영
-> 
+>
 > `Spring Boot` `PostgreSQL` `Vue JS`
 
 > **GS리테일 물류 DW, 팝카드 DW운영**
@@ -76,7 +75,7 @@ sidebar: false
 > 2018-11-01 ~ 2019-11-18
 >
 > 항공실시간파트개발
-> 
+>
 > `Spring` `Oracle` `Nexacro`
 
 > **농협 멤버십 프로젝트**
@@ -84,14 +83,12 @@ sidebar: false
 > 2018-09-01 ~ 2019-11-01
 >
 > 테스트
-> 
 
 > **신입 교육 수료**
 >
 > 2018-03-02 ~ 2018-09-01
 >
 > `Java` `Spring` `Oracle` `HTML` `CSS` `javascript`
-
 
 <style lang="stylus" scoped>
 p {
@@ -101,7 +98,7 @@ p {
   padding: 0;
   max-width: $homePageWidth;
   display: block;
-  text-align: left;
+  text-align: center;
   margin-left: 20px;
   margin-bottom: 40px;
 

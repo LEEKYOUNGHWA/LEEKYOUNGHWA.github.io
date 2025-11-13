@@ -1,17 +1,16 @@
 ---
-title: GetSmart 자동 재생
+title: GetSmart 자동 재생 V3
 lang: ko-KR
 date: 2023/11/20 10:00:00
 lastUpdated: 2025/11/11 10:20:00
 subTitle: Tampermonkey를 사용한 확실한 방법!! alert() 이나 confirm() 없애고 의무교육 동영상 자동재생
 image: https://www.tampermonkey.net/images/ape.svg
+description: GetSmart 자동 재생 알림창(alert/confirm) 제거, 동영상 끝으로 이동, 인프런 강의 자동 재생. 사내 의무교육 및 온라인 강의를 빠르게 완료
 meta:
-  - name: auto click alert ok
-    content: auto confirm window.alert() or window.confirm
-  - name: alert
-    content: Javascript detect alert
-  - name: javascript alert(), confirm() 자동 확인 누르기
-    content: 기존 화면에서 alert(), confirm() 자동 확인 누르기
+  - name: description
+    content: "GetSmart 겟 스마트 자동 재생 Tampermonkey 활용 . 알림창(alert/confirm) 제거, 동영상 끝으로 이동, 인프런 강의 자동 재생까지. 사내 의무교육 및 온라인 강의를 빠르게 완료하세요."
+  - name: keywords
+    content: "겟스마트, 겟 스마트, GetSmart, Tampermonkey, 자동 재생, alert 제거, confirm 제거, 인프런, 온라인 강의, 사내 교육, 동영상 끝으로 이동, 교육 자동화"
 tags: ["javascript"]
 sidebar: false
 ---

@@ -1,6 +1,24 @@
 export const albumList = {
   "2025": [
     {
+      "link": "https://music.apple.com/kr/album/the-life-of-pablo/1443063578",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ab/74/4a/ab744ae9-235f-0a2f-9f8a-74ddee3c339e/16UMGIM37046.rgb.jpg/592x592bb.webp",
+      "date": "2025.11.13",
+      "artist": "Kanye West",
+      "name": "The Life of Pablo",
+      "memo": "The Life of Pablo",
+      "year": "2016"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/previs%C3%A3o-do-tempo/1593468206",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5b/4c/9d/5b4c9d0c-1842-b4fd-5263-e48238f9ad0f/19UMGIM47100.rgb.jpg/592x592bb.webp",
+      "date": "2025.11.12",
+      "artist": "Marcos Valle",
+      "name": "Previsão Do Tempo",
+      "memo": "찰나의 순간에 명반 감정 완료...! 이젠 대충 들으면 금방 판별이 가능해졌다......",
+      "year": "2003"
+    },
+    {
       "link": "https://music.apple.com/kr/album/sound-renovates-a-structure/1593806196",
       "img": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/16/02/5e/16025efd-47ff-b407-8985-841d90113526/cover_KM0001682_1.jpg/592x592bb.webp",
       "date": "2025.10.31",

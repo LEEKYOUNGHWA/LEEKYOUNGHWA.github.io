@@ -154,7 +154,7 @@ let tup1: [number, number] = [1, 2];
 let tup2: [number, string, boolean] = [1, "2", true];
 
 const users: [string, number][] = [
-  ["이정환", 1],
+  ["이이이", 1],
   ["이아무개", 2],
   ["김아무개", 3],
   ["박아무개", 4],
@@ -173,7 +173,7 @@ let user: {
   name: string;
 } = {
   id: 1,
-  name: "이정환",
+  name: "이이이",
 };
 
 let config: {
@@ -201,7 +201,7 @@ type User = {
 
 let user: User = {
   id: 1,
-  name: "이정환",
+  name: "이이이",
   nickname: "winterlood",
   birth: "1997.01.07",
   bio: "안녕하세요",
@@ -258,7 +258,7 @@ enum Language {
 }
 
 const user1 = {
-  name: "이정환",
+  name: "이이이",
   role: Role.ADMIN, // 0 <- 관리자
   language: Language.korean,
 };
@@ -561,7 +561,7 @@ type Person = {
 };
 
 let person = {} as Person;
-person.name = "이정환";
+person.name = "이이이";
 person.age = 27;
 ```
 
@@ -615,3 +615,487 @@ const len: number = post.author!.length; // ? => !
 ```
 
 ### 타입 좁히기
+
+조건문 등을 이용해 넓은타입에서 좁은타입으로 타입을 상황에 따라 좁히는 방법
+
+```ts
+type Person = {
+  name: string;
+  age: number;
+};
+
+// value => number : toFixed
+// value => string : toUpperCase
+// value => Date : getTime
+// value => Person : name은 age살 입니다.
+function func(value: number | string | Date | null | Person) {
+  // 여기서는 toFixed 나 toUpperCase 사용 불가
+  // 타입 가드
+  if (typeof value === "number") {
+    console.log(value.toFixed());
+  } else if (typeof value === "string") {
+    console.log(value.toUpperCase());
+  } else if (value instanceof Date) {
+    console.log(value.getTime());
+  } else if (value && "age" in value) {
+    console.log(`${value.name}은 ${value.age}살 입니다`);
+  }
+}
+```
+
+### 서로소 유니온 타입
+
+```ts
+type LoadingTask = {
+  state: "LOADING";
+};
+
+type FailedTask = {
+  state: "FAILED";
+  error: {
+    message: string;
+  };
+};
+
+type SuccessTask = {
+  state: "SUCCESS";
+  response: {
+    data: string;
+  };
+};
+
+type AsyncTask = LoadingTask | FailedTask | SuccessTask;
+
+function processResult(task: AsyncTask) {
+  switch (task.state) {
+    case "LOADING": {
+      console.log("로딩 중");
+      break;
+    }
+    case "FAILED": {
+      console.log(`에러 발생 : ${task.error.message}`);
+      break;
+    }
+    case "SUCCESS": {
+      console.log(`성공 : ${task.response.data}`);
+      break;
+    }
+  }
+}
+```
+
+## 함수 타입
+
+어떤 [타입의] 매개변수를 받고, 어떤 [타입의] 결과값을 반환하는지 함수를 설명
+
+### 함수 선언식
+
+```ts
+function func(a: number, b: number) {
+  return a + b; // number로 추론 된다
+}
+```
+
+### 화살표 함수
+
+```ts
+const add = (a: number, b: number) => a + b;
+```
+
+### 함수의 매개변수
+
+```ts
+function introduce(name = "이이이", age: number, tall?: number) {
+  console.log(`name : ${name}`);
+  if (typeof tall === "number") {
+    console.log(`tall : ${tall + 10}`);
+  }
+}
+
+introduce("이이이", 27, 175);
+
+introduce("이이이", 27);
+```
+
+### rest파라미터
+
+```ts
+function getSum(...rest: []) {
+  let sum = 0;
+  rest.forEach((it) => (sum += it));
+
+  return sum;
+}
+
+function getSum(...rest: [number, number, number]) {
+  let sum = 0;
+  rest.forEach((it) => (sum += it));
+
+  return sum;
+}
+
+getSum(1, 2, 3); // 6
+// getSum(1, 2, 3, 4, 5); // 15
+```
+
+### 함수 타입 표현식
+
+```ts
+type Operation = (a: number, b: number) => number;
+
+const add: (a: number, b: number) => number = (a, b) => a + b;
+const sub: Operation = (a, b) => a - b;
+```
+
+### 호출 시그니처 (콜 시그니쳐)
+
+```ts
+type Operation2 = {
+  (a: number, b: number): number;
+  name: string;
+}; // 하이브리드타입
+
+const add2: Operation2 = (a, b) => a + b;
+const sub2: Operation2 = (a, b) => a - b;
+const multiply2: Operation2 = (a, b) => a * b;
+const divide2: Operation2 = (a, b) => a / b;
+
+// add2();
+// add2.name
+```
+
+### 함수타입의 호환성
+
+특정 함수 타입을 다른 함수 타입으로 취급해도 괜찮은가
+
+1. 반환값의 타입이 호환되는가 : **!!다운캐스팅은 불가능**
+2. 매개변수의 타입이 호환되는가 : **!!업캐스팅은 불가능**
+
+   2-1. 매개변수의 개수가 같을 때
+
+   ```ts
+   type C = (value: number) => void;
+   type D = (value: 10) => void;
+
+   let c: C = (value) => {};
+   let d: D = (value) => {};
+
+   // c = d;
+   d = c;
+   ```
+
+   2-2. 매개변수의 개수가 다를 때
+
+   ```ts
+   type Func1 = (a: number, b: number) => void;
+   type Func2 = (a: number) => void;
+
+   let func1: Func1 = (a, b) => {};
+   let func2: Func2 = (a) => {};
+
+   func1 = func2;
+   // func2 = func1;
+   ```
+
+### 함수 오버로딩
+
+하나의 함수를 매개변수의 개수나 타입에 따라 여러가지 버전으로 만드는 문법. 타입스크립트에서만 지원
+
+```ts
+// 버전들 -> 오버로드 시그니쳐
+function func(a: number): void;
+function func(a: number, b: number, c: number): void;
+
+// 실제 구현부 -> 구현 시그니쳐
+function func(a: number, b?: number, c?: number) {
+  if (typeof b === "number" && typeof c === "number") {
+    console.log(a + b + c);
+  } else {
+    console.log(a * 20);
+  }
+}
+
+func(1);
+func(1, 2, 3);
+```
+
+### 사용자 정의 타입 가드
+
+```ts
+type Dog = {
+  name: string;
+  isBark: boolean;
+};
+
+type Cat = {
+  name: string;
+  isScratch: boolean;
+};
+
+type Animal = Dog | Cat;
+
+function isDog(animal: Animal): animal is Dog {
+  return (animal as Dog).isBark !== undefined;
+}
+
+function isCat(animal: Animal): animal is Cat {
+  return (animal as Cat).isScratch !== undefined;
+}
+
+function warning(animal: Animal) {
+  if (isDog(animal)) {
+    // 강아지
+    animal;
+  } else if ("isScratch" in animal) {
+    // 고양이
+  }
+}
+```
+
+## 인터페이스
+
+호출 시그니처로 오버로드 구현 가능
+
+```ts
+interface Person {
+  readonly name: string;
+  age?: number;
+  sayHi(): void;
+  sayHi(a: number, b: number): void;
+}
+
+const person: Person = {
+  name: "이정환",
+  sayHi: function () {
+    console.log("Hi");
+  },
+};
+
+person.sayHi();
+person.sayHi(1, 2);
+```
+
+### 인터페이스 확장
+
+```ts
+type Animal = {
+  name: string;
+  color: string;
+};
+
+interface Dog extends Animal {
+  isBark: boolean;
+}
+
+interface Cat extends Animal {
+  isScratch: boolean;
+}
+
+const dog: Dog = {
+  name: "", // 원본 타입의 서브타입 다시 정의 가능
+  color: "",
+  isBark: true,
+};
+
+interface DogCat extends Dog, Cat {}
+
+const dogCat: DogCat = {
+  name: "",
+  color: "",
+  isBark: true,
+  isScratch: true,
+};
+```
+
+### 선언 합침
+
+```ts
+interface Person {
+  name: string;
+}
+
+interface Person {
+  name: string;
+  age: number;
+}
+
+interface Developer extends Person {
+  name: "hello";
+}
+
+const person: Person = {
+  name: "",
+  age: 27,
+};
+```
+
+## 모듈 보강
+
+선언 병합은 이미 정의된 타입(특히 라이브러리 타입)에 새로운 속성이나 메소드를 추가하여 타입 정의를 확장할 때 유용하게 사용됩니다. 이를 모듈 보강이라고 합니다.
+
+```ts
+interface Lib {
+  a: number;
+  b: number;
+}
+
+interface Lib {
+  c: string;
+}
+
+const lib: Lib = {
+  a: 1,
+  b: 2,
+  c: "hello",
+};
+```
+
+## 자바스크립트 클래스
+
+```js
+class Student {
+  // 필드
+  name;
+  grade;
+  age;
+
+  // 생성자
+  constructor(name, grade, age) {
+    this.name = name;
+    this.grade = grade;
+    this.age = age;
+  }
+
+  // 메서드
+  study() {
+    console.log("열심히 공부 함");
+  }
+
+  introduce() {
+    console.log(`안녕하세요 ${this.name} 입니다!`);
+  }
+}
+
+class StudentDeveloper extends Student {
+  // 필드
+  favoriteSkill;
+
+  // 생성자
+  constructor(name, grade, age, favoriteSkill) {
+    super(name, grade, age);
+    this.favoriteSkill = favoriteSkill;
+  }
+
+  // 메서드
+  programming() {
+    console.log(`${this.favoriteSkill}로 프로그래밍 함`);
+  }
+}
+```
+
+클래스를 이용해서 만든 객체 -> 인스턴스
+
+스튜던트 인스턴스
+
+```js
+let studentB = new Student("홍길동", "A+", 27);
+console.log(studentB);
+studentB.study();
+studentB.introduce();
+```
+
+## 타입스크립트 클래스
+
+```ts
+class Employee {
+  // 필드
+  name: string;
+  age: number;
+  position: string;
+
+  // 생성자
+  constructor(name: string, age: number, position: string) {
+    this.name = name;
+    this.age = age;
+    this.position = position;
+  }
+
+  // 메서드
+  work() {
+    console.log("일함");
+  }
+}
+
+const employeeB = new Employee("이정환", 27, "개발자");
+console.log(employeeB);
+```
+
+자바스크립트의 클래스 이면서 하나의 타입
+
+```ts
+const employeeC: Employee = {
+  name: "",
+  age: 0,
+  position: "",
+  work() {},
+};
+```
+
+### super
+
+타입스크립트에서는 생략하면 오류발생
+
+```ts
+class ExecutiveOfficer extends Employee {
+  // 필드
+  officeNumber: number;
+
+  // 생성자
+  constructor(
+    name: string,
+    age: number,
+    position: string,
+    officeNumber: number
+  ) {
+    super(name, age, position); // 부모클래스의 생성자
+    this.officeNumber = officeNumber;
+  }
+}
+```
+
+### 접근제어자(access modifier)
+
+#### public
+
+접근 가능
+
+#### private
+
+접근 불가
+
+#### proteced
+
+파생클래스에서는 접근 가능
+
+#### 생성자에 접근제어자 붙이면 필드 자동생성됨 필드 생략 가능
+
+```ts
+class Employee {
+  // 필드
+
+  // 생성자
+  constructor(
+    private name: string,
+    protected age: number,
+    public position: string
+  ) {}
+
+  // 메서드
+  work() {
+    console.log(`${this.name} 일함`);
+  }
+}
+```
+
+### 인터페이스와 클래스
+

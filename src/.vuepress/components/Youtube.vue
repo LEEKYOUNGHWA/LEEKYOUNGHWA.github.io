@@ -1,18 +1,41 @@
 <template>
-    <div class="iframe-container" style="text-align: center;" >
-        <iframe width="560" height="315" :src="this.src" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <div class="iframe-wrapper" :style="{ maxWidth: maxWidth, margin: '0 auto' }">
+    <div class="iframe-container">
+      <iframe
+          width="560"
+          height="315"
+          :src="src"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+      ></iframe>
     </div>
+  </div>
 </template>
 
 <script>
 export default {
-  props: [
-    'src',
-  ],
+  props: {
+    src: {
+      type: String,
+      required: true
+    },
+    maxWidth: {
+      type: String,
+      default: '560px' // 원하는 기본 max-width
+    }
+  }
 };
 </script>
 
 <style scoped>
+.iframe-wrapper {
+    width: 100%;
+    text-align: center;
+    padding-top: 16px; /* 위쪽 여백 추가 */
+}
 .iframe-container {
     position: relative;
     padding-bottom: 56.25%;

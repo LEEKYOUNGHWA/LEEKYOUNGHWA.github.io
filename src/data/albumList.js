@@ -1,6 +1,15 @@
 export const albumList = {
   "2025": [
     {
+      "link": "https://music.apple.com/kr/album/abbey-road-2019-mix/1474815798",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/48/53/43/485343e3-dd6a-0034-faec-f4b6403f8108/13UMGIM63890.rgb.jpg/592x592bb.webp",
+      "date": "2025.11.26",
+      "artist": "The Beatles",
+      "name": "Abby Road(2019 Mix)",
+      "memo": "비틀즈는 전 지구적 혼돈 속에서 예술로 인간의 연대를 증명한 20세기 문명의 전환점이었다. 그들은 인간 경험의 경계를 음악으로 확장하며, 예술과 존재, 대중과 정체성 사이의 낡은 경계를 해체한 시대의 사유로 평가받는다.",
+      "year": "1969"
+    },
+    {
       "link": "https://music.apple.com/kr/album/the-life-of-pablo/1443063578",
       "img": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ab/74/4a/ab744ae9-235f-0a2f-9f8a-74ddee3c339e/16UMGIM37046.rgb.jpg/592x592bb.webp",
       "date": "2025.11.13",
@@ -44,6 +53,15 @@ export const albumList = {
       "name": "Led Zeppelin II",
       "memo": "F1무비... 돌비 영화관에서 또 듣고싶다...",
       "year": "1969"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/dont-tap-the-glass/1827715784",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a0/ae/e6/a0aee657-b365-fed2-249c-0f22efa507d0/196873435435.jpg/592x592bb.webp",
+      "date": "2025.09.13",
+      "artist": "Tyler, The Creator",
+      "name": "DON'T TAP THE GLASS",
+      "memo": "타일러 콘서트!!!!!!!!!!! 2025년 최고의 한해였다....!!!",
+      "year": "2025"
     },
     {
       "link": "https://music.apple.com/kr/album/jorge-ben-samba-esquema-novo/1187250736",

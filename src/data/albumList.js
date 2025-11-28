@@ -1,6 +1,15 @@
 export const albumList = {
   "2025": [
     {
+      "link": "https://music.apple.com/kr/album/revolver-2022-mix/1642995371",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Video122/v4/e3/9e/0e/e39e0e04-8559-81ae-d59d-fc6bb9abe6a9/Job4258ed0c-a972-408f-a84c-fb3d2151f054-138242655-PreviewImage_preview_image_nonvideo_sdr-Time1666967630606.png/592x592bb.webp",
+      "date": "2025.11.28",
+      "artist": "The Beatles",
+      "name": "Revolver (2022 Mix)",
+      "memo": "비틀즈는 일반 대중에게 인기 많은 로큰롤 밴드나, 팝 그룹으로 인식되는 경향이 있지만, 대중적인 로큰롤 밴드로서의 비틀즈의 정체성은 1965년까지에 국한되는 것이며 중기와 후기의 비틀즈는 사이키델릭 록, 하드 록, 아방가르드 등 다양한 장르로 다변화된 성향을 보이게 된다. 1966년을 기점으로 전기와 후기로 나눌 수 있는데, 이러한 구분법의 가장 큰 근거는 이 해에 비틀즈가 무대 생활을 그만두었다는 점이다. 투어밴드로서의 생명을 포기하고 스튜디오 밴드로 자신의 정체성을 확립하게 되는 1966년을 기점으로 잡은 것. 또한 Revolver와 페퍼 상사 이후 비틀즈의 앨범이 통일성과 자기완결성을 지니게 된 것을 근거로 삼기도 한다. 이러한 구분은 1973년 발매된 컴필레이션 앨범인 1962-1966과 1967-1970이 발매되면서 공식적으로도 인정받게 된다",
+      "year": "1966"
+    },
+    {
       "link": "https://music.apple.com/kr/album/abbey-road-2019-mix/1474815798",
       "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/48/53/43/485343e3-dd6a-0034-faec-f4b6403f8108/13UMGIM63890.rgb.jpg/592x592bb.webp",
       "date": "2025.11.26",
@@ -17,15 +26,6 @@ export const albumList = {
       "name": "The Life of Pablo",
       "memo": "The Life of Pablo",
       "year": "2016"
-    },
-    {
-      "link": "https://music.apple.com/kr/album/previs%C3%A3o-do-tempo/1593468206",
-      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5b/4c/9d/5b4c9d0c-1842-b4fd-5263-e48238f9ad0f/19UMGIM47100.rgb.jpg/592x592bb.webp",
-      "date": "2025.11.12",
-      "artist": "Marcos Valle",
-      "name": "Previsão Do Tempo",
-      "memo": "찰나의 순간에 명반 감정 완료...! 이젠 대충 들으면 금방 판별이 가능해졌다......",
-      "year": "2003"
     },
     {
       "link": "https://music.apple.com/kr/album/sound-renovates-a-structure/1593806196",

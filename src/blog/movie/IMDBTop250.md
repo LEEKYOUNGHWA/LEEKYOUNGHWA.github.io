@@ -1,13 +1,11 @@
 ---
+title: IMDb Top 250
 lastUpdated: 2025/12/01 17:10:00
 ---
 
 <template>
   <div class="top-250-watchlist">
     <h1>IMDb Top 250</h1>
-    <p class="subtitle">
-      (클릭: 감상평 링크 | 마우스 오버: 상세 정보 | 별표 아이콘 클릭: IMDb 링크)
-    </p>
     <div class="poster-grid">
       <div
         v-for="movie in movies"
@@ -41,7 +39,6 @@ export default {
   name: 'ImdbTop250',
   data() {
     return {
-      // 실제 데이터에는 나머지 250개 영화의 정보가 포함되어야 합니다.
       movies: imdbtop250
     };
   },
@@ -73,13 +70,7 @@ h1 {
   margin-bottom: 0.5em;
 }
 
-.subtitle {
-  font-size: 0.9em;
-  color: #666;
-  margin-bottom: 2em;
-}
 
-/* 포스터 그리드 (10개씩 가로 배치) */
 .poster-grid {
   display: flex;
   flex-wrap: wrap;
@@ -87,7 +78,6 @@ h1 {
   gap: 10px; /* 포스터 사이 간격 */
 }
 
-/* 포스터 개별 컨테이너 */
 .poster-container {
   position: relative;
   width: calc(10% - 10px); /* 가로 10개, gap을 고려하여 계산 */
@@ -103,16 +93,14 @@ h1 {
   z-index: 10;
 }
 
-/* 포스터 이미지 */
 .movie-poster {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
-  filter: saturate(100%); /* 기본적으로 채도 100% */
+  filter: saturate(100%);
 }
 
-/* 안 본 영화 (is-watched 클래스가 없는 경우) 스타일 */
 .poster-container:not(.is-watched) .movie-poster {
   filter: grayscale(100%) brightness(50%); /* 안 본 영화: 흑백 & 어둡게 */
   transition: filter 0.3s ease;
@@ -155,12 +143,10 @@ h1 {
   color: #ccc;
 }
 
-/* IMDb 링크 버튼 스타일 */
 .imdb-link {
   color: #f5c518; /* IMDb 대표 색상 */
   text-decoration: none;
   font-size: 0.7em;
-  /* margin-top: 10px; */
   padding: 5px 10px;
   margin: 5px;
   border: 1px solid #f5c518;
@@ -177,7 +163,6 @@ h1 {
   margin-right: 3px;
 }
 
-/* 안 본 영화 커버 (추가적인 스크래치 느낌) */
 .unwatched-cover {
   position: absolute;
   top: 0;
@@ -191,7 +176,6 @@ h1 {
   z-index: 5;
 }
 
-/* 순위 표시 */
 .movie-index {
   position: absolute;
   top: 0;
@@ -202,5 +186,50 @@ h1 {
   font-size: 0.7em;
   font-weight: bold;
   z-index: 6;
+}
+@media (max-width: 768px) {
+
+  /* 제목 크기 조정 */
+  h1 {
+    font-size: 2em;
+  }
+
+  /* 모바일 화면: 가로 3개 배치 */
+  .poster-container {
+    /* 가로 3개 배치: (100% / 3) - (gap 크기) */
+    width: calc(33.333% - 7px); /* 10px gap을 고려하여 약 7px 정도를 빼줍니다. */
+  }
+
+  /* 모바일에서는 hover 효과 비활성화/축소 */
+  .poster-container:hover {
+    transform: none; /* 확대 효과 제거 */
+    z-index: initial;
+  }
+
+  /* 모바일 터치 환경에서는 hover 정보를 항상 숨김 (클릭 이벤트에 집중) */
+  .movie-info {
+    opacity: 0; 
+    /* 필요에 따라, 안 본 영화의 경우에만 불투명도를 살짝 주어 정보를 표시할 수도 있습니다.
+   .poster-container:not(.is-watched) .movie-info { opacity: 0.2; } */
+ }
+ 
+ /* 안 본 영화의 필터 밝기 조정 */
+ .poster-container:not(.is-watched) .movie-poster {
+  filter: grayscale(100%) brightness(60%); /* 너무 어두워지지 않게 60%로 상향 조정 */
+ }
+ 
+ /* 포스터 정보 글꼴 크기 축소 */
+ .movie-title {
+  font-size: 0.8em;
+ }
+
+ .movie-meta,
+ .imdb-link {
+  font-size: 0.65em;
+ }
+ 
+ .movie-index {
+  font-size: 0.6em;
+ }
 }
 </style>

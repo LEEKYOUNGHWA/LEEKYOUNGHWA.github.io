@@ -1099,3 +1099,248 @@ class Employee {
 
 ### 인터페이스와 클래스
 
+인터페이스를 이용해 클래스에 어떤 필드들이 존재하고, 어떤 메서드가 존재하는지 정의
+
+```ts
+interface CharacterInterface {
+  name: string;
+  moveSpeed: number;
+  move(): void;
+}
+
+class Character implements CharacterInterface {
+  constructor(
+    public name: string,
+    public moveSpeed: number,
+    private extra: string
+  ) {}
+
+  move(): void {
+    console.log(`${this.moveSpeed} 속도로 이동!`);
+  }
+}
+```
+
+## 제네릭
+
+모든 타입의 값을 다 적용
+
+```ts
+// 제네릭 함수
+function func<T>(value: T): T {
+  return value;
+}
+
+let arr = func<[number, number, number]>([1, 2, 3]);
+// 1. T에 [Number, Number, Number] 튜플 타입이 할당됨
+// 2. 매개변수 value와 반환값 타입이 모두 튜플 타입이 됨
+```
+
+### Map 메서드 타입 정의
+
+Map은 다음과 같이 원본 배열의 각 요소에 콜백함수를 수행하고 반환된 값들을 모아 새로운 배열로 만들어 반환
+
+```ts
+function map<T, U>(arr: T[], callback: (item: T) => U) {
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    result.push(callback(arr[i]));
+  }
+  return result;
+}
+```
+
+### forEach
+
+배열의 모든 요소에 콜백함수를 한번씩 수행
+
+```ts
+function forEach<T>(arr: T[], callback: (item: T) => void) {
+  for (let i = 0; i < arr.length; i++) {
+    callback(arr[i]);
+  }
+}
+```
+
+### 제네릭 인터페이스
+
+```ts
+interface KeyPair<K, V> {
+  key: K;
+  value: V;
+}
+```
+
+### 인덱스 시그니쳐와 함께 사용
+
+```ts
+interface Map<V> {
+  [key: string]: V;
+}
+
+let stringMap: Map<string> = {
+  key: "value",
+};
+
+let booleanMap: Map<boolean> = {
+  key: true,
+};
+```
+
+### 제네릭 타입 별칭
+
+```ts
+type Map2<V> = {
+  [key: string]: V;
+};
+
+let stringMap2: Map2<string> = {
+  key: "string",
+};
+```
+
+### 제네릭 클래스
+
+```ts
+class List<T> {
+  constructor(private list: T[]) {}
+
+  push(data: T) {
+    this.list.push(data);
+  }
+
+  pop() {
+    return this.list.pop();
+  }
+
+  print() {
+    console.log(this.list);
+  }
+}
+
+const numberList = new List<number>([1, 2, 3]);
+numberList.pop();
+numberList.push(4);
+numberList.print();
+
+const stringList = new List<string>(["1", "2"]);
+stringList.push("hello");
+```
+
+### 프로미스
+
+```ts
+const promise = new Promise<number>((resolve, reject) => {
+  setTimeout(() => {
+    // resolve(20);
+    reject("~~ 때문에 실패");
+  }, 3000);
+});
+
+promise.then((response) => {
+  console.log(response * 10); // 20
+});
+
+promise.catch((err) => {
+  if (typeof err === "string") {
+    console.log(err);
+  }
+});
+```
+
+### 타입조작
+
+- 인덱스드 엑세스 타입은 인덱스를 이용해 다른 타입내의 특정 프로퍼티의 타입을 추출하는 타입
+- keyof 연산자는 객체 타입으로부터 프로퍼티의 모든 key들을 String Literal Union 타입으로 추출하는 연산자
+- typeof 연산자는 자바스크립트에서 특정 값의 타입을 문자열로 반환하는 연산자. 타입을 정의할 때 사용하면 특정 변수의 타입을 추론하는 기능도 가지고 있습니다.
+- 맵드 타입은 기존의 객체 타입을 기반으로 새로운 객체 타입을 만드는 마법같은 타입 조작 기능
+- 템플릿 리터럴 타입 가장 단순한 기능으로 템플릿 리터럴을 이용해 특정 패턴을 갖는 String 타입을 만드는 기능
+
+## 조건부 타입
+
+extends와 삼항 연산자를 이용해 조건에 따라 각각 다른 타입을 정의하도록 돕는 문법
+
+### 제네릭 조건부 타입
+
+```ts
+type StringNumberSwitch<T> = T extends number ? string : number;
+
+let varA: StringNumberSwitch<number>;
+// string
+
+let varB: StringNumberSwitch<string>;
+// number
+```
+
+### 분산적인 조건부 타입
+
+조건부 타입의 타입 변수에 Union 타입을 할당하면 분산적인 조건부 타입으로 조건부 타입이 업그레이드 되기 때문입니다.
+
+```ts
+type StringNumberSwitch<T> = T extends number ? string : number;
+
+(...)
+
+let c: StringNumberSwitch<number | string>;
+// string | number
+```
+
+### infer
+
+조건부 타입 내에서 특정 타입을 추론
+
+```ts
+type FuncA = () => string;
+
+type FuncB = () => number;
+
+type ReturnType<T> = T extends () => infer R ? R : never;
+
+type A = ReturnType<FuncA>;
+
+type B = ReturnType<FuncB>;
+
+type C = ReturnType<number>;
+```
+
+타입 변수 T에 함수 타입 FuncA가 할당됩니다.
+T는 () ⇒ string 이 됩니다.
+조건부 타입의 조건식은 다음 형태가 됩니다 () ⇒ string extends () ⇒ infer R ? R : never
+조건식을 참으로 만드는 R 타입을 추론 합니다 그 결과 R은 string이 됩니다.
+추론이 가능하면 이 조건식을 참으로 판단합니다 따라서 결과는 string이 됩니다. 불가능하다면 조건식을 거짓으로 판단 never
+
+## 유틸리티 타입
+
+타입스크립트가 자체적으로 제공하는 특수한 타입들입니다. 우리가 지금까지 배웠던 제네릭, 맵드 타입, 조건부 타입 등의 타입 조작 기능을 이용해 실무에서 자주 사용되는 유용한 타입들을 모아 놓은 것을 의미
+
+### Partial<T>
+
+특정 객체 타입의 모든 프로퍼티를 선택적 프로퍼티로 변환
+
+### Required<T>
+
+특정 객체 타입의 모든 프로퍼티를 필수(선택적이지 않은) 프로퍼티로 변환
+
+### Readonly
+
+특정 객체 타입의 모든 프로퍼티를 읽기 전용 프로퍼티로 변환
+
+### Pick<T, K>
+
+특정 객체 타입으로부터 특정 프로퍼티 만을 골라내는 그런 타입
+
+### Omit<T, K>
+
+특정 객체 타입으로부터 특정 프로퍼티 만을 제거하는 타입
+
+### Exclude<T, K>
+
+다음과 같이 T로부터 K를 제거하는 타입
+
+### Extract<T, K>
+
+T로 부터 K를 추출하는 타입
+
+### ReturnType<T>
+
+T에 할당된 함수 타입의 반환값 타입을 추출하는 타입

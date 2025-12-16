@@ -7,7 +7,7 @@
         "rating": "9.3",
         "year": "1994",
         "reviewLink": "",
-        "watched": false
+        "watched": true
     },
     {
         "index": 2,
@@ -24,7 +24,8 @@
         "name": "다크 나이트",
         "poster": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_QL75_UX90_CR0,0,90,133_.jpg",
         "rating": "9.1",
-        "year": "2008"
+        "year": "2008",
+        "watched": true
     },
     {
         "index": 4,
@@ -186,7 +187,8 @@
         "name": "양들의 침묵",
         "poster": "https://m.media-amazon.com/images/M/MV5BMGQ3NWQ0NDYtN2ZkNS00ZDA0LWEzZWUtMmVmOTY5Njg0ZWY2XkEyXkFqcGc@._V1_QL75_UY133_CR5,0,90,133_.jpg",
         "rating": "8.6",
-        "year": "1991"
+        "year": "1991",
+        "watched": true
     },
     {
         "index": 23,
@@ -202,7 +204,8 @@
         "name": "라이언 일병 구하기",
         "poster": "https://m.media-amazon.com/images/M/MV5BNGUzMjEwODItMDA4Mi00ZTI3LWFkMTAtMjQzYWU3Nzk3Mjk2XkEyXkFqcGc@._V1_QL75_UY133_CR2,0,90,133_.jpg",
         "rating": "8.6",
-        "year": "1998"
+        "year": "1998",
+        "watched": true
     },
     {
         "index": 25,
@@ -234,7 +237,8 @@
         "name": "Teomineiteo 2",
         "poster": "https://m.media-amazon.com/images/M/MV5BZTE2MjViZWMtYzdmMC00ZWYyLTg5YjAtNTcxMTg2MDY0ZjUxXkEyXkFqcGc@._V1_QL75_UX90_CR0,2,90,133_.jpg",
         "rating": "8.6",
-        "year": "1991"
+        "year": "1991",
+        "watched": true
     },
     {
         "index": 29,
@@ -242,7 +246,8 @@
         "name": "Star Wars",
         "poster": "https://m.media-amazon.com/images/M/MV5BOGUwMDk0Y2MtNjBlNi00NmRiLTk2MWYtMGMyMDlhYmI4ZDBjXkEyXkFqcGc@._V1_QL75_UX90_CR0,2,90,133_.jpg",
         "rating": "8.6",
-        "year": "1977"
+        "year": "1977",
+        "watched": true
     },
     {
         "index": 30,
@@ -250,7 +255,8 @@
         "name": "빽 투 더 퓨쳐",
         "poster": "https://m.media-amazon.com/images/M/MV5BZmM3ZjE0NzctNjBiOC00MDZmLTgzMTUtNGVlOWFlOTNiZDJiXkEyXkFqcGc@._V1_QL75_UX90_CR0,3,90,133_.jpg",
         "rating": "8.5",
-        "year": "1985"
+        "year": "1985",
+        "watched": true
     },
     {
         "index": 31,
@@ -258,7 +264,8 @@
         "name": "센과 치히로의 행방불명",
         "poster": "https://m.media-amazon.com/images/M/MV5BNTEyNmEwOWUtYzkyOC00ZTQ4LTllZmUtMjk0Y2YwOGUzYjRiXkEyXkFqcGc@._V1_QL75_UX90_CR0,0,90,133_.jpg",
         "rating": "8.6",
-        "year": "2001"
+        "year": "2001",
+        "watched": true
     },
     {
         "index": 32,
@@ -282,7 +289,8 @@
         "name": "Gisaengchung",
         "poster": "https://m.media-amazon.com/images/M/MV5BYjk1Y2U4MjQtY2ZiNS00OWQyLWI3MmYtZWUwNmRjYWRiNWNhXkEyXkFqcGc@._V1_QL75_UX90_CR0,0,90,133_.jpg",
         "rating": "8.5",
-        "year": "2019"
+        "year": "2019",
+        "watched": true
     },
     {
         "index": 35,
@@ -306,7 +314,8 @@
         "name": "라이온 킹",
         "poster": "https://m.media-amazon.com/images/M/MV5BZGRiZDZhZjItM2M3ZC00Y2IyLTk3Y2MtMWY5YjliNDFkZTJlXkEyXkFqcGc@._V1_QL75_UX90_CR0,0,90,133_.jpg",
         "rating": "8.5",
-        "year": "1994"
+        "year": "1994",
+        "watched": true
     },
     {
         "index": 38,
@@ -330,7 +339,8 @@
         "name": "위플래쉬",
         "poster": "https://m.media-amazon.com/images/M/MV5BM2ZmMWUzOTQtYjU4ZC00NWQ3LWEzYzctMjhkZjVmNjBjZGFlXkEyXkFqcGc@._V1_QL75_UY133_CR2,0,90,133_.jpg",
         "rating": "8.5",
-        "year": "2014"
+        "year": "2014",
+        "watched": true
     },
     {
         "index": 41,
@@ -338,7 +348,8 @@
         "name": "프레스티지",
         "poster": "https://m.media-amazon.com/images/M/MV5BNTM4NDQzZTktMjY2Yi00MWM5LWJiOTEtMTcxNzgwYTAyN2Q2XkEyXkFqcGc@._V1_QL75_UY133_CR3,0,90,133_.jpg",
         "rating": "8.5",
-        "year": "2006"
+        "year": "2006",
+        "watched": true
     },
     {
         "index": 42,
@@ -370,7 +381,8 @@
         "name": "시네마 천국",
         "poster": "https://m.media-amazon.com/images/M/MV5BMTljNzc4YWEtYTZlMS00ODMyLWIwMTAtNWQxY2VkMDEwYTk5XkEyXkFqcGc@._V1_QL75_UX90_CR0,0,90,133_.jpg",
         "rating": "8.5",
-        "year": "1988"
+        "year": "1988",
+        "watched": true
     },
     {
         "index": 46,
@@ -394,7 +406,8 @@
         "name": "유주얼 서스펙트",
         "poster": "https://m.media-amazon.com/images/M/MV5BOTkyMDY2OTctNjIzYS00YjM3LWIwMjctZWQzZDk4M2YxYmU2XkEyXkFqcGc@._V1_QL75_UY133_CR2,0,90,133_.jpg",
         "rating": "8.5",
-        "year": "1995"
+        "year": "1995",
+        "watched": true
     },
     {
         "index": 49,
@@ -402,7 +415,8 @@
         "name": "에이리언",
         "poster": "https://m.media-amazon.com/images/M/MV5BN2NhMDk2MmEtZDQzOC00MmY5LThhYzAtMDdjZGFjOGZjMjdjXkEyXkFqcGc@._V1_QL75_UX90_CR0,1,90,133_.jpg",
         "rating": "8.5",
-        "year": "1979"
+        "year": "1979",
+        "watched": true
     },
     {
         "index": 50,
@@ -426,7 +440,8 @@
         "name": "장고: 분노의 추적자",
         "poster": "https://m.media-amazon.com/images/M/MV5BMjIyNTQ5NjQ1OV5BMl5BanBnXkFtZTcwODg1MDU4OA@@._V1_QL75_UX90_CR0,0,90,133_.jpg",
         "rating": "8.5",
-        "year": "2012"
+        "year": "2012",
+        "watched": true
     },
     {
         "index": 53,
@@ -466,7 +481,8 @@
         "name": "메멘토",
         "poster": "https://m.media-amazon.com/images/M/MV5BNmM5MzgxNTMtMDg2Mi00NWU0LTg2NGQtMjM3MTU5ZTI5MTJmXkEyXkFqcGc@._V1_QL75_UY133_CR2,0,90,133_.jpg",
         "rating": "8.4",
-        "year": "2000"
+        "year": "2000",
+        "watched": true
     },
     {
         "index": 58,
@@ -474,7 +490,8 @@
         "name": "Dune: Part Two",
         "poster": "https://m.media-amazon.com/images/M/MV5BNTc0YmQxMjEtODI5MC00NjFiLTlkMWUtOGQ5NjFmYWUyZGJhXkEyXkFqcGc@._V1_QL75_UX90_CR0,0,90,133_.jpg",
         "rating": "8.4",
-        "year": "2024"
+        "year": "2024",
+        "watched": true
     },
     {
         "index": 59,
@@ -490,7 +507,8 @@
         "name": "어벤져스: 인피니티 워",
         "poster": "https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_QL75_UX90_CR0,0,90,133_.jpg",
         "rating": "8.4",
-        "year": "2018"
+        "year": "2018",
+        "watched": true
     },
     {
         "index": 61,
@@ -538,7 +556,8 @@
         "name": "샤이닝",
         "poster": "https://m.media-amazon.com/images/M/MV5BNmM5ZThhY2ItOGRjOS00NzZiLWEwYTItNDgyMjFkOTgxMmRiXkEyXkFqcGc@._V1_QL75_UX90_CR0,2,90,133_.jpg",
         "rating": "8.4",
-        "year": "1980"
+        "year": "1980",
+        "watched": true
     },
     {
         "index": 67,
@@ -554,7 +573,8 @@
         "name": "바스터즈: 거친 녀석들",
         "poster": "https://m.media-amazon.com/images/M/MV5BNTZjM2U3ZDUtNDhiYy00OTYwLWI0YjAtNzM1OGYxZjE3Nzc2XkEyXkFqcGc@._V1_QL75_UY133_CR2,0,90,133_.jpg",
         "rating": "8.4",
-        "year": "2009"
+        "year": "2009",
+        "watched": true
     },
     {
         "index": 69,
@@ -594,7 +614,8 @@
         "name": "코코",
         "poster": "https://m.media-amazon.com/images/M/MV5BMDIyM2E2NTAtMzlhNy00ZGUxLWI1NjgtZDY5MzhiMDc5NGU3XkEyXkFqcGc@._V1_QL75_UY133_CR2,0,90,133_.jpg",
         "rating": "8.4",
-        "year": "2017"
+        "year": "2017",
+        "watched": true
     },
     {
         "index": 74,
@@ -602,7 +623,8 @@
         "name": "어벤져스: 엔드게임",
         "poster": "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_QL75_UX90_CR0,0,90,133_.jpg",
         "rating": "8.4",
-        "year": "2019"
+        "year": "2019",
+        "watched": true
     },
     {
         "index": 75,
@@ -618,7 +640,8 @@
         "name": "굿 윌 헌팅",
         "poster": "https://m.media-amazon.com/images/M/MV5BNDdjZGQ5YzEtNTc2My00Mjc0LWFlMTctYzkwMzZlNzdiZWYzXkEyXkFqcGc@._V1_QL75_UX90_CR0,2,90,133_.jpg",
         "rating": "8.3",
-        "year": "1997"
+        "year": "1997",
+        "watched": true
     },
     {
         "index": 77,
@@ -626,7 +649,8 @@
         "name": "Toy Story",
         "poster": "https://m.media-amazon.com/images/M/MV5BZTA3OWVjOWItNjE1NS00NzZiLWE1MjgtZDZhMWI1ZTlkNzYwXkEyXkFqcGc@._V1_QL75_UX90_CR0,0,90,133_.jpg",
         "rating": "8.3",
-        "year": "1995"
+        "year": "1995",
+        "watched": true
     },
     {
         "index": 78,
@@ -650,7 +674,8 @@
         "name": "Oldeuboi",
         "poster": "https://m.media-amazon.com/images/M/MV5BODk1ZTQ1NzQtZDgwYS00MDI1LWEwZGMtYzNhMTdjMDFlOWQwXkEyXkFqcGc@._V1_QL75_UY133_CR2,0,90,133_.jpg",
         "rating": "8.3",
-        "year": "2003"
+        "year": "2003",
+        "watched": true
     },
     {
         "index": 81,
@@ -674,7 +699,8 @@
         "name": "Mononoke-hime",
         "poster": "https://m.media-amazon.com/images/M/MV5BNjIwOWJlYTEtYTViNy00ZmU2LWFmNjEtODYxN2E3MDRmYTA2XkEyXkFqcGc@._V1_QL75_UY133_CR2,0,90,133_.jpg",
         "rating": "8.3",
-        "year": "1997"
+        "year": "1997",
+        "watched": true
     },
     {
         "index": 84,
@@ -682,7 +708,8 @@
         "name": "아메리칸 뷰티",
         "poster": "https://m.media-amazon.com/images/M/MV5BMDI1MDE0OTMtMmI2MS00Yjc2LTg2MTItMWExYTg5NzA1OGUzXkEyXkFqcGc@._V1_QL75_UX90_CR0,0,90,133_.jpg",
         "rating": "8.3",
-        "year": "1999"
+        "year": "1999",
+        "watched": true
     },
     {
         "index": 85,
@@ -690,7 +717,8 @@
         "name": "세 얼간이",
         "poster": "https://m.media-amazon.com/images/M/MV5BNzc4ZWQ3NmYtODE0Ny00YTQ4LTlkZWItNTBkMGQ0MmUwMmJlXkEyXkFqcGc@._V1_QL75_UY133_CR1,0,90,133_.jpg",
         "rating": "8.4",
-        "year": "2009"
+        "year": "2009",
+        "watched": true
     },
     {
         "index": 86,
@@ -706,7 +734,8 @@
         "name": "조커",
         "poster": "https://m.media-amazon.com/images/M/MV5BZmJhOTQ0OGQtZGRlMS00ZmRjLTk2NTMtMWJmNTA2YjRhYjIzXkEyXkFqcGc@._V1_QL75_UY133_CR1,0,90,133_.jpg",
         "rating": "8.3",
-        "year": "2019"
+        "year": "2019",
+        "watched": true
     },
     {
         "index": 88,
@@ -754,7 +783,8 @@
         "name": "토이 스토리 3",
         "poster": "https://m.media-amazon.com/images/M/MV5BODc4M2E1YjktNjMyNC00ZjdiLTlhN2EtNzVjN2Q5ZTU1NmZkXkEyXkFqcGc@._V1_QL75_UY133_CR2,0,90,133_.jpg",
         "rating": "8.3",
-        "year": "2010"
+        "year": "2010",
+        "watched": true
     },
     {
         "index": 94,
@@ -778,7 +808,8 @@
         "name": "이터널 선샤인",
         "poster": "https://m.media-amazon.com/images/M/MV5BMTY4NzcwODg3Nl5BMl5BanBnXkFtZTcwNTEwOTMyMw@@._V1_QL75_UX90_CR0,0,90,133_.jpg",
         "rating": "8.3",
-        "year": "2004"
+        "year": "2004",
+        "watched": true
     },
     {
         "index": 97,
@@ -810,7 +841,8 @@
         "name": "2001: A Space Odyssey",
         "poster": "https://m.media-amazon.com/images/M/MV5BNjU0NDFkMTQtZWY5OS00MmZhLTg3Y2QtZmJhMzMzMWYyYjc2XkEyXkFqcGc@._V1_QL75_UX90_CR0,0,90,133_.jpg",
         "rating": "8.3",
-        "year": "1968"
+        "year": "1968",
+        "watched": true
     },
     {
         "index": 101,
@@ -826,7 +858,8 @@
         "name": "스카페이스",
         "poster": "https://m.media-amazon.com/images/M/MV5BNDUzYjY0NmUtMDM4OS00Y2Q5LWJiODYtNTk0ZTk0YjZhMTg1XkEyXkFqcGc@._V1_QL75_UX90_CR0,1,90,133_.jpg",
         "rating": "8.3",
-        "year": "1983"
+        "year": "1983",
+        "watched": true
     },
     {
         "index": 103,
@@ -850,7 +883,8 @@
         "name": "업",
         "poster": "https://m.media-amazon.com/images/M/MV5BNmI1ZTc5MWMtMDYyOS00ZDc2LTkzOTAtNjQ4NWIxNjYyNDgzXkEyXkFqcGc@._V1_QL75_UX90_CR0,0,90,133_.jpg",
         "rating": "8.3",
-        "year": "2009"
+        "year": "2009",
+        "watched": true
     },
     {
         "index": 106,
@@ -978,7 +1012,8 @@
         "name": "1917",
         "poster": "https://m.media-amazon.com/images/M/MV5BYTI4ZjFmYjEtMThmYy00YTYyLWE3MjQtYjllYzJiNTA4YTA4XkEyXkFqcGc@._V1_QL75_UY133_CR2,0,90,133_.jpg",
         "rating": "8.2",
-        "year": "2019"
+        "year": "2019",
+        "watched": true
     },
     {
         "index": 122,
@@ -994,7 +1029,8 @@
         "name": "Oppenheimer",
         "poster": "https://m.media-amazon.com/images/M/MV5BYWYyYTg5NzYtNWZhZS00YjVlLWFhNDUtMGVhMDQyNGVmMWQxXkEyXkFqcGc@._V1_QL75_UX90_CR0,5,90,133_.jpg",
         "rating": "8.3",
-        "year": "2023"
+        "year": "2023",
+        "watched": true
     },
     {
         "index": 124,
@@ -1026,7 +1062,8 @@
         "name": "더 울프 오브 월 스트리트",
         "poster": "https://m.media-amazon.com/images/M/MV5BOWEwZmQ4YjMtMTcwYy00ZTk3LTkyNDEtZDI1ODE1NTkwZWQ2XkEyXkFqcGc@._V1_QL75_UY133_CR1,0,90,133_.jpg",
         "rating": "8.2",
-        "year": "2013"
+        "year": "2013",
+        "watched": true
     },
     {
         "index": 128,
@@ -1034,7 +1071,8 @@
         "name": "트루먼 쇼",
         "poster": "https://m.media-amazon.com/images/M/MV5BNzA3ZjZlNzYtMTdjMy00NjMzLTk5ZGYtMTkyYzNiOGM1YmM3XkEyXkFqcGc@._V1_QL75_UX90_CR0,0,90,133_.jpg",
         "rating": "8.2",
-        "year": "1998"
+        "year": "1998",
+        "watched": true
     },
     {
         "index": 129,
@@ -1042,7 +1080,8 @@
         "name": "그린 북",
         "poster": "https://m.media-amazon.com/images/M/MV5BNDU5YTNmMmItN2QxNy00OGQ0LTg5MTctNzFmYjEzZjcwN2UwXkEyXkFqcGc@._V1_QL75_UX90_CR0,1,90,133_.jpg",
         "rating": "8.2",
-        "year": "2018"
+        "year": "2018",
+        "watched": true
     },
     {
         "index": 130,
@@ -1058,7 +1097,8 @@
         "name": "배트맨 비긴즈",
         "poster": "https://m.media-amazon.com/images/M/MV5BMzA2NDQzZDEtNDU5Ni00YTlkLTg2OWEtYmQwM2Y1YTBjMjFjXkEyXkFqcGc@._V1_QL75_UX90_CR0,0,90,133_.jpg",
         "rating": "8.2",
-        "year": "2005"
+        "year": "2005",
+        "watched": true
     },
     {
         "index": 132,
@@ -1082,7 +1122,8 @@
         "name": "셔터 아일랜드",
         "poster": "https://m.media-amazon.com/images/M/MV5BNzBkZDA1MGMtODI3ZS00OWU3LTg1ZTktNWU1ZGM2Mjk4ZjliXkEyXkFqcGc@._V1_QL75_UY133_CR2,0,90,133_.jpg",
         "rating": "8.2",
-        "year": "2010"
+        "year": "2010",
+        "watched": true
     },
     {
         "index": 135,
@@ -1194,7 +1235,8 @@
         "name": "탑건: 매버릭",
         "poster": "https://m.media-amazon.com/images/M/MV5BOTZkYzAyYjItYTllNS00MzdjLWE3ZDEtMTQ2ZDg0MDZjYzk3XkEyXkFqcGc@._V1_QL75_UY133_CR2,0,90,133_.jpg",
         "rating": "8.2",
-        "year": "2022"
+        "year": "2022",
+        "watched": true
     },
     {
         "index": 149,
@@ -1218,7 +1260,8 @@
         "name": "프리즈너스",
         "poster": "https://m.media-amazon.com/images/M/MV5BMTg0NTIzMjQ1NV5BMl5BanBnXkFtZTcwNDc3MzM5OQ@@._V1_QL75_UY133_CR0,0,90,133_.jpg",
         "rating": "8.2",
-        "year": "2013"
+        "year": "2013",
+        "watched": true
     },
     {
         "index": 152,
@@ -1226,7 +1269,8 @@
         "name": "킬 빌",
         "poster": "https://m.media-amazon.com/images/M/MV5BZmMyYzJlZmYtY2I3NC00NjAyLTkyZWItZjdjZDI1YTYyYTEwXkEyXkFqcGc@._V1_QL75_UX90_CR0,1,90,133_.jpg",
         "rating": "8.2",
-        "year": "2003"
+        "year": "2003",
+        "watched": true
     },
     {
         "index": 153,
@@ -1258,7 +1302,8 @@
         "name": "Finding Nemo",
         "poster": "https://m.media-amazon.com/images/M/MV5BMTc5NjExNTA5OV5BMl5BanBnXkFtZTYwMTQ0ODY2._V1_QL75_UX90_CR0,0,90,133_.jpg",
         "rating": "8.2",
-        "year": "2003"
+        "year": "2003",
+        "watched": true
     },
     {
         "index": 157,
@@ -1362,7 +1407,8 @@
         "name": "브이 포 벤데타",
         "poster": "https://m.media-amazon.com/images/M/MV5BOTI5ODc3NzExNV5BMl5BanBnXkFtZTcwNzYxNzQzMw@@._V1_QL75_UX90_CR0,0,90,133_.jpg",
         "rating": "8.1",
-        "year": "2005"
+        "year": "2005",
+        "watched": true
     },
     {
         "index": 170,
@@ -1378,7 +1424,8 @@
         "name": "인사이드 아웃",
         "poster": "https://m.media-amazon.com/images/M/MV5BOTgxMDQwMDk0OF5BMl5BanBnXkFtZTgwNjU5OTg2NDE@._V1_QL75_UX90_CR0,0,90,133_.jpg",
         "rating": "8.1",
-        "year": "2015"
+        "year": "2015",
+        "watched": true
     },
     {
         "index": 172,
@@ -1386,7 +1433,8 @@
         "name": "캐치 미 이프 유 캔",
         "poster": "https://m.media-amazon.com/images/M/MV5BMTY5MzYzNjc5NV5BMl5BanBnXkFtZTYwNTUyNTc2._V1_QL75_UX90_CR0,0,90,133_.jpg",
         "rating": "8.1",
-        "year": "2002"
+        "year": "2002",
+        "watched": true
     },
     {
         "index": 173,
@@ -1394,7 +1442,8 @@
         "name": "쓰리 빌보드",
         "poster": "https://m.media-amazon.com/images/M/MV5BMjI0ODcxNzM1N15BMl5BanBnXkFtZTgwMzIwMTEwNDI@._V1_QL75_UX90_CR0,0,90,133_.jpg",
         "rating": "8.1",
-        "year": "2017"
+        "year": "2017",
+        "watched": true
     },
     {
         "index": 174,
@@ -1458,7 +1507,8 @@
         "name": "죽은 시인의 사회",
         "poster": "https://m.media-amazon.com/images/M/MV5BMDYwNGVlY2ItMWYxMS00YjZiLWE5MTAtYWM5NWQ2ZWJjY2Q3XkEyXkFqcGc@._V1_QL75_UY133_CR0,0,90,133_.jpg",
         "rating": "8.1",
-        "year": "1989"
+        "year": "1989",
+        "watched": true
     },
     {
         "index": 182,
@@ -1490,7 +1540,8 @@
         "name": "매드맥스: 분노의 도로",
         "poster": "https://m.media-amazon.com/images/M/MV5BMGZjZDczMTktNDk5ZC00MmJmLWJlOGMtZjdkZDdlNDk0NzJmXkEyXkFqcGc@._V1_QL75_UY133_CR2,0,90,133_.jpg",
         "rating": "8.1",
-        "year": "2015"
+        "year": "2015",
+        "watched": true
     },
     {
         "index": 186,
@@ -1538,7 +1589,8 @@
         "name": "12 Years a Slave",
         "poster": "https://m.media-amazon.com/images/M/MV5BN2VkNjQyZDgtZDZjZS00MzUyLTliZDktNzIwZGM3ZjljZWEyXkEyXkFqcGc@._V1_QL75_UY133_CR2,0,90,133_.jpg",
         "rating": "8.1",
-        "year": "2013"
+        "year": "2013",
+        "watched": true
     },
     {
         "index": 192,
@@ -1570,7 +1622,8 @@
         "name": "라따뚜이",
         "poster": "https://m.media-amazon.com/images/M/MV5BMTMzODU0NTkxMF5BMl5BanBnXkFtZTcwMjQ4MzMzMw@@._V1_QL75_UX90_CR0,0,90,133_.jpg",
         "rating": "8.1",
-        "year": "2007"
+        "year": "2007",
+        "watched": true
     },
     {
         "index": 196,
@@ -1578,7 +1631,8 @@
         "name": "스파이더맨: 노 웨이 홈",
         "poster": "https://m.media-amazon.com/images/M/MV5BMmFiZGZjMmEtMTA0Ni00MzA2LTljMTYtZGI2MGJmZWYzZTQ2XkEyXkFqcGc@._V1_QL75_UX90_CR0,1,90,133_.jpg",
         "rating": "8.2",
-        "year": "2021"
+        "year": "2021",
+        "watched": true
     },
     {
         "index": 197,
@@ -1594,7 +1648,8 @@
         "name": "Gone Girl",
         "poster": "https://m.media-amazon.com/images/M/MV5BMTk0MDQ3MzAzOV5BMl5BanBnXkFtZTgwNzU1NzE3MjE@._V1_QL75_UY133_CR0,0,90,133_.jpg",
         "rating": "8.1",
-        "year": "2014"
+        "year": "2014",
+        "watched": true
     },
     {
         "index": 199,
@@ -1602,7 +1657,8 @@
         "name": "Monsters, Inc.",
         "poster": "https://m.media-amazon.com/images/M/MV5BZWZiMGY3NGItYzJmNi00OGViLWEwNGUtMDI0ODliMTA2MGU2XkEyXkFqcGc@._V1_QL75_UX90_CR0,1,90,133_.jpg",
         "rating": "8.1",
-        "year": "2001"
+        "year": "2001",
+        "watched": true
     },
     {
         "index": 200,
@@ -1626,7 +1682,8 @@
         "name": "Ford v Ferrari",
         "poster": "https://m.media-amazon.com/images/M/MV5BOTBjNTEyNjYtYjdkNi00YzE5LTljYzUtZjVlYmYwZmJmZWYxXkEyXkFqcGc@._V1_QL75_UX90_CR0,0,90,133_.jpg",
         "rating": "8.1",
-        "year": "2019"
+        "year": "2019",
+        "watched": true
     },
     {
         "index": 203,
@@ -1690,7 +1747,8 @@
         "name": "로건",
         "poster": "https://m.media-amazon.com/images/M/MV5BM2JjODdkMGMtNmY2YS00OGM2LThiY2YtZGYyNzE4Nzc2ODA0XkEyXkFqcGc@._V1_QL75_UX90_CR0,1,90,133_.jpg",
         "rating": "8.1",
-        "year": "2017"
+        "year": "2017",
+        "watched": true
     },
     {
         "index": 211,
@@ -1738,7 +1796,8 @@
         "name": "캐리비안의 해적: 블랙펄의 저주",
         "poster": "https://m.media-amazon.com/images/M/MV5BNDhlMzEyNzItMTA5Mi00YWRhLThlNTktYTQyMTA0MDIyNDEyXkEyXkFqcGc@._V1_QL75_UX90_CR0,0,90,133_.jpg",
         "rating": "8.1",
-        "year": "2003"
+        "year": "2003",
+        "watched": true
     },
     {
         "index": 217,
@@ -1786,7 +1845,8 @@
         "name": "터미네이터",
         "poster": "https://m.media-amazon.com/images/M/MV5BZmE0YzIxM2QtMGNlMi00MjRmLWE3MWMtOWQzMGVjMmU0YTFmXkEyXkFqcGc@._V1_QL75_UX90_CR0,1,90,133_.jpg",
         "rating": "8.1",
-        "year": "1984"
+        "year": "1984",
+        "watched": true
     },
     {
         "index": 223,
@@ -1868,7 +1928,8 @@
         "name": "The Incredibles",
         "poster": "https://m.media-amazon.com/images/M/MV5BMTY5OTU0OTc2NV5BMl5BanBnXkFtZTcwMzU4MDcyMQ@@._V1_QL75_UX90_CR0,0,90,133_.jpg",
         "rating": "8.0",
-        "year": "2004"
+        "year": "2004",
+        "watched": true
     },
     {
         "index": 233,
@@ -1948,7 +2009,8 @@
         "name": "Ahgassi",
         "poster": "https://m.media-amazon.com/images/M/MV5BZjIwMjVjNmEtZGY4Ni00MjFlLTgwZTMtYTVlNWFjNTE0M2FjXkEyXkFqcGc@._V1_QL75_UY133_CR2,0,90,133_.jpg",
         "rating": "8.1",
-        "year": "2016"
+        "year": "2016",
+        "watched": true
     },
     {
         "index": 243,
@@ -1956,7 +2018,8 @@
         "name": "Network",
         "poster": "https://m.media-amazon.com/images/M/MV5BY2E4ZGJiNTMtZTAxZC00MmVlLWI1NjYtMGVhMjhkOGEwZDhjXkEyXkFqcGc@._V1_QL75_UX90_CR0,2,90,133_.jpg",
         "rating": "8.1",
-        "year": "1976"
+        "year": "1976",
+        "watched": true
     },
     {
         "index": 244,

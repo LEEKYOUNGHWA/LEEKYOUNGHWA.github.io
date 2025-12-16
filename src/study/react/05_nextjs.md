@@ -1,7 +1,7 @@
 ---
 title: 05. nextjs
 subTitle: 언제다듣지
-lastUpdated: 2025/12/92 16:53:00
+lastUpdated: 2025/12/02 16:53:00
 tags: ["react"]
 image: https://nomadcoders.co/logos/next.svg
 ---

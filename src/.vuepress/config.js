@@ -36,11 +36,11 @@ module.exports = {
    */
   themeConfig: {
     logo: "/logo.jpg",
-    repo: "",
+    repo: "https://github.com/LEEKYOUNGHWA/LEEKYOUNGHWA.github.io",
     editLinks: true,
     docsDir: "",
-    editLinkText: "",
-    lastUpdated: false,
+    editLinkText: "edit",
+    lastUpdated: true,
     nav: [
       { text: "TIL", link: "/posts/list" },
       { text: "Study", link: "/study/list" },
@@ -65,7 +65,7 @@ module.exports = {
     "flowchart",
     "vuepress-plugin-mermaidjs",
     "vuepress-plugin-chart",
-    ["sitemap", { hostname: "https://leekyounghwa.github.io" }],
+    ["sitemap", { hostname: "https://leekyounghwa.github.io" , dateFormatter: () => null,}],
     [
       "seo",
       {
@@ -95,25 +95,42 @@ module.exports = {
   },
 };
 
+function readMarkdownTree(basePath, parentPath = "") {
+  return fs.readdirSync(basePath)
+    .filter((name) => name !== "list.md")
+    .map((name) => {
+      const fullPath = path.join(basePath, name);
+      const relativePath = parentPath
+        ? `${parentPath}/${name}`
+        : name;
+
+      const stat = fs.statSync(fullPath);
+
+      // 📁 폴더면 재귀
+      if (stat.isDirectory()) {
+        const children = readMarkdownTree(fullPath, relativePath);
+
+        // 안에 md 하나도 없으면 제외
+        if (children.length === 0) return null;
+
+        return {
+          title: name,
+          collapsable: true,
+          children,
+        };
+      }
+
+      // 📄 마크다운 파일만
+      if (stat.isFile() && name.endsWith(".md")) {
+        return relativePath.replace(".md", "");
+      }
+
+      return null;
+    })
+    .filter(Boolean);
+}
+
 function getSideBar(dirNm) {
-  const src = "./src/";
-  const fs = require("fs");
-  const fileList = [];
-  fs.readdirSync(src + dirNm)
-    .filter((file) => file != "list.md")
-    .forEach((file) => {
-      const childrenList = [];
-      fs.readdirSync(src + dirNm + "/" + file)
-        .filter((fileName) => fileName != "list.md")
-        .forEach((fileName) => {
-          childrenList.push((file + "/" + fileName).replace(".md", ""));
-        });
-      fileList.push({
-        title: file,
-        collapsable: true,
-        children: childrenList,
-      });
-    });
-  console.log(fileList);
-  return fileList;
+  const basePath = path.join("./src", dirNm);
+  return readMarkdownTree(basePath);
 }

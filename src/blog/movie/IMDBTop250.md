@@ -1,6 +1,7 @@
 ---
 title: IMDb Top 250
 lastUpdated: 2025/12/01 17:10:00
+subTitle: 포스터 사고싶었으나 돈없..
 ---
 
 <template>
@@ -45,10 +46,7 @@ export default {
   methods: {
     goToReview(reviewLink) {
       if (reviewLink) {
-        // 실제 웹페이지 환경에서는 Vue Router를 사용하거나, 
-        // Window.location.href = reviewLink; 와 같이 사용하면 됩니다.
-        alert(`감상평 링크로 이동: ${reviewLink}`);
-        // 예시: this.$router.push(reviewLink);
+        this.$router.push('/blog/movie' + reviewLink);
       } else {
         alert("아직 감상평 링크가 없습니다.");
       }

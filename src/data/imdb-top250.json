@@ -1802,7 +1802,9 @@
         "name": "사운드 오브 뮤직",
         "poster": "https://m.media-amazon.com/images/M/MV5BYWJhYmU4MjQtZDJhYi00ZGVjLTlkNTEtNzkzNGVjOWQ3MjcwXkEyXkFqcGc@._V1_QL75_UX90_CR0,1,90,133_.jpg",
         "rating": "8.1",
-        "year": "1965"
+        "year": "1965",
+        "watched": true,
+        "reviewLink": "/IMDB/soundOfMusic"
     },
     {
         "index": 225,

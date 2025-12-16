@@ -1,5 +1,5 @@
 ---
-date: 2023/11/20 13:05:00
+date: 2025/11/20 13:05:00
 lastUpdated: 2025/11/20 13:05:00
 subTitle: AI가 있어도...
 description: Quartz Cron

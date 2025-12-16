@@ -1,6 +1,24 @@
 export const albumList = {
   "2025": [
     {
+      "link": "https://music.apple.com/kr/album/sgt-peppers-lonely-hearts-club-band-2017-mix/1573250333",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/64/85/d2/6485d219-91ac-5481-2668-7eab1320436d/21UMGIM57007.rgb.jpg/316x316bb.webp",
+      "date": "2025.12.16",
+      "artist": "The Beatles",
+      "name": "Sgt. Pepper's Lonely Hearts Club Band",
+      "memo": "비틀즈의 음악적 실험정신이 극에 달한 작품으로, 사이키델릭 록의 정수를 보여준다. 앨범은 다양한 음악적 스타일과 혁신적인 녹음 기법을 통해 청자를 새로운 음악적 경험으로 이끈다. 'Lucy in the Sky with Diamonds', 'A Day in the Life' 등은 그들의 창의성과 시대를 앞선 사운드를 잘 나타낸다. 이 앨범은 단순한 음악 작품을 넘어, 1960년대 문화와 사회적 변화를 반영하는 아이콘으로 자리잡았다...<br/><br/>라고 VScode가 자동완성해줬따....세상..",
+      "year": "1967"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/the-sound-of-music-50th-anniversary-edition/1550173102",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/79/a8/f3/79a8f388-ac4b-5705-d9f1-548dcf3fd476/20CRGIM25365.rgb.jpg/316x316bb.webp",
+      "date": "2025.12.16",
+      "artist": "Various Artists",
+      "name": "The Sound of Music",
+      "memo": "인류교양과목",
+      "year": "2016"
+    },
+    {
       "link": "https://music.apple.com/kr/album/revolver-2022-mix/1642995371",
       "img": "https://is1-ssl.mzstatic.com/image/thumb/Video122/v4/e3/9e/0e/e39e0e04-8559-81ae-d59d-fc6bb9abe6a9/Job4258ed0c-a972-408f-a84c-fb3d2151f054-138242655-PreviewImage_preview_image_nonvideo_sdr-Time1666967630606.png/592x592bb.webp",
       "date": "2025.11.28",
@@ -406,14 +424,6 @@ export const albumList = {
       "year": "1979"
     },
     {
-      "link": "https://music.apple.com/kr/playlist/%ED%95%9C%EB%B2%88%EC%94%A9-%EB%B6%88%EB%9F%89%EC%8B%9D%ED%92%88%EC%9D%B4-%EB%95%A1%EA%B8%B8%EB%95%8C%EA%B0%80-%EC%9E%88%EB%8B%A4/pl.u-d2b05VluL7dL4MA",
-      "img": "https://is1-ssl.mzstatic.com/image/thumb/SG-MQ-US-035-Image000001/v4/9e/70/36/9e703667-3d3e-ccf3-a403-58b9844fccfc/image/305x305cc.webp",
-      "date": "2025.02.25",
-      "artist": "(앨범콜렉터잠시탈주)playlist",
-      "name": "250225",
-      "memo": "Beef 트리거 '싱글 취급 안하는데 가끔은 불량식품이 땡겨'행 탈선기차 출발",
-    },
-    {
       "link": "https://music.apple.com/kr/album/madvillainy/887699504",
       "img": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/1a/c2/1a/1ac21a9d-3ffd-3f80-dc96-223622b50b5f/Madvillainy.jpg/316x316bb.webp",
       "date": "2025.02.24",
@@ -554,7 +564,7 @@ export const albumList = {
       "date": "2025.01.22",
       "artist": "Travis Scott",
       "name": "DAYS BEFORE RODEO",
-      "memo": "아니 비행기 안에 이게 있어? 포르투갈 행 행복한 비행 이었다... 힙합 편식쟁이 내 취향은 아니지만 부정할 수 없는 명반이다",
+      "memo": "아니 비행기 안에 이게 있어? 포르투갈 행 행복한 비행 이었다... 내 취향은 아니지만 부정할 수 없는 명반이다",
       "year": "2014"
     },
     {

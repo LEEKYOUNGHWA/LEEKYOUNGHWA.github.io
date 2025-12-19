@@ -2,6 +2,7 @@
 title: IMDb Top 250
 lastUpdated: 2025/12/01 17:10:00
 subTitle: 포스터 사고싶었으나 돈없..
+image: https://m.media-amazon.com/images/G/01/imdb/images/social/imdb_logo.png
 ---
 
 <template>

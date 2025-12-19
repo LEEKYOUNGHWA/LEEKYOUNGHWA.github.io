@@ -1,12 +1,21 @@
 export const albumList = {
   "2025": [
     {
+      "link": "https://music.apple.com/kr/album/big-willie-style/273258789",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/0e/1c/65/0e1c657e-9c9a-6516-ee45-63092bef957d/mzi.fbfqyeqd.jpg/592x592bb.webp",
+      "date": "2025.12.19",
+      "artist": "Will Smith",
+      "name": "Big Willie Style",
+      "memo": "발매 당시엔 전반적으로 평론가들에게 엇갈린 평가를 받았다. AllMusic은 윌의 세련되고 유머러스한 팝 랩 스타일에 큰 호평을 보냈고, 롤링 스톤 역시 \"Gettin' Jiggy wit It\", \"Yes Yes Y'All\"을 예로 들며 윌 스미스의 '멋진 파티 음악'을 높이 평가하였으며, 앨범의 가사적인 주제에도 호평을 하였다. 반면, 엔터테인먼트 위클리는 '진부한 팝 랩 클리셰'로 가득찼다고 말하며 Big Willie Style에 큰 혹평을 가했고, NME에선 윌 스미스를 '랩의 클리프 리처드'라고 칭하며 '확실히 형편없다'라는 소감을 남겼다.",
+      "year": "1997"
+    },
+    {
       "link": "https://music.apple.com/kr/album/sgt-peppers-lonely-hearts-club-band-2017-mix/1573250333",
       "img": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/64/85/d2/6485d219-91ac-5481-2668-7eab1320436d/21UMGIM57007.rgb.jpg/316x316bb.webp",
       "date": "2025.12.16",
       "artist": "The Beatles",
       "name": "Sgt. Pepper's Lonely Hearts Club Band",
-      "memo": "비틀즈의 음악적 실험정신이 극에 달한 작품으로, 사이키델릭 록의 정수를 보여준다. 앨범은 다양한 음악적 스타일과 혁신적인 녹음 기법을 통해 청자를 새로운 음악적 경험으로 이끈다. 'Lucy in the Sky with Diamonds', 'A Day in the Life' 등은 그들의 창의성과 시대를 앞선 사운드를 잘 나타낸다. 이 앨범은 단순한 음악 작품을 넘어, 1960년대 문화와 사회적 변화를 반영하는 아이콘으로 자리잡았다...<br/><br/>라고 VScode가 자동완성해줬따....세상..",
+      "memo": "비틀즈의 음악적 실험정신이 극에 달한 작품으로, 사이키델릭 록의 정수를 보여준다. 앨범은 다양한 음악적 스타일과 혁신적인 녹음 기법을 통해 청자를 새로운 음악적 경험으로 이끈다. 'Lucy in the Sky with Diamonds', 'A Day in the Life' 등은 그들의 창의성과 시대를 앞선 사운드를 잘 나타낸다. 이 앨범은 단순한 음악 작품을 넘어, 1960년대 문화와 사회적 변화를 반영하는 아이콘으로 자리잡았다",
       "year": "1967"
     },
     {
@@ -692,7 +701,7 @@ export const albumList = {
       "date": "2024.12.30",
       "artist": "Red Hot Chili Peppers",
       "name": "Blood Sugar Sex Magik",
-      "memo": "HR프로젝트 최익재 매니저님. 앨범을 낸적이 있으며(뭔지는 안알려주심) 넉살과 공연을 한적이 있고 술탄오브더 디스코 드럼과 친구이며 빅마마 지영이에게 드럼 못친다고 타박해서 드럼 접고 데뷔할 수 있게 만든 그가 죽을때까지 단 한장의 앨범만 들을 수 있다면 이 앨범을 듣겠다 함.",
+      "memo": "앨범을 낸적이 있으며(뭔지는 안알려주심) 넉살과 공연을 한적이 있고 술탄오브더 디스코 드럼과 친구이며 빅마마 지영이에게 드럼 못친다고 타박해서 드럼 접고 데뷔할 수 있게 만든 그가 죽을때까지 단 한장의 앨범만 들을 수 있다면 이 앨범을 듣겠다 함.",
       "year": "1991"
     },
     {

@@ -1,9 +1,10 @@
 ---
 lastUpdated: 2025/12/16 15:00:00
 subTitle: IMDB Top 250
+image: https://m.media-amazon.com/images/M/MV5BYWJhYmU4MjQtZDJhYi00ZGVjLTlkNTEtNzkzNGVjOWQ3MjcwXkEyXkFqcGc@._V1_QL75_UX90_CR0,1,90,133_.jpg
 ---
 
-# Sound of music
+# 사운드 오브 뮤직
 
 영화를 나름(?) 좋아하긴 하지만 개인적으로 60년대 영화는 좀 보기 힘들다.. 정서도 안맞는거 같고 루즈한거 같아서..
 

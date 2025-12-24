@@ -1,6 +1,15 @@
 export const albumList = {
   "2025": [
     {
+      "link": "https://music.apple.com/kr/album/honky-ch%C3%A2teau-bonus-track-version/1440910513",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Video112/v4/f0/a9/ec/f0a9ecb1-8d9f-cf87-4861-e231770a5a4f/Job94582030-d1d5-49d7-a1d5-2011d82569c2-133735264-PreviewImage_preview_image_nonvideo_sdr-Time1657141686954.png/592x592bf.webp",
+      "date": "2025.12.22",
+      "artist": "Elton John",
+      "name": "Honky Château",
+      "memo": "크으 죽인다 피아노 배우고 싶다",
+      "year": "1972"
+    },
+    {
       "link": "https://music.apple.com/kr/album/big-willie-style/273258789",
       "img": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/0e/1c/65/0e1c657e-9c9a-6516-ee45-63092bef957d/mzi.fbfqyeqd.jpg/592x592bb.webp",
       "date": "2025.12.19",

@@ -1,4 +1,15 @@
 export const albumList = {
+  "2026": [
+    {
+      "link": "https://music.apple.com/kr/album/madvillain-vol-1/1788884145",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/70/db/a5/70dba5b4-db90-6a07-071d-41ba2d4049b6/5050580698994.png/592x592bb.webp",
+      "date": "2026.01.08",
+      "artist": "Abstract Orchestra",
+      "name": "Madvillain, Vol. 1",
+      "memo": "올해 첫 앨범 되시겠다...! 휴먼 디깅👍 음테기 극복",
+      "year": "2018"
+    }
+  ],
   "2025": [
     {
       "link": "https://music.apple.com/kr/album/honky-ch%C3%A2teau-bonus-track-version/1440910513",

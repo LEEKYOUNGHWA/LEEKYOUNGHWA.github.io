@@ -1,6 +1,24 @@
 export const albumList = {
   "2026": [
     {
+      "link": "https://music.apple.com/kr/album/astral-signal/1444048865",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/79/b6/f3/79b6f3f7-6b77-0733-be42-f07d1e047085/00602567229179.rgb.jpg/592x592bb.webp",
+      "date": "2026.01.09",
+      "artist": "Gene Harris",
+      "name": "Astral Signal",
+      "memo": "Losalamitoslatinfunklovesong",
+      "year": "1974"
+    },
+    {
+      "link": "https://music.apple.com/kr/album/madvillain-vol-2/1788885754",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ae/bd/1b/aebd1bf1-ec84-94e8-8cb0-c72c8f4bdd98/5050580712348.png/592x592bb.webp",
+      "date": "2026.01.09",
+      "artist": "Abstract Orchestra",
+      "name": "Madvillain, Vol. 2",
+      "memo": "2도 좋다",
+      "year": "2019"
+    },
+    {
       "link": "https://music.apple.com/kr/album/madvillain-vol-1/1788884145",
       "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/70/db/a5/70dba5b4-db90-6a07-071d-41ba2d4049b6/5050580698994.png/592x592bb.webp",
       "date": "2026.01.08",

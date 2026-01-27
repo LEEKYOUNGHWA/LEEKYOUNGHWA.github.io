@@ -1,6 +1,15 @@
 export const albumList = {
   "2026": [
     {
+      "link": "https://music.apple.com/kr/album/kod/1373858456",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/04/f4/a2/04f4a2ca-81d1-a258-0c70-ee555840bc15/18UMGIM22943.rgb.jpg/592x592bb.webp",
+      "date": "2026.01.14",
+      "artist": "J. Cole",
+      "name": "KOD",
+      "memo": "Life can bring much pain\nThere are many ways to deal with this pain\nChoose wisely",
+      "year": "2018"
+    },
+    {
       "link": "https://music.apple.com/kr/album/astral-signal/1444048865",
       "img": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/79/b6/f3/79b6f3f7-6b77-0733-be42-f07d1e047085/00602567229179.rgb.jpg/592x592bb.webp",
       "date": "2026.01.09",

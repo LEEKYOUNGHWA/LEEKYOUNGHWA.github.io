@@ -1,6 +1,15 @@
 export const albumList = {
   "2026": [
     {
+      "link": "https://music.apple.com/kr/album/4-walls-the-4th-album/1052057270",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/62/15/02/62150210-5b5e-46fa-bd5c-37da1e8e5653/B.jpg/592x592bb.webp",
+      "date": "2026.02.04",
+      "artist": "f(x)",
+      "name": "4 Walls - The 4th Album",
+      "memo": "국가문화재급 2010년대 수만 프로듀싱",
+      "year": "2015"
+    },
+    {
       "link": "https://music.apple.com/kr/album/kod/1373858456",
       "img": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/04/f4/a2/04f4a2ca-81d1-a258-0c70-ee555840bc15/18UMGIM22943.rgb.jpg/592x592bb.webp",
       "date": "2026.01.14",

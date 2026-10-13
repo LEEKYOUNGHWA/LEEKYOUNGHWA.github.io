@@ -1,0 +1,11 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import SubHome from "../../components/SubHome.astro";
+import { listOf } from "../../lib/posts";
+const posts = await listOf("blog");
+---
+<Layout title="Home > Journal">
+  <div class="theme-default-content content__default">
+    <SubHome posts={posts} title="Journal" desc="music, movie, ect..." />
+  </div>
+</Layout>

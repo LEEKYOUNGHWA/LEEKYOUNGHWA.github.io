@@ -1,0 +1,17 @@
+---
+// VuePress TTSButton.vue와 동일: 본문을 브라우저 음성으로 읽기
+---
+<button class="speak-button">텍스트 읽기</button>
+<script>
+  document.querySelectorAll(".speak-button").forEach((b) =>
+    b.addEventListener("click", () => {
+      const text = (document.querySelector(".theme-default-content.content__default") as HTMLElement).innerText;
+      speechSynthesis.speak(new SpeechSynthesisUtterance(text));
+    }),
+  );
+</script>
+<style>
+  .speak-button { background-color: #007bff; color: white; padding: 10px 20px; border-radius: 30px; border: none; font-size: 16px; cursor: pointer; transition: background-color 0.3s; }
+  .speak-button:hover { background-color: #0056b3; }
+  .speak-button:focus { outline: none; }
+</style>

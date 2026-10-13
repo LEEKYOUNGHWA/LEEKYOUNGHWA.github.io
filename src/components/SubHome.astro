@@ -1,0 +1,62 @@
+---
+// VuePress SubHome.vue와 같은 마크업 (scoped 스타일 해시 data-v-5b3a16de 재사용)
+import { url, type Post } from "../lib/posts";
+const { posts, title, desc } = Astro.props as { posts: Post[]; title: string; desc: string };
+const perPage = 10;
+const pages = Math.ceil(posts.length / perPage);
+---
+<div data-v-5b3a16de>
+  <div class="subhome" data-v-5b3a16de><h1 data-v-5b3a16de>{title}</h1> <p data-v-5b3a16de>{desc}</p></div>
+  {posts.map((p, i) => (
+    <div data-v-5b3a16de data-page={Math.floor(i / perPage) + 1} style={i >= perPage ? "display:none" : ""}>
+      <div class="container" data-v-5b3a16de>
+        <a href={url(p)} class="thumbnail-container" data-v-5b3a16de>
+          <img src={p.data.image || "/logo.jpg"} loading="lazy" class="thumbnail" data-v-5b3a16de referrerpolicy="no-referrer" />
+        </a>
+        <div class="blog-content" data-v-5b3a16de>
+          <h5 data-v-5b3a16de>{p.data.lastUpdated}</h5>
+          <h3 data-v-5b3a16de><a href={url(p)} data-v-5b3a16de>{p.data.title}</a></h3>
+          <p data-v-5b3a16de>{p.data.subTitle}</p>
+        </div>
+      </div>
+      <h2 data-v-5b3a16de></h2>
+    </div>
+  ))}
+  {pages > 1 && (
+    <div class="pagination" data-v-5b3a16de data-pages={pages}>
+      <button data-v-5b3a16de data-go="prev">←</button>
+      {Array.from({ length: pages }, (_, i) => (
+        <button data-v-5b3a16de data-go={i + 1} class={i === 0 ? "active" : ""}>{i + 1}</button>
+      ))}
+      <button data-v-5b3a16de data-go="next">→</button>
+    </div>
+  )}
+</div>
+<script>
+  const nav = document.querySelector<HTMLElement>(".pagination");
+  if (nav) {
+    const total = Number(nav.dataset.pages);
+    const go = (page: number, scroll = true) => {
+      if (page < 1 || page > total) return;
+      document.querySelectorAll<HTMLElement>("[data-page]").forEach((el) => (el.style.display = el.dataset.page === String(page) ? "" : "none"));
+      nav.querySelectorAll<HTMLButtonElement>("button").forEach((b) => {
+        b.classList.toggle("active", b.dataset.go === String(page));
+        if (b.dataset.go === "prev") b.disabled = page === 1;
+        if (b.dataset.go === "next") b.disabled = page === total;
+      });
+      nav.dataset.current = String(page);
+      if (!scroll) return;
+      const u = new URL(location.href);
+      u.searchParams.set("page", String(page));
+      history.replaceState(null, "", u);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+    nav.addEventListener("click", (e) => {
+      const b = (e.target as HTMLElement).closest("button");
+      if (!b) return;
+      const cur = Number(nav.dataset.current ?? 1);
+      go(b.dataset.go === "prev" ? cur - 1 : b.dataset.go === "next" ? cur + 1 : Number(b.dataset.go));
+    });
+    go(Number(new URL(location.href).searchParams.get("page")) || 1, false);
+  }
+</script>

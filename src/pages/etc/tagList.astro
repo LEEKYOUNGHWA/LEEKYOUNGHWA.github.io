@@ -1,0 +1,18 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { allPosts, url, type Post } from "../../lib/posts";
+const tags = new Map<string, Post[]>();
+for (const p of await allPosts()) for (const t of p.data.tags) tags.set(t, [...(tags.get(t) ?? []), p]);
+const id = (t: string) => t.replace(" ", "-");
+---
+<Layout title="Home > Tags">
+  <div class="theme-default-content content__default">
+    <div class="subhome"><h1>Tags</h1><p>태그 모음</p></div>
+    {[...tags].map(([tag, list]) => (
+      <>
+        <h2 id={id(tag)}><a href={`#${id(tag)}`} class="header-anchor" aria-hidden="true">#</a> {tag}</h2>
+        <ul>{list.map((p) => <li><a href={url(p)}>{p.data.title}</a></li>)}</ul>
+      </>
+    ))}
+  </div>
+</Layout>

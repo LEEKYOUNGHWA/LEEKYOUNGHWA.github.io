@@ -2,46 +2,47 @@
 
 ## [LEEKYOUNGHWA.github.io](https://LEEKYOUNGHWA.github.io)
 
-## 세팅 가이드
+[Astro](https://astro.build)로 만든 블로그. 2026년 10월 VuePress 1에서 이전함.
 
-1. 관리자 권한 powershell 에서 chocolatey 설치
-   ```sh
-    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-   ```
-1. VsCode, git, nvm 설치
+## 실행
 
-   ```
-   choco install vscode
-   choco install git
-   choco install nvm
-   ```
-
-1. 깃 이름, 이메일 설정
-
-   ```
-   git config --global user.name "leekyounghwa"
-   git config --global user.email "rudghk5220@gmail.com"
-   ```
-
-1. node 설치
-   ```
-   nvm install 20
-   nvm use 20
-   ```
-1. VsCode 확장프로그램 Vue, Git Graph 설치
-1. git clone `https://github.com/LEEKYOUNGHWA/LEEKYOUNGHWA.github.io.git`
-1. 블로그 실행
-   ```
-   npm i
-   npm start
-   ```
-
-## Mac 세팅
+Node 22.12 이상 필요 (`.nvmrc` 기준 24)
 
 ```
-brew install nvm git   # 또는 nvm 공식 설치 스크립트
-nvm install            # .nvmrc 기준 node 20 설치
+nvm install
 nvm use
 npm i
-npm start
+npm run dev
 ```
+
+http://localhost:4321
+
+## 글 쓰기
+
+`src/content/posts/` 아래에 마크다운 파일 추가
+
+| 폴더 | 메뉴 |
+|---|---|
+| `posts/연도/` | TIL |
+| `study/주제/` | Study |
+| `blog/분류/` | Journal |
+| `trash/` | 개인 아카이브 (메뉴·검색 노출 X) |
+
+```md
+---
+title: "글 제목"
+section: posts            # posts | study | blog | etc | trash
+lastUpdated: "2026/10/14 10:00:00"
+subTitle: "목록과 검색 결과에 나오는 설명"
+image: "https://..."      # 목록 썸네일 (선택)
+tags: ["태그"]             # 선택
+---
+
+본문
+```
+
+Youtube, Gist, Music 같은 컴포넌트를 쓰려면 `.mdx` 파일로 만들고 `src/components`에서 import.
+
+## 배포
+
+`main`에 push하면 GitHub Actions가 빌드해서 `gh-pages` 브랜치로 배포.

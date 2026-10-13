@@ -1,0 +1,11 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import SubHome from "../../../components/SubHome.astro";
+import { listOf } from "../../../lib/posts";
+const posts = await listOf("trash", "trash/leetcode/");
+---
+<Layout title="Home > leetcode" noindex>
+  <div class="theme-default-content content__default">
+    <SubHome posts={posts} title="leetcode" desc="울지마바보야" />
+  </div>
+</Layout>

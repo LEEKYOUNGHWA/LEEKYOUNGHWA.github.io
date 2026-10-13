@@ -1,42 +1,22 @@
 {
   "name": "leekyounghwa.github.io",
+  "type": "module",
   "version": "0.0.1",
-  "description": "vuepress blog",
-  "main": "index.js",
-  "authors": {
-    "name": "LeeKyounghwa",
-    "email": "rudghk5220@gmail.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/LEEKYOUNGHWA/LEEKYOUNGHWA.github.io/LEEKYOUNGHWA.github.io"
+  "engines": {
+    "node": ">=22.12.0"
   },
   "scripts": {
-    "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider vuepress dev src",
-    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider vuepress build src",
-    "start": "npm run build && npm run dev"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "license": "MIT",
   "dependencies": {
-    "@toast-ui/vue-grid": "^4.21.22",
-    "axios": "^1.7.5",
-    "esm": "^3.0.0",
-    "json-fn": "^1.1.1",
-    "vue-jsonp": "^2.0.0",
-    "vue-typed-js": "^0.1.2",
-    "vuepress": "^1.9.10",
-    "vuepress-plugin-chart": "^0.3.0",
-    "vuepress-plugin-flowchart": "^1.5.0",
-    "vuepress-plugin-img-lazy": "^1.0.4",
-    "vuepress-plugin-mermaidjs": "^1.9.1",
-    "vuepress-plugin-seo": "^0.1.4",
-    "vuepress-plugin-sitemap": "^2.3.1"
-  },
-  "keywords": [
-    "vuepress"
-  ],
-  "author": "LeeKyounghwa",
-  "devDependencies": {
-    "cross-env": "^10.1.0"
+    "@astrojs/markdown-satteri": "^0.4.3",
+    "@astrojs/mdx": "^8.0.3",
+    "@astrojs/vue": "^7.0.3",
+    "astro": "^7.3.8",
+    "mermaid": "^12.2.0",
+    "vue": "^3.5.44"
   }
 }

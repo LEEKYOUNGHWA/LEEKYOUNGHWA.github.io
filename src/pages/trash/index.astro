@@ -1,0 +1,6 @@
+---
+import { getEntry } from "astro:content";
+import PostPage from "../../components/PostPage.astro";
+const post = (await getEntry("posts", "trash/index"))!;
+---
+<PostPage post={post} />

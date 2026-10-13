@@ -1,0 +1,36 @@
+---
+// VuePress Movie.vue와 동일
+const {
+  name = "name",
+  memo = "memo",
+  img = "https://leekyounghwa.github.io/logo.jpg",
+  src = "https://www.youtube.com/embed/?listType=playlist&list=PLZc89k5FA5Gk9od-efYrKDyxt4gd9Q31O",
+} = Astro.props;
+const id = name.replaceAll(" ", "-");
+---
+<div>
+  <div class="movie-section">
+    <img class="movie-img" src={img} referrerpolicy="no-referrer" />
+    <div class="blog-content">
+      <h3 id={id}><a href={`#${id}`} class="header-anchor" aria-hidden="true">#</a> {name}</h3>
+      <p>{memo}</p>
+    </div>
+  </div>
+  <div class="iframe-container">
+    <iframe src={src} type="text/html" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+<style>
+  .movie-section { display: flex; margin: 20px auto 40px auto; padding: 10px; width: 80%; max-width: 800px; }
+  .movie-img { cursor: pointer; margin-right: 40px; height: 200px; width: 150px; object-fit: cover; }
+  .blog-content { flex: 2; display: flex; flex-direction: column; justify-content: flex-start; padding-left: 10px; padding-right: 10px; }
+  h3 { margin: 10px 0 0 0; }
+  p { margin: 10px 0 0 0; font-size: 0.8em; }
+  .iframe-container { position: relative; width: 100%; max-width: 800px; margin: 0 auto 140px; padding-bottom: 56.25%; height: 0; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+  .iframe-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+  @media (max-width: 800px) {
+    .movie-section { margin-top: 40px; flex-direction: column; align-items: center; }
+    .movie-img { margin-right: 0; height: 200px; }
+    .blog-content { padding-left: 0; align-items: center; text-align: center; }
+  }
+</style>

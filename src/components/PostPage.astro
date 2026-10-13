@@ -1,0 +1,53 @@
+---
+import { render } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+import Comment from "./Comment.astro";
+import { allPosts, sidebarOf, url, SITE, type Post } from "../lib/posts";
+
+
+const { post } = Astro.props as { post: Post };
+const { Content, headings } = await render(post);
+const hasSidebar = (post.data.section === "posts" || post.data.section === "study") && post.data.sidebar;
+const sidebar = hasSidebar ? await sidebarOf(post.data.section as "posts" | "study") : undefined;
+
+// 이전/다음 글: 사이드바 순서 기준 (VuePress와 동일)
+const flat = sidebar?.flatMap((g) => g.items) ?? [];
+const i = flat.findIndex((p) => p.id === post.id);
+const prev = i > 0 ? flat[i - 1] : undefined;
+const next = i >= 0 && i < flat.length - 1 ? flat[i + 1] : undefined;
+const showTitle = post.data.section !== "etc";
+// 설명이 없거나 무의미하면 본문 앞부분을 검색 결과 설명으로 사용
+const summary = (post.body ?? "")
+  .replace(/^(```|~~~)[\s\S]*?^\1/gm, "").replace(/^import .*$/gm, "").replace(/<[^>]+>/g, "")
+  .replace(/!\[[^\]]*\]\([^)]*\)/g, "").replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
+  .replace(/[#>*`_|]/g, "").replace(/\s+/g, " ").trim().slice(0, 150);
+const desc = [post.data.description, post.data.subTitle].find((d) => d && d !== "모르겠다" && d !== post.data.title && d.length > 10) ?? (summary || post.data.title);
+const editUrl = `${SITE.repo}/blob/main/${post.filePath}`;
+---
+<Layout title={post.data.title} description={desc} image={post.data.image}
+  sidebar={sidebar} current={post} headings={headings} noindex={post.data.section === "trash"}>
+  <div class="theme-default-content content__default">
+    {showTitle && <h1 id="frontmatter-title">{post.data.title}</h1>}
+    <Content />
+  </div>
+  {post.data.tags.length > 0 && (
+    <div class="theme-default-content">
+      {post.data.tags.map((t) => <a href={`/etc/tagList.html#${t.replace(" ", "-")}`}>#{t}</a>)}
+    </div>
+  )}
+  <footer class="page-edit">
+    <div class="edit-link"><a href={editUrl} target="_blank" rel="noopener noreferrer">edit</a></div>
+    {post.data.lastUpdated && (
+      <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">{post.data.lastUpdated}</span></div>
+    )}
+  </footer>
+  {(prev || next) && (
+    <div class="page-nav">
+      <p class="inner">
+        {prev && <span class="prev">← <a href={url(prev)} class="prev">{prev.data.title}</a></span>}
+        {next && <span class="next"><a href={url(next)}>{next.data.title}</a> →</span>}
+      </p>
+    </div>
+  )}
+  <Comment />
+</Layout>

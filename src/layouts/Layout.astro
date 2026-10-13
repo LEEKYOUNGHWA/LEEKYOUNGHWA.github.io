@@ -1,0 +1,178 @@
+---
+import { SITE, url, allPosts, type SidebarGroup, type Post } from "../lib/posts";
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  sidebar?: SidebarGroup[];
+  current?: Post;
+  headings?: { depth: number; slug: string; text: string }[];
+  home?: boolean;
+  noindex?: boolean;
+}
+const { title, description = "vuepress blog", image, sidebar, current, headings = [], home = false, noindex = false } = Astro.props;
+const pageTitle = title ? `${title} | ${SITE.title}` : SITE.title;
+const path = decodeURI(Astro.url.pathname);
+const isActive = (link: string) => path === link || path === link.replace(/\.html$/, "");
+const outbound = `<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span>`;
+const subHeaders = headings.filter((h) => h.depth === 2);
+const searchIndex = (await allPosts()).map((p) => ({ t: p.data.title, u: url(p) }));
+const ogImage = new URL(image ?? "/logo.jpg", Astro.site);
+---
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href="/logo.jpg" />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+    <meta property="og:type" content={current ? "article" : "website"} />
+    <meta property="og:url" content={new URL(Astro.url.pathname, Astro.site)} />
+    <meta property="og:site_name" content={SITE.title} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#3eaf7c" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <link rel="stylesheet" href="/vuepress.css" />
+    <link rel="stylesheet" href="/custom.css" />
+    {import.meta.env.PROD && (
+      <>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-672PNZBWWP"></script>
+        <script is:inline>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-672PNZBWWP');</script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8111136017997298" crossorigin="anonymous"></script>
+      </>
+    )}
+  </head>
+  <body>
+    <div id="app">
+      <div class:list={["theme-container", { "no-sidebar": !sidebar }]}>
+        <header class="navbar">
+          <div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div>
+          <a href="/" class="home-link"><img src="/logo.jpg" alt={SITE.title} class="logo" /> <span class="site-name can-hide">{SITE.title}</span></a>
+          <div class="links">
+            <div class="search-box">
+              <input aria-label="Search" autocomplete="off" spellcheck="false" value="" />
+              <ul class="suggestions align-right" style="display:none"></ul>
+            </div>
+            <nav class="nav-links can-hide">
+              {SITE.nav.map((n) => (
+                <div class="nav-item"><a href={n.link} class:list={["nav-link", { "router-link-active": isActive(n.link) }]}>{n.text}</a></div>
+              ))}
+              <a href={SITE.repo} target="_blank" rel="noopener noreferrer" class="repo-link">GitHub <Fragment set:html={outbound} /></a>
+            </nav>
+          </div>
+        </header>
+        <div class="sidebar-mask"></div>
+        <aside class="sidebar">
+          <nav class="nav-links">
+            {SITE.nav.map((n) => (
+              <div class="nav-item"><a href={n.link} class="nav-link">{n.text}</a></div>
+            ))}
+            <a href={SITE.repo} target="_blank" rel="noopener noreferrer" class="repo-link">GitHub <Fragment set:html={outbound} /></a>
+          </nav>
+          {sidebar && (
+            <ul class="sidebar-links">
+              {sidebar.map((g) => {
+                const open = g.items.some((p) => p.id === current?.id);
+                const items = g.items.map((p) => (
+                  <li>
+                    <a href={url(p)} class:list={["sidebar-link", { active: p.id === current?.id }]}>{p.data.title}</a>
+                    {p.id === current?.id && subHeaders.length > 0 && (
+                      <ul class="sidebar-sub-headers">
+                        {subHeaders.map((h) => (
+                          <li class="sidebar-sub-header"><a href={`#${h.slug}`} class="sidebar-link">{h.text}</a></li>
+                        ))}
+                      </ul>
+                    )}
+                  </li>
+                ));
+                return g.title ? (
+                  <li>
+                    <section class="sidebar-group collapsable depth-0">
+                      <p class:list={["sidebar-heading", { open }]}><span>{g.title}</span> <span class:list={["arrow", open ? "down" : "right"]}></span></p>
+                      <ul class="sidebar-links sidebar-group-items" style={open ? "" : "display:none"}>{items}</ul>
+                    </section>
+                  </li>
+                ) : items;
+              })}
+            </ul>
+          )}
+        </aside>
+        {home ? <slot /> : <main class="page"><slot /></main>}
+      </div>
+    </div>
+
+    <script is:inline define:vars={{ searchIndex }}>
+      window.__SEARCH__ = searchIndex;
+    </script>
+    <script>
+      const container = document.querySelector(".theme-container")!;
+      // 모바일 사이드바
+      document.querySelector(".sidebar-button")?.addEventListener("click", () => container.classList.toggle("sidebar-open"));
+      document.querySelector(".sidebar-mask")?.addEventListener("click", () => container.classList.remove("sidebar-open"));
+
+      // 사이드바 그룹 접기/펼치기
+      document.querySelectorAll<HTMLElement>(".sidebar-heading").forEach((h) => {
+        h.addEventListener("click", () => {
+          const list = h.nextElementSibling as HTMLElement | null;
+          if (!list) return;
+          const open = list.style.display === "none";
+          list.style.display = open ? "" : "none";
+          h.classList.toggle("open", open);
+          h.querySelector(".arrow")?.classList.replace(open ? "right" : "down", open ? "down" : "right");
+        });
+      });
+
+      // 제목 옆 # 앵커, 외부 링크 아이콘 (VuePress 기본 동작)
+      const outbound = document.querySelector(".repo-link span")?.outerHTML ?? "";
+      document.querySelectorAll<HTMLElement>(".theme-default-content :is(h1,h2,h3,h4)[id]").forEach((h) => {
+        h.insertAdjacentHTML("afterbegin", `<a href="#${h.id}" class="header-anchor">#</a> `);
+      });
+      document.querySelectorAll<HTMLAnchorElement>(".theme-default-content a[href^='http']").forEach((a) => {
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+        if (!a.querySelector("img")) a.insertAdjacentHTML("beforeend", outbound);
+      });
+
+      // 검색 (제목 기준, VuePress 기본 검색과 같은 UI)
+      const input = document.querySelector<HTMLInputElement>(".search-box input")!;
+      const box = document.querySelector<HTMLUListElement>(".search-box .suggestions")!;
+      const index = (window as any).__SEARCH__ as { t: string; u: string }[];
+      let focusIdx = -1;
+      const render = () => {
+        const q = input.value.trim().toLowerCase();
+        const hits = q ? index.filter((p) => p.t.toLowerCase().includes(q)).slice(0, 10) : [];
+        box.innerHTML = hits
+          .map((p, i) => `<li class="suggestion${i === focusIdx ? " focused" : ""}"><a href="${p.u}"><span class="page-title">${p.t.replace(/</g, "&lt;")}</span></a></li>`)
+          .join("");
+        box.style.display = hits.length ? "" : "none";
+        input.parentElement!.classList.toggle("focused", true);
+      };
+      input.addEventListener("input", () => { focusIdx = -1; render(); });
+      input.addEventListener("focus", render);
+      input.addEventListener("blur", () => setTimeout(() => (box.style.display = "none"), 150));
+      input.addEventListener("keydown", (e) => {
+        const n = box.children.length;
+        if (e.key === "ArrowDown") { focusIdx = (focusIdx + 1) % n; render(); e.preventDefault(); }
+        if (e.key === "ArrowUp") { focusIdx = (focusIdx - 1 + n) % n; render(); e.preventDefault(); }
+        if (e.key === "Enter" && n) location.href = (box.children[Math.max(focusIdx, 0)].querySelector("a") as HTMLAnchorElement).href;
+      });
+
+      // ```mermaid 코드블록을 다이어그램으로
+      const blocks = document.querySelectorAll<HTMLElement>('pre[data-language="mermaid"]');
+      if (blocks.length) {
+        const { default: mermaid } = await import("mermaid");
+        mermaid.initialize({ startOnLoad: false });
+        blocks.forEach((pre) => { pre.classList.add("mermaid"); pre.textContent = pre.textContent; pre.removeAttribute("style"); });
+        await mermaid.run({ nodes: [...blocks] });
+      }
+    </script>
+  </body>
+</html>

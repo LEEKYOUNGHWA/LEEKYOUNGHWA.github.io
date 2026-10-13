@@ -12,8 +12,8 @@
     "url": "https://github.com/LEEKYOUNGHWA/LEEKYOUNGHWA.github.io/LEEKYOUNGHWA.github.io"
   },
   "scripts": {
-    "dev": "vuepress dev src",
-    "build": "set NODE_OPTIONS=--openssl-legacy-provider && vuepress build src",
+    "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider vuepress dev src",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider vuepress build src",
     "start": "npm run build && npm run dev"
   },
   "license": "MIT",
@@ -35,5 +35,8 @@
   "keywords": [
     "vuepress"
   ],
-  "author": "LeeKyounghwa"
+  "author": "LeeKyounghwa",
+  "devDependencies": {
+    "cross-env": "^10.1.0"
+  }
 }

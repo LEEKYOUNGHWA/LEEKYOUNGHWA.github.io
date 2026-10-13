@@ -35,3 +35,13 @@
    npm i
    npm start
    ```
+
+## Mac 세팅
+
+```
+brew install nvm git   # 또는 nvm 공식 설치 스크립트
+nvm install            # .nvmrc 기준 node 20 설치
+nvm use
+npm i
+npm start
+```

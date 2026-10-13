@@ -8,17 +8,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version-file: .nvmrc
           cache: npm
 
+      # npm ci 대신 npm install: 맥에서 만든 lock 파일에 리눅스 전용 선택 패키지가 빠져 있어도 설치되도록
       - name: Install and Build
         run: |
-          npm ci
+          npm install --no-audit --no-fund
           npm run build
 
       # 기존과 같이 gh-pages 브랜치로 배포 (.nojekyll 자동 추가 → _astro 폴더 정상 서빙)

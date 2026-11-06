@@ -2,24 +2,31 @@
 title: "GetSmart 강의 자동 재생 · 다음 강의 자동 넘기기 (Tampermonkey 스크립트)"
 subTitle: "Tampermonkey로 GetSmart 강의를 자동으로 재생하고 다음 강의로 넘기는 스크립트 공유"
 section: posts
-lastUpdated: "2025/11/11 10:20:00"
-description: "GetSmart 자동 재생 알림창(alert/confirm) 제거, 동영상 끝으로 이동, 인프런 강의 자동 재생. 사내 의무교육 및 온라인 강의를 빠르게 완료"
+lastUpdated: "2026/11/06 10:00:00"
+description: "GetSmart 알림창(alert/confirm) 자동 확인, 동영상 자동 재생, 플레이어 최대 배속 설정, 인프런 강의 자동 재생"
 image: "https://www.tampermonkey.net/images/ape.svg"
 tags: ["javascript"]
 sidebar: false
 ---
 
-> ## 2025년 V3 업데이트
+> ## 2026년 V4 업데이트
+>
+> 올해는 끝으로 땡기기가 막혔네요 ㅠ 땡겨도 원래 위치로 돌아갑니다.  
+> 그래서 끝으로 이동 대신 플레이어 배속 메뉴의 최대 배속으로 재생하도록 바꿨습니다.  
+> 그리고 `hrdgsitm.getsmart.co.kr` 처럼 주소가 다른 과정도 있어서 `@match`를 `https://*.getsmart.co.kr/*` 로 바꿨어요.  
+> 동영상 없는 페이지에서 나던 오류도 고치고 `alert`도 같이 없앱니다.  
+> 밑에 [스크립트](#4-스크립트-작성후-ctrls-저장-상단-주석도-중요합니다용-전체-복사-후-붙여넣기-해주세요) 그대로 복붙하시면 됩니다~!
+
+<details class="custom-block details">
+<summary>History</summary>
+
+> ## 2025년 V3
 >
 > 어느덧 3주년을 맞이한 getSmart 자동재생 입니다! 올해는 또 넘어가기가 안되는군용?ㅋㅋ  
 > 소스상에서는 땡겨집니다(다행)  
 > 그리고 브라우저 정책상 자동재생이 막혔더군요 깨알 상식 공유차원에서 한번 읽어보십숑  
-> 밑에 [스크립트](#4-스크립트-작성후-ctrls-저장-상단-주석도-중요합니다용-전체-복사-후-붙여넣기-해주세요) 업데이트 했슴다 `video.muted = true; ` 한줄 추가했습니다.  
-> 그대로 복붙하시면 됩니다~!
+> `video.muted = true; ` 한줄 추가했습니다.
 > ![tampermonkey](/image/2025/11/11/mutevideo.png)
-
-<details class="custom-block details">
-<summary>History</summary>
 
 > ## 2024년
 >
@@ -68,54 +75,64 @@ sidebar: false
 
 ```js
 // ==UserScript==
-// @name         getsmart 알럿 없애기 및 동영상 자동 재생, 끝으로 이동
+// @name         getsmart 알럿 없애기, 자동 재생, 최대 배속
 // @namespace    https://leekyounghwa.github.io/posts/2023/autoConfirmClick.html
-// @version      2025-11-11
-// @description  getsmart 알럿 없애기, 동영상 자동 재생 및 끝으로 이동
-// @match        https://gsitm.getsmart.co.kr/*
+// @version      2026-11-06
+// @description  getsmart 알럿 자동 확인, 음소거 자동 재생, 플레이어 최대 배속 설정
+// @match        https://*.getsmart.co.kr/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=tampermonkey.net
+// @run-at       document-start
 // @grant        none
 // ==/UserScript==
 
 (function () {
   "use strict";
   console.log("pageload");
+
+  // 플레이어 배속 메뉴의 최대값으로 맞춰 주세요 (예: 1.5, 2)
+  const MAX_RATE = 2;
+
   // 알림 창 자동 확인 설정
-  var _old_confirm = window.confirm;
-  window.confirm = function () {
-    return true; // 자동 확인
-    _old_confirm.apply(window, arguments);
-  };
+  window.confirm = () => true;
+  window.alert = () => {};
+
+  // 영상마다 배속은 한 번만 설정
+  const applied = new WeakSet();
 
   setInterval(function () {
-    // 동영상 요소 찾기
-    var video = document.querySelector("video");
-    video.muted = true; // 2025 업데이트 동영상 mute
-    if (video && video.currentTime < video.duration - 5) {
-      // 동영상 자동 재생
-      video
-        .play()
-        .then(() => {
-          console.log("동영상이 자동 재생되었습니다.");
+    document.querySelectorAll("video").forEach(function (video) {
+      // 동영상 정보 로드 전이면 다음 체크 때 다시 확인
+      if (!isFinite(video.duration) || video.duration <= 0) return;
 
-          // 동영상을 끝으로 이동 (끝에서 5초 전)
-          var videoDuration = video.duration;
-          video.currentTime = videoDuration - 5;
-          console.log("동영상이 끝부분으로 이동했습니다.");
-        })
-        .catch((error) => {
-          console.log("자동 재생 실패:", error);
-        });
-    }
-  }, 5000); // 5초마다 체크
+      if (!applied.has(video)) {
+        video.playbackRate = MAX_RATE;
+        applied.add(video);
+        console.log("배속 설정:", MAX_RATE);
+      }
+
+      // 멈춰 있으면 음소거 후 자동 재생 (브라우저 자동재생 정책)
+      if (video.paused && !video.ended) {
+        video.muted = true;
+        video.play().catch((error) => console.log("자동 재생 실패:", error));
+      }
+    });
+  }, 3000); // 3초마다 체크
 })();
 ```
 
 ![tampermonkey1](/image/2025/11/11/tampermonkey1.png)
 
+<div class="custom-block tip">
+<p class="custom-block-title">최대 배속 확인하는 법</p>
+
+동영상 하단의 `1.0x`, `배속`, 톱니바퀴 버튼을 눌러 나오는 목록 중 가장 큰 값을 `MAX_RATE`에 넣어 주세요.  
+한 차시 돌려보고 진도율이 안 올라가면 한 단계 낮춰 주시면 됩니다.
+
+</div>
+
 ## 5. 동영상 실행
 
-실행하면 금방 끝납니다 5분안에 SSAP 가능
+창 띄워두고 다른 일 하시면 알아서 재생됩니다.
 
 멈추면 다 종료된겁니다..!
 

@@ -1,6 +1,6 @@
 ---
 title: "chapter4"
-section: study
+section: posts
 lastUpdated: "2024/01/24 04:55:49"
 tags: ["java"]
 ---

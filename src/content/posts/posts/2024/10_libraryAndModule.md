@@ -1,6 +1,6 @@
 ---
 title: "10. 라이브러리와 모듈"
-section: study
+section: posts
 lastUpdated: "2024/01/05 17:33:00"
 tags: ["java"]
 ---

@@ -1,6 +1,6 @@
 ---
 title: "자바스크립트파워북"
-section: study
+section: posts
 lastUpdated: "2023/12/27 14:45:00"
 subTitle: "자바스크립트파워북"
 tags: ["books"]

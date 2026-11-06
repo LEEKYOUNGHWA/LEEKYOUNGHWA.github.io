@@ -1,6 +1,6 @@
 ---
 title: "Kurzgesagt"
-section: blog
+section: posts
 lastUpdated: "2024/09/13 14:45:00"
 subTitle: "성덕"
 ---

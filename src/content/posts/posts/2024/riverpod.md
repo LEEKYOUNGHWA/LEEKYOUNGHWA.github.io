@@ -1,6 +1,6 @@
 ---
 title: "Flutter 에 Riverpod 적용해서 리팩토링 해보자"
-section: study
+section: posts
 lastUpdated: "2024/12/06 17:16:00"
 subTitle: "바보는 이걸 이해하는데 상당히 오랜 시간이 걸렸다"
 image: "https://img.icons8.com/color/512/flutter.png"

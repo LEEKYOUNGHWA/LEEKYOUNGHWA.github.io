@@ -1,6 +1,6 @@
 ---
 title: "7. 상속"
-section: study
+section: posts
 lastUpdated: "2024/01/05 17:30:00"
 tags: ["java"]
 ---

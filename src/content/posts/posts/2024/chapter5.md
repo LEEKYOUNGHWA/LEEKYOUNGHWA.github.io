@@ -1,6 +1,6 @@
 ---
 title: "05.객체 지향 설계 5원칙 - SOLID"
-section: study
+section: posts
 lastUpdated: "2024/01/24 04:56:49"
 tags: ["java"]
 ---

@@ -1,6 +1,6 @@
 ---
 title: "06.스프링이 사랑한 디자인 패턴"
-section: study
+section: posts
 lastUpdated: "2024/01/24 04:57:49"
 tags: ["java"]
 ---

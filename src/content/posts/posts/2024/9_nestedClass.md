@@ -1,6 +1,6 @@
 ---
 title: "9. 중첩클래스"
-section: study
+section: posts
 lastUpdated: "2024/01/05 17:32:00"
 tags: ["java"]
 ---

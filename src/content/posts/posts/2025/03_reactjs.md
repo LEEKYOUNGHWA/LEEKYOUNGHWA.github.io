@@ -1,6 +1,6 @@
 ---
 title: "03. react.js"
-section: study
+section: posts
 lastUpdated: "2025/09/30 15:26:00"
 subTitle: "언제다듣지"
 image: "https://images.icon-icons.com/2415/PNG/512/react_original_wordmark_logo_icon_146375.png"

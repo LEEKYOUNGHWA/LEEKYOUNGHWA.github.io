@@ -1,6 +1,6 @@
 ---
 title: "5. 참조타입"
-section: study
+section: posts
 lastUpdated: "2024/01/05 17:28:00"
 tags: ["java"]
 ---

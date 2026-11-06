@@ -1,5 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { allPosts, popularPosts, url, type Post } from "../lib/posts";
+const popular = await popularPosts();
+const time = (p: Post) => new Date(p.data.lastUpdated || "1999/10/04").getTime();
+const recent = (await allPosts())
+  .filter((p) => p.data.section === "posts" && !p.id.endsWith("/index") && !popular.some((q) => q.id === p.id))
+  .sort((a, b) => time(b) - time(a))
+  .slice(0, 5);
 ---
 <Layout home>
   <main class="home">
@@ -11,9 +18,25 @@ import Layout from "../layouts/Layout.astro";
       <blockquote>
         <p><a href="https://ko.wikipedia.org/wiki/%EB%A7%88%EC%9D%B8%EB%93%9C_%EC%97%85%EB%A1%9C%EB%94%A9">마인드 업로딩</a>(영어: whole brain emulation (WBE), mind uploading, mind/brain upload) 또는 정신 전송(精神転送, 영어: mind transfer, mind copying)은 트랜스휴머니즘이나 사이언스 픽션에서 사용되는 용어이며 인간의 마음을 컴퓨터와 같은 인공물에 전송하는 것을 말한다.</p>
       </blockquote>
+      <div class="home-lists">
+        <section>
+          <h2>인기 글</h2>
+          <ul>{popular.map((p) => <li><a href={url(p)}>{p.data.title}</a></li>)}</ul>
+        </section>
+        <section>
+          <h2>최근 글</h2>
+          <ul>{recent.map((p) => <li><a href={url(p)}>{p.data.title}</a> <span class="home-date">{p.data.lastUpdated?.slice(0, 10)}</span></li>)}</ul>
+        </section>
+      </div>
     </div>
   </main>
 </Layout>
 <style is:global>
   .home .hero img { max-width: 450px !important; }
+  .home-lists { display: grid; grid-template-columns: 1fr 1fr; gap: 0 2rem; margin-top: 2rem; }
+  .home-lists h2 { font-size: 1.3rem; border-bottom: 1px solid #eaecef; padding-bottom: .3rem; }
+  .home-lists ul { padding-left: 1.2rem; }
+  .home-lists li { margin: .4rem 0; }
+  .home-date { color: #999; font-size: .85em; }
+  @media (max-width: 719px) { .home-lists { grid-template-columns: 1fr; } }
 </style>

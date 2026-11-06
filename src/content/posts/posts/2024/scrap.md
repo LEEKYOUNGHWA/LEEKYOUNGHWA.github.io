@@ -1,6 +1,6 @@
 ---
 title: "Scrap"
-section: blog
+section: posts
 lastUpdated: "2024/11/01 14:14:00"
 subTitle: "Collection of tastes"
 image: "https://i.etsystatic.com/41044968/r/il/34ca41/6073840813/il_570xN.6073840813_swdr.jpg"

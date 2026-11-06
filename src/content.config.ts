@@ -11,7 +11,7 @@ const posts = defineCollection({
   }),
   schema: z.object({
     title: z.string(),
-    section: z.enum(["posts", "study", "blog", "etc", "trash"]),
+    section: z.enum(["posts", "etc", "trash"]),
     lastUpdated: z.string().optional(),
     subTitle: z.string().optional(),
     description: z.string().optional(),

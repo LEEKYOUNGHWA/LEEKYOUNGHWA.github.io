@@ -1,6 +1,6 @@
 ---
 title: "11. 예외처리"
-section: study
+section: posts
 lastUpdated: "2024/01/05 17:33:00"
 tags: ["java"]
 ---

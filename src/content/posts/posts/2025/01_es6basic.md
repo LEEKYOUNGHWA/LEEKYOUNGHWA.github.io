@@ -1,6 +1,6 @@
 ---
 title: "01. javascript 기초"
-section: study
+section: posts
 lastUpdated: "2025/09/10 16:28:00"
 subTitle: "콩나물(=나)에 물주기"
 image: "https://images.icon-icons.com/2415/PNG/512/react_original_wordmark_logo_icon_146375.png"

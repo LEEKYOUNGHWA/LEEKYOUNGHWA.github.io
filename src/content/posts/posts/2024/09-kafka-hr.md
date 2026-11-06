@@ -1,6 +1,6 @@
 ---
 title: "카프카 Pilot Project"
-section: study
+section: posts
 lastUpdated: "2024/11/01 13:47:00"
 subTitle: "여러 시스템으로 대량의 정보 전파"
 image: "https://velog.velcdn.com/images/gsun/post/64573b02-6890-4bf8-a50c-91210e6c9063/image.png"

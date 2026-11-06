@@ -1,6 +1,6 @@
 ---
 title: "07.스프링 삼각형과 설정 정보"
-section: study
+section: posts
 lastUpdated: "2024/01/24 04:58:49"
 tags: ["java"]
 ---

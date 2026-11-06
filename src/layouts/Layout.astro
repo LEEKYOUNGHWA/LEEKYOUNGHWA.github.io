@@ -1,22 +1,25 @@
 ---
-import { SITE, url, allPosts, type SidebarGroup, type Post } from "../lib/posts";
+import { SITE, url, allPosts, type Post } from "../lib/posts";
 
+type Heading = { depth: number; slug: string; text: string };
 interface Props {
   title?: string;
   description?: string;
   image?: string;
-  sidebar?: SidebarGroup[];
+  toc?: Heading[];
+  tocTitle?: string;
   current?: Post;
-  headings?: { depth: number; slug: string; text: string }[];
   home?: boolean;
   noindex?: boolean;
 }
-const { title, description = "vuepress blog", image, sidebar, current, headings = [], home = false, noindex = false } = Astro.props;
+const { title, description = "vuepress blog", image, toc = [], tocTitle, current, home = false, noindex = false } = Astro.props;
+const sidebar = toc.length > 0;
+// 가장 얕은 제목 단계를 1단계로 맞춤 (## 부터 쓰는 글도 들여쓰기 0부터)
+const minDepth = Math.min(...toc.map((h) => h.depth));
 const pageTitle = title ? `${title} | ${SITE.title}` : SITE.title;
 const path = decodeURI(Astro.url.pathname);
 const isActive = (link: string) => path === link || path === link.replace(/\.html$/, "");
 const outbound = `<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span>`;
-const subHeaders = headings.filter((h) => h.depth === 2);
 const searchIndex = (await allPosts()).map((p) => ({ t: p.data.title, u: url(p) }));
 const ogImage = new URL(image ?? "/logo.jpg", Astro.site);
 ---
@@ -78,31 +81,14 @@ const ogImage = new URL(image ?? "/logo.jpg", Astro.site);
             <a href={SITE.repo} target="_blank" rel="noopener noreferrer" class="repo-link">GitHub <Fragment set:html={outbound} /></a>
           </nav>
           {sidebar && (
-            <ul class="sidebar-links">
-              {sidebar.map((g) => {
-                const open = g.items.some((p) => p.id === current?.id);
-                const items = g.items.map((p) => (
-                  <li>
-                    <a href={url(p)} class:list={["sidebar-link", { active: p.id === current?.id }]}>{p.data.title}</a>
-                    {p.id === current?.id && subHeaders.length > 0 && (
-                      <ul class="sidebar-sub-headers">
-                        {subHeaders.map((h) => (
-                          <li class="sidebar-sub-header"><a href={`#${h.slug}`} class="sidebar-link">{h.text}</a></li>
-                        ))}
-                      </ul>
-                    )}
-                  </li>
-                ));
-                return g.title ? (
-                  <li>
-                    <section class="sidebar-group collapsable depth-0">
-                      <p class:list={["sidebar-heading", { open }]}><span>{g.title}</span> <span class:list={["arrow", open ? "down" : "right"]}></span></p>
-                      <ul class="sidebar-links sidebar-group-items" style={open ? "" : "display:none"}>{items}</ul>
-                    </section>
-                  </li>
-                ) : items;
-              })}
-            </ul>
+            <div class="toc">
+              {tocTitle && <a href="#frontmatter-title" class="toc-title">{tocTitle}</a>}
+              <ul class="toc-list">
+                {toc.map((h) => (
+                  <li class={`toc-item toc-depth-${h.depth - minDepth}`}><a href={`#${h.slug}`} class="toc-link" data-slug={h.slug}>{h.text}</a></li>
+                ))}
+              </ul>
+            </div>
           )}
         </aside>
         {home ? <slot /> : <main class="page"><slot /></main>}
@@ -118,17 +104,19 @@ const ogImage = new URL(image ?? "/logo.jpg", Astro.site);
       document.querySelector(".sidebar-button")?.addEventListener("click", () => container.classList.toggle("sidebar-open"));
       document.querySelector(".sidebar-mask")?.addEventListener("click", () => container.classList.remove("sidebar-open"));
 
-      // 사이드바 그룹 접기/펼치기
-      document.querySelectorAll<HTMLElement>(".sidebar-heading").forEach((h) => {
-        h.addEventListener("click", () => {
-          const list = h.nextElementSibling as HTMLElement | null;
-          if (!list) return;
-          const open = list.style.display === "none";
-          list.style.display = open ? "" : "none";
-          h.classList.toggle("open", open);
-          h.querySelector(".arrow")?.classList.replace(open ? "right" : "down", open ? "down" : "right");
-        });
-      });
+      // 목차: 지금 읽는 위치의 제목 강조, 모바일에서 항목 누르면 사이드바 닫기
+      const tocLinks = [...document.querySelectorAll<HTMLAnchorElement>(".toc-link")];
+      if (tocLinks.length) {
+        const targets = tocLinks.map((a) => document.getElementById(a.dataset.slug!)).filter((el): el is HTMLElement => !!el);
+        const update = () => {
+          let cur = targets[0];
+          for (const t of targets) if (t.getBoundingClientRect().top <= 90) cur = t;
+          tocLinks.forEach((a) => a.classList.toggle("active", a.dataset.slug === cur?.id));
+        };
+        addEventListener("scroll", update, { passive: true });
+        update();
+        tocLinks.forEach((a) => a.addEventListener("click", () => container.classList.remove("sidebar-open")));
+      }
 
       // 제목 옆 # 앵커, 외부 링크 아이콘 (VuePress 기본 동작)
       const outbound = document.querySelector(".repo-link span")?.outerHTML ?? "";

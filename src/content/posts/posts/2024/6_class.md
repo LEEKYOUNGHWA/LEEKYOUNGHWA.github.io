@@ -1,6 +1,6 @@
 ---
 title: "6. 클래스"
-section: study
+section: posts
 lastUpdated: "2024/01/05 17:29:00"
 tags: ["java"]
 ---

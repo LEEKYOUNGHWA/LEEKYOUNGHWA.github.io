@@ -2,30 +2,31 @@
 import { render } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import Comment from "./Comment.astro";
-import { allPosts, sidebarOf, url, SITE, type Post } from "../lib/posts";
+import { listOf, relatedOf, url, SITE, type Post } from "../lib/posts";
 
 
 const { post } = Astro.props as { post: Post };
 const { Content, headings } = await render(post);
-const hasSidebar = (post.data.section === "posts" || post.data.section === "study") && post.data.sidebar;
-const sidebar = hasSidebar ? await sidebarOf(post.data.section as "posts" | "study") : undefined;
 
-// 이전/다음 글: 사이드바 순서 기준 (VuePress와 동일)
-const flat = sidebar?.flatMap((g) => g.items) ?? [];
+// 이전/다음 글: Posts 목록과 같은 최근 수정순 (← 더 최근 글, 더 예전 글 →)
+const flat = post.data.section === "posts" && post.data.sidebar ? await listOf("posts") : [];
 const i = flat.findIndex((p) => p.id === post.id);
 const prev = i > 0 ? flat[i - 1] : undefined;
 const next = i >= 0 && i < flat.length - 1 ? flat[i + 1] : undefined;
 const showTitle = post.data.section !== "etc";
+// 왼쪽 사이드바 = 이 글의 목차 (h1~h3). etc(프로필 등)·제목 없는 글은 사이드바 없음
+const toc = post.data.section !== "etc" ? headings.filter((h) => h.depth <= 3) : [];
 // 설명이 없거나 무의미하면 본문 앞부분을 검색 결과 설명으로 사용
 const summary = (post.body ?? "")
   .replace(/^(```|~~~)[\s\S]*?^\1/gm, "").replace(/^import .*$/gm, "").replace(/<[^>]+>/g, "")
   .replace(/!\[[^\]]*\]\([^)]*\)/g, "").replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
   .replace(/[#>*`_|]/g, "").replace(/\s+/g, " ").trim().slice(0, 150);
 const desc = [post.data.description, post.data.subTitle].find((d) => d && d !== "모르겠다" && d !== post.data.title && d.length > 10) ?? (summary || post.data.title);
+const related = await relatedOf(post);
 const editUrl = `${SITE.repo}/blob/main/${post.filePath}`;
 ---
 <Layout title={post.data.title} description={desc} image={post.data.image}
-  sidebar={sidebar} current={post} headings={headings} noindex={post.data.section === "trash"}>
+  toc={toc} tocTitle={post.data.title} current={post} noindex={post.data.section === "trash"}>
   <div class="theme-default-content content__default">
     {showTitle && <h1 id="frontmatter-title">{post.data.title}</h1>}
     <Content />
@@ -33,6 +34,16 @@ const editUrl = `${SITE.repo}/blob/main/${post.filePath}`;
   {post.data.tags.length > 0 && (
     <div class="theme-default-content">
       {post.data.tags.map((t) => <a href={`/etc/tagList.html#${t.replace(" ", "-")}`}>#{t}</a>)}
+    </div>
+  )}
+  {related.length > 0 && (
+    <div class="theme-default-content related-posts">
+      <h3>함께 보면 좋은 글</h3>
+      <ul>
+        {related.map((p) => (
+          <li><a href={url(p)}>{p.data.title}</a>{p.data.subTitle && <span class="related-sub"> — {p.data.subTitle.length > 60 ? p.data.subTitle.slice(0, 60) + "…" : p.data.subTitle}</span>}</li>
+        ))}
+      </ul>
     </div>
   )}
   <footer class="page-edit">

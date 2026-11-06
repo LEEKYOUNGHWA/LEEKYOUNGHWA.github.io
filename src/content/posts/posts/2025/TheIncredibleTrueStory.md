@@ -1,6 +1,6 @@
 ---
 title: "The Incredible True Story"
-section: blog
+section: posts
 lastUpdated: "2025/08/08 10:11:00"
 subTitle: "인생앨범2"
 image: "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/fd/20/99/fd2099f6-d209-f7d1-7ce0-a69717692f2d/15UMGIM54242.rgb.jpg/316x316bb.webp"

@@ -6,9 +6,7 @@ export const SITE = {
   title: "MIND UPLOAD",
   repo: "https://github.com/LEEKYOUNGHWA/LEEKYOUNGHWA.github.io",
   nav: [
-    { text: "TIL", link: "/posts/list.html" },
-    { text: "Study", link: "/study/list.html" },
-    { text: "Journal", link: "/blog/list.html" },
+    { text: "Posts", link: "/posts/list.html" },
     { text: "Tags", link: "/etc/tagList.html" },
     { text: "Profile", link: "/etc/resume.html" },
   ],
@@ -21,25 +19,42 @@ export async function allPosts() {
 }
 
 // 목록 페이지: VuePress SubHome과 같은 lastUpdated 내림차순
-export async function listOf(section: Post["data"]["section"], prefix?: string) {
+export async function listOf(section: Post["data"]["section"] | Post["data"]["section"][], prefix?: string) {
   const time = (p: Post) => new Date(p.data.lastUpdated || "1999/10/04").getTime();
-  return (await allPosts()).filter((p) => p.data.section === section && (!prefix || p.id.startsWith(prefix))).sort((a, b) => time(b) - time(a));
+  const sections = Array.isArray(section) ? section : [section];
+  return (await allPosts())
+    .filter((p) => sections.includes(p.data.section) && !p.id.endsWith("/index") && (!prefix || p.id.startsWith(prefix)))
+    .sort((a, b) => time(b) - time(a));
 }
 
-// 사이드바: 폴더 = 그룹, 파일명 순 (VuePress config의 readMarkdownTree와 동일)
-export type SidebarGroup = { title: string; items: Post[] };
-export async function sidebarOf(section: "posts" | "study"): Promise<SidebarGroup[]> {
-  const list = (await allPosts()).filter((p) => p.data.section === section);
-  const groups = new Map<string, Post[]>();
-  for (const p of list) {
-    const parts = p.id.split("/");
-    const g = parts.length > 2 ? parts[1] : "";
-    if (!groups.has(g)) groups.set(g, []);
-    groups.get(g)!.push(p);
+// 함께 보면 좋은 글: 태그가 겹치는 글 우선, 모자라면 같은 섹션 최신 글로 채움 (trash 제외)
+export async function relatedOf(post: Post, limit = 3): Promise<Post[]> {
+  if (post.data.section === "trash" || post.data.section === "etc") return [];
+  const time = (p: Post) => new Date(p.data.lastUpdated || "1999/10/04").getTime();
+  const pool = (await allPosts()).filter(
+    (p) => p.id !== post.id && !p.id.endsWith("/index") && p.data.section !== "trash" && p.data.section !== "etc",
+  );
+  const tags = new Set(post.data.tags);
+  const shared = (p: Post) => p.data.tags.filter((t) => tags.has(t)).length;
+  const byTag = pool.filter((p) => shared(p) > 0).sort((a, b) => shared(b) - shared(a) || time(b) - time(a));
+  const picked = byTag.slice(0, limit);
+  if (picked.length < limit) {
+    const rest = pool
+      .filter((p) => p.data.section === post.data.section && !picked.includes(p))
+      .sort((a, b) => time(b) - time(a));
+    picked.push(...rest.slice(0, limit - picked.length));
   }
-  // 파일 시스템 순서(대문자 먼저)와 같게 코드 포인트 순 비교
-  const cmp = (a: string, b: string) => (a < b ? -1 : a > b ? 1 : 0);
-  return [...groups.entries()]
-    .sort(([a], [b]) => cmp(a, b))
-    .map(([title, items]) => ({ title, items: items.sort((a, b) => cmp(a.id, b.id)) }));
+  return picked;
+}
+
+// 홈 인기 글: GA4 조회수 상위 (2026/10 기준). 순서대로 노출, 없는 id는 건너뜀
+export const POPULAR_IDS = [
+  "posts/2023/iosReminderDday",
+  "posts/2023/autoConfirmClick",
+  "posts/2024/svnLock",
+  "posts/2024/installSDKman",
+];
+export async function popularPosts(): Promise<Post[]> {
+  const all = await allPosts();
+  return POPULAR_IDS.map((id) => all.find((p) => p.id === id)).filter((p): p is Post => !!p);
 }

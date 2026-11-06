@@ -1,6 +1,6 @@
 ---
 title: "Flask VSCode Debugging"
-section: study
+section: posts
 lastUpdated: "2024/11/05 14:47:00"
 subTitle: "Flask VSCode 디버깅 설정"
 image: "https://img.icons8.com/?size=512&id=TtXEs5SeYLG8&format=png"

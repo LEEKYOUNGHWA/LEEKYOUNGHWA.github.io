@@ -1,6 +1,6 @@
 ---
 title: "13_generic"
-section: study
+section: posts
 lastUpdated: "2024/01/05 17:34:00"
 tags: ["java"]
 ---

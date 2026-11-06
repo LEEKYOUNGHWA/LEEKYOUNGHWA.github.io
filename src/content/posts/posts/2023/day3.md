@@ -1,6 +1,6 @@
 ---
 title: "**day3** (2023-12-06)"
-section: study
+section: posts
 lastUpdated: "2023/12/04 00:00:00"
 tags: ["python"]
 ---

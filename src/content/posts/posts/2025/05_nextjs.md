@@ -1,6 +1,6 @@
 ---
 title: "05. nextjs"
-section: study
+section: posts
 lastUpdated: "2025/12/02 16:53:00"
 subTitle: "언제다듣지"
 image: "https://nomadcoders.co/logos/next.svg"

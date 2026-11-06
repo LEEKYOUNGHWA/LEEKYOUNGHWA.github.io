@@ -1,6 +1,6 @@
 ---
 title: "Flutter 설치"
-section: study
+section: posts
 lastUpdated: "2024/11/28 16:55:00"
 subTitle: "설치, 소스"
 image: "https://img.icons8.com/color/512/flutter.png"

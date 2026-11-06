@@ -1,6 +1,6 @@
 ---
 title: "02. 자바의 절차적/구조적 프로그래밍"
-section: study
+section: posts
 lastUpdated: "2024/01/24 04:53:49"
 tags: ["java"]
 ---

@@ -1,6 +1,6 @@
 ---
 title: "04. typescript"
-section: study
+section: posts
 lastUpdated: "2025/11/18 10:52:00"
 subTitle: "언제다듣지"
 image: "https://www.typescriptlang.org/favicon-32x32.png?v=8944a05a8b601855de116c8a56d3b3ae"

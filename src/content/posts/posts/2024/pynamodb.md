@@ -1,6 +1,6 @@
 ---
 title: "pynamodb 삽질기..."
-section: study
+section: posts
 lastUpdated: "2024/11/17 20:30:00"
 subTitle: "바보는 이걸 이해하는데 상당히 오랜 시간이 걸렸다"
 image: "https://img.icons8.com/?size=512&id=TtXEs5SeYLG8&format=png"

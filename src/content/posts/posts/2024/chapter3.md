@@ -1,6 +1,6 @@
 ---
 title: "03. 자바와 객체 지향"
-section: study
+section: posts
 lastUpdated: "2024/01/24 04:54:49"
 tags: ["java"]
 ---

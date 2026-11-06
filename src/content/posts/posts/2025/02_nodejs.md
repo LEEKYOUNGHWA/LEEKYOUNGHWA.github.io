@@ -1,6 +1,6 @@
 ---
 title: "02. node.js"
-section: study
+section: posts
 lastUpdated: "2025/09/30 10:19:00"
 subTitle: "해마다 학습능력이.. 퇴화되는거 같다...."
 image: "https://images.icon-icons.com/2415/PNG/512/react_original_wordmark_logo_icon_146375.png"

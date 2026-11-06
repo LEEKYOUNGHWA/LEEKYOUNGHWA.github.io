@@ -1,6 +1,6 @@
 ---
 title: "Flask zappa 배포"
-section: study
+section: posts
 lastUpdated: "2024/11/04 17:29:00"
 subTitle: "onBoarding"
 image: "https://img.icons8.com/?size=512&id=TtXEs5SeYLG8&format=png"

@@ -9,3 +9,18 @@
 .search-box .suggestions { width: 20rem; }
 /* mermaid */
 pre.mermaid { background: transparent !important; text-align: center; }
+/* 함께 보면 좋은 글 */
+.related-posts { padding-top: 0 !important; padding-bottom: 0 !important; }
+.related-posts h3 { margin-top: 1rem; border-top: 1px solid #eaecef; padding-top: 1.2rem; }
+.related-posts li { margin: .35rem 0; }
+.related-posts .related-sub { color: #888; font-size: .9em; }
+/* 왼쪽 사이드바 = 글 목차 */
+.sidebar .toc { padding: 1.5rem 0; }
+.sidebar .toc-title { display: block; padding: 0 1.25rem .6rem 1.5rem; font-weight: 700; font-size: 1.05em; color: #2c3e50; line-height: 1.4; border-bottom: 1px solid #eaecef; margin-bottom: .6rem; }
+.sidebar .toc-list { list-style: none; margin: 0; padding: 0; }
+.sidebar .toc-link { display: block; padding: .3rem 1rem .3rem 1.25rem; border-left: .25rem solid transparent; color: #2c3e50; line-height: 1.4; font-size: .95em; }
+.sidebar .toc-link:hover { color: #3eaf7c; }
+.sidebar .toc-link.active { color: #3eaf7c; font-weight: 600; border-left-color: #3eaf7c; }
+.sidebar .toc-depth-0 > .toc-link { font-weight: 600; }
+.sidebar .toc-depth-1 > .toc-link { padding-left: 2.25rem; }
+.sidebar .toc-depth-2 > .toc-link { padding-left: 3.25rem; font-size: .9em; color: #555; }

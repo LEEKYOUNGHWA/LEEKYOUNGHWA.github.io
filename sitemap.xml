@@ -2,21 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://leekyounghwa.github.io/</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/list.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/list.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/blog/list.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/etc/tagList.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/etc/resume.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/blog/book/%EC%9D%B4%EB%B0%A9%EC%9D%B8.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/blog/etc/goldenRecord.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/blog/etc/kurzgesagt.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/blog/movie/IMDB/soundOfMusic.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/blog/movie/IMDBTop250.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/blog/music/2024.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/blog/music/2025.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/blog/music/2026.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/blog/music/all.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/blog/music/scrap.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/blog/music/TheIncredibleTrueStory.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2022/blogPluginList.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2022/googleAnalytics.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2022/markdownForBlog.html</loc></url>
@@ -26,6 +13,10 @@
   <url><loc>https://leekyounghwa.github.io/posts/2023/adsenseLog.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2023/autoConfirmClick.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2023/confluence.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2023/day1.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2023/day2.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2023/day3.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2023/day4.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2023/dbObject.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2023/eclipse.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2023/git.html</loc></url>
@@ -33,24 +24,66 @@
   <url><loc>https://leekyounghwa.github.io/posts/2023/iosReminderDday.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2023/javaException.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2023/javaLambda.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2023/javascriptPowerbook.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2023/oracleDeclareProcedure.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2023/playwright.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2023/writeDocumentUsingPython.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/01-kafka-aws.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/02-kafka-command-line.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/03-kafka-client.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/04-kafka-consumer.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/05-kafka-streams.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/06-kafka-connect.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/07-kafka-spring.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/08-kafka-application.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/09-kafka-hr.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/10_libraryAndModule.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/11_exception.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/13_generic.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/2024.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/5_reference%20type.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/6_class.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/7_inheritance.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/8_interface.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/9_nestedClass.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2024/caseSensitive.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/chapter2.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/chapter3.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/chapter4.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/chapter5.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/chapter6.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/chapter7.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/dart.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/debugging.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/deploy.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/dotenv.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/flutter-deploy.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2024/gitResetHard.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2024/hardware.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/install.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2024/installSDKman.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2024/kafkaChatGPT.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2024/kafkaSoa.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2024/killPort.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/kurzgesagt.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2024/mobaXterm.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2024/oracleCloud.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2024/poi.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2024/PublicKeyRetrievalisnotallowed.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/pynamodb.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/riverpod.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/scrap.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2024/svnLock.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2024/toastUiVueGrid.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2024/vuepressGist.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2024/widget.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2024/workflowyml.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2025/01_es6basic.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2025/02_nodejs.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2025/03_reactjs.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2025/04_typescript.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2025/05_nextjs.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2025/2025.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2025/chocolatey.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2025/cron.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2025/DB2Loop.html</loc></url>
@@ -58,58 +91,23 @@
   <url><loc>https://leekyounghwa.github.io/posts/2025/delEc2.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2025/docker.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2025/domain.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2025/goldenRecord.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2025/IMDBTop250.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2025/javaCompile.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2025/localMariaDBSetting.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2025/nvm.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2025/proC.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2025/pythonDBtableCopyByGPT.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2025/pythonExcelDownByGPT.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2025/soundOfMusic.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2025/TheIncredibleTrueStory.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2025/vsCodeTerminalEncoding.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2026/2026.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2026/all.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2026/blogMigration.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2026/BOM.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2026/ISMS-P.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2026/llama.html</loc></url>
   <url><loc>https://leekyounghwa.github.io/posts/2026/LLM.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/flask/debugging.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/flask/deploy.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/flask/pynamodb.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/flutter/dart.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/flutter/deploy.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/flutter/dotenv.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/flutter/install.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/flutter/riverpod.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/flutter/widget.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/java/10_libraryAndModule.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/java/11_exception.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/java/13_generic.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/java/5_reference%20type.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/java/6_class.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/java/7_inheritance.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/java/8_interface.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/java/9_nestedClass.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/javascript/javascriptPowerbook.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/kafka/01-kafka-aws.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/kafka/02-kafka-command-line.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/kafka/03-kafka-client.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/kafka/04-kafka-consumer.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/kafka/05-kafka-streams.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/kafka/06-kafka-connect.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/kafka/07-kafka-spring.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/kafka/08-kafka-application.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/kafka/09-kafka-hr.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/oopInSpring/chapter2.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/oopInSpring/chapter3.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/oopInSpring/chapter4.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/oopInSpring/chapter5.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/oopInSpring/chapter6.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/oopInSpring/chapter7.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/python/day1.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/python/day2.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/python/day3.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/python/day4.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/react/01_es6basic.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/react/02_nodejs.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/react/03_reactjs.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/react/04_typescript.html</loc></url>
-  <url><loc>https://leekyounghwa.github.io/study/react/05_nextjs.html</loc></url>
+  <url><loc>https://leekyounghwa.github.io/posts/2026/%EC%9D%B4%EB%B0%A9%EC%9D%B8.html</loc></url>
 </urlset>
